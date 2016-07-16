@@ -15,14 +15,14 @@ Para facilitar o nosso fluxo de desenvolvimento na **CCM**, construímos esse mi
 | Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
 
 ##Referências
- | Features    | ferramentas usadas|
- | --------------- | ------------ |
- | HTML | [Blade WP](https://github.com/tormjens/wp-blade) |
- | CSS | [Sass](http://sass-lang.com/) ([Libsass](http://sass-lang.com/libsass) via [node-sass](https://github.com/sass/node-sass)), [CSSNano](https://github.com/ben-eb/cssnano), Source Maps |
- | Framework para Sass | [Bourbon](Bourbon.io) e [Neat](neat.bourbon.io) |
- | Images | [ImageMin](https://www.npmjs.com/package/gulp-imagemin) |
- | Live Updating |  |
- | Assets para produção |  |
+ Features    | ferramentas usadas
+ ------ | -----
+**HTML** | [Blade WP](https://github.com/tormjens/wp-blade)
+**CSS** | [Sass](http://sass-lang.com/) ([Libsass](http://sass-lang.com/libsass) via [node-sass](https://github.com/sass/node-sass)), [CSSNano](https://github.com/ben-eb/cssnano), Source Maps
+**Framework para Sass** | [Bourbon](Bourbon.io) e [Neat](neat.bourbon.io)
+**Images** | [ImageMin](https://www.npmjs.com/package/gulp-imagemin)
+**Live Updating** |  em breve
+**Assets para produção** | em breve
 
 ##Inspirações
  - https://github.com/roots/sage
