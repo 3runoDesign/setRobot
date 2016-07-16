@@ -1,1 +1,4 @@
-@include('contents.index')
+@extends('layouts.base')
+@section('content')
+    @include('contents.index')
+@endsection
