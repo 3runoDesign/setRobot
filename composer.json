@@ -13,7 +13,7 @@
         "wordpress"
     ],
     "support": {
-        "issues": "https://github.com/CC-Mkt/setRobot/issues",
+        "issues": "https://github.com/CC-Mkt/setRobot/issues"
     },
     "require": {
         "php": ">=5.4.0"
