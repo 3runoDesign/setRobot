@@ -15,11 +15,6 @@ Para facilitar o nosso fluxo de desenvolvimento na **CCM**, construímos esse mi
 | Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
 
 ##Referências
- - [Blade WP](https://github.com/tormjens/wp-blade)
- - [HTML 5 Boilerplate](https://html5boilerplate.com/)
- - [Sass](http://sass-lang.com/)
- - []()
- - []()
  | Features    | ferramentas usadas|
  | --------------- | ------------ |
  | HTML | [Blade WP](https://github.com/tormjens/wp-blade) |
