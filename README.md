@@ -32,6 +32,9 @@ Para facilitar o nosso fluxo de desenvolvimento na **CCM**, construímos esse mi
 ##Como contribuir
 Basta fazer o **Fork** e nos mandar uma **Pull Request**
 
+##Versionamento
+setRobot sem o [Versionamento Semântico](http://semver.org/lang/pt-BR/).
+
 #Copyright e Licença
 Copyright 2016.
 O código PHP esta licenciado sob a Licença GPLv2. Todos os arquivos CSS, SCSS, JS, imagens e outros não incluindo arquivos PHP estão licenciados como MIT ou pela licença especificada dentro de seus arquivos.
