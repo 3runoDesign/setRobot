@@ -1,26 +1,26 @@
 {
-  "name": "cc-mkt/setrobot",
-  "version": "1.0.0-alpha",
-  "author": "Team CCM <dev@agenciaccm.com.br>",
-  "homepage": "https://github.com/CC-Mkt/setRobot",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/CC-Mkt/setRobot.git"
-  },
-  "bugs": {
-    "url": "https://github.com/CC-Mkt/setRobot/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
+    "name": "cc-mkt/setrobot",
+    "version": "1.0.0-alpha",
+    "author": "Team CCM <dev@agenciaccm.com.br>",
+    "homepage": "https://github.com/CC-Mkt/setRobot",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/CC-Mkt/setRobot.git"
+    },
+    "bugs": {
+        "url": "https://github.com/CC-Mkt/setRobot/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "scripts": {
+        "build": "..."
+    },
+    "engines": {
+        "node": ">= 0.12.0",
+        "npm": ">=2.1.5"
     }
-  ],
-  "scripts": {
-    "build": "bower install && gulp"
-  },
-  "engines": {
-    "node": ">= 6.2.0",
-    "npm": ">=3.8.9"
-  }
 }

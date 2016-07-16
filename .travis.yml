@@ -24,8 +24,8 @@ install:
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - composer global require squizlabs/php_codesniffer
 
-script:
-  - npm run build
-  - npm run jshint
-  - npm run jscs
-  - phpcs --standard=ruleset.xml --extensions=php -n -s .
+# script:
+#   - npm run build
+#   - npm run jshint
+#   - npm run jscs
+#   - phpcs --standard=ruleset.xml --extensions=php -n -s .
