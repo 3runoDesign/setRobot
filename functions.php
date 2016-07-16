@@ -1,7 +1,4 @@
 <?php
-
-require_once __DIR__ . '/vendor/autoload.php';
-
 $setrobot_includes = [
     'core/bootstrap.php',
 
