@@ -1,5 +1,5 @@
 {
-    "name": "cc-mkt/setrobot",
+    "name": "setrobot",
     "version": "1.0.0-alpha",
     "author": "Team CCM <dev@agenciaccm.com.br>",
     "homepage": "https://github.com/CC-Mkt/setRobot",
@@ -17,7 +17,7 @@
         }
     ],
     "scripts": {
-        "build": "..."
+        "build": "bower install"
     },
     "engines": {
         "node": ">= 0.12.0",
