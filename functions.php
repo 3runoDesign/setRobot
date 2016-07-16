@@ -3,6 +3,9 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 $setrobot_includes = [
+    'core/bootstrap.php',
+
+    'inc/blade.php',
     'inc/optimize.php',
 ];
 

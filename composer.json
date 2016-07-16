@@ -16,6 +16,7 @@
         "issues": "https://github.com/CC-Mkt/setRobot/issues"
     },
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "tormjens/wp-blade": "^2.0"
     }
 }
