@@ -1,0 +1,21 @@
+{
+    "name": "cc-mkt/setrobot",
+    "type": "wordpress-theme",
+    "license": "MIT",
+    "description": "Tema base para o desenvolvimento com o WordPress.",
+    "authors": [
+        {
+            "name": "Team CCM",
+            "email": "dev@agenciaccm.com.br"
+        }
+    ],
+    "keywords": [
+        "wordpress"
+    ],
+    "support": {
+        "issues": "https://github.com/CC-Mkt/setRobot/issues",
+    },
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
