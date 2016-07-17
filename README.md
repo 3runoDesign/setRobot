@@ -41,4 +41,4 @@ Copyright 2016.
 O código PHP esta licenciado sob a Licença GPLv2. Todos os arquivos CSS, SCSS, JS, imagens e outros não incluindo arquivos PHP estão licenciados como MIT ou pela licença especificada dentro de seus arquivos.
 
 #Feito com amor por Agência CCM
-Esse tema foi criado e é mantido pela [Agência CCM](agenciaccm.com.br).
+Esse tema foi criado e é mantido pela [Agência CCM](http://agenciaccm.com.br).
