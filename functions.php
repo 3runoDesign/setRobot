@@ -3,6 +3,7 @@ $setrobot_includes = [
     'core/bootstrap.php',
 
     'core/classes/revisioning-json.php',
+    'core/classes/thumbs-media-downsize.php',
 
     'inc/assets.php',
     'inc/blade.php',
