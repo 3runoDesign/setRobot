@@ -4,6 +4,7 @@ $setrobot_includes = [
 
     'inc/blade.php',
     'inc/optimize.php',
+    'inc/assets.php',
 ];
 
 /**
