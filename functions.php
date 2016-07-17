@@ -2,6 +2,8 @@
 $setrobot_includes = [
     'core/bootstrap.php',
 
+    'core/classes/revisioning-json.php',
+
     'inc/blade.php',
     'inc/optimize.php',
     'inc/assets.php',
