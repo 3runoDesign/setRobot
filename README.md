@@ -24,6 +24,7 @@ Para facilitar o nosso fluxo de desenvolvimento na **Agência CCM**, construímo
 **Images** | [ImageMin](https://www.npmjs.com/package/gulp-imagemin)
 **Live Updating** |  em breve
 **Assets para produção** | em breve
+**Deploy** | Para FTP use [Git-FTP](https://github.com/git-ftp/git-ftp)
 
 ##Inspirações
  - https://github.com/roots/sage
