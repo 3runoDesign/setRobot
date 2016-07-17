@@ -1,6 +1,8 @@
 ![SetRobot Logo](http://agenciaccm.s3-sa-east-1.amazonaws.com/uploads/2016/07/16165134/setrobot_logo.svg "SetRobot")
 [![Build Status](https://travis-ci.org/CC-Mkt/setRobot.svg?branch=master)](https://travis-ci.org/CC-Mkt/setRobot)
 [![Dependency Status](https://david-dm.org/CC-Mkt/setRobot.svg)](https://david-dm.org/CC-Mkt/setRobot)
+[![Code Climate](https://codeclimate.com/github/CC-Mkt/setRobot/badges/gpa.svg)](https://codeclimate.com/github/CC-Mkt/setRobot)
+[![Code Climate](https://codeclimate.com/github/CC-Mkt/setRobot/badges/gpa.svg)](https://codeclimate.com/github/CC-Mkt/setRobot)
 
 SetRobot é um tema base criado pelo time **Agência CCM**, para auxiliar no desenvolvimento ágil de temas para WordPress.
 
