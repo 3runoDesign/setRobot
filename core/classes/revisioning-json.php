@@ -54,7 +54,7 @@ class AssetManifest
     {
         $min = is_bool($min) ? $min : false;
         $filename       = preg_replace('/\.[^.]+$/', '', $file);
-        $fileExtension = substr($file, strrpos($file, '.') + 1);;
+        $fileExtension = substr($file, strrpos($file, '.') + 1);
 
         return ($min) ? $filename . '.min.' . $fileExtension : $file;
     }
