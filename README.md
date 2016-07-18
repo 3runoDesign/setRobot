@@ -35,7 +35,15 @@ Para facilitar o nosso fluxo de desenvolvimento na **Agência CCM**, construímo
  - https://github.com/zach-adams/cutlass-wp-theme
 
 ##Como contribuir
-Basta fazer o **Fork** e nos mandar uma **Pull Request**
+Se você usa [Atom.io](https://atom.io/):
+- [PHP CS Fixer (PSR-2)](https://atom.io/packages/php-cs-fixer)
+- [PHPmd](https://atom.io/packages/linter-phpmd)
+
+Se você usa [Sublime Text](https://www.sublimetext.com/):
+- [PHP CS Fixer](https://github.com/benmatselby/sublime-phpcs)
+- [PHPmd](https://github.com/SublimeLinter/SublimeLinter-phpmd)
+
+Depois basta fazer o **Fork** e nos mandar uma **Pull Request**.
 
 ##Versionamento
 setRobot sem o [Versionamento Semântico](http://semver.org/lang/pt-BR/).
