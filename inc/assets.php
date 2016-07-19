@@ -1,7 +1,7 @@
 <?php
 function add_assets_css()
 {
-    $pathJson = (WP_ENV == 'development') ? JSON_REV : '';
+    $pathJson = (!WP_ENV == 'development') ? JSON_REV : '';
     $manifest = new AssetManifest($pathJson);
 
     wp_enqueue_style('setrobot/vendor_css',  $manifest->getFile('css/vendor.css'), false, null);

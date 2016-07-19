@@ -3,13 +3,14 @@ $setrobot_includes = [
     'core/bootstrap.php',
 
     'core/classes/revisioning-json.php',
-    'core/classes/taxonomy-single-term.php',
+    // 'core/classes/taxonomy-single-term.php',
     'core/classes/thumbs-media-downsize.php',
 
     'inc/assets.php',
     'inc/blade.php',
     'inc/copyright.php',
     'inc/optimize.php',
+    'inc/thumbnails.php',
 ];
 
 /**
