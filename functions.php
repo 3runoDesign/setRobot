@@ -8,6 +8,7 @@ $setrobot_includes = [
     'core/classes/taxonomy-single-term.php',
     'core/classes/thumbs-media-downsize.php',
 
+    'inc/admin.php',
     'inc/assets.php',
     'inc/blade.php',
     'inc/copyright.php',
