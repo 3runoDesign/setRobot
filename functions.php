@@ -9,6 +9,7 @@ $setrobot_includes = [
     'inc/assets.php',
     'inc/blade.php',
     'inc/copyright.php',
+    'inc/menu.php',
     'inc/optimize.php',
     'inc/thumbnails.php',
 ];
