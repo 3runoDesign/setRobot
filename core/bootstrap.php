@@ -10,5 +10,5 @@
     }
 
     define('ASSETS_PUB', '/assets');
-    define('ASSETS_REV', ASSETS_PUB . '/rev');
+    define('ASSETS_REV', ASSETS_PUB);
     define('JSON_REV', get_template_directory() . ASSETS_REV .'/rev-manifest.json');

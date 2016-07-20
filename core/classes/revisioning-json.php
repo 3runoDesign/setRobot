@@ -70,8 +70,8 @@ class AssetManifest
         if ($this->jsonValid) {
             $manifest = json_decode($this->fileJson, true);
 
-            if (array_key_exists($this->explodeString($file, true), $manifest)) {
-                return get_template_directory_uri() . ASSETS_REV . '/' . $manifest[ $this->explodeString($file, true) ];
+            if (array_key_exists($this->explodeString($file, false), $manifest)) {
+                return get_template_directory_uri() . ASSETS_REV . '/' . $manifest[ $this->explodeString($file, false) ];
             }
 
             trigger_error(sprintf('Não foi possível localizar o arquivo [ %s ] em produção!', $file), E_USER_ERROR);
