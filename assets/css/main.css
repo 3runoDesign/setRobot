@@ -1,1 +1,7 @@
-html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}
+/* line 4, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 9, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit; }

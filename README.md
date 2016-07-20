@@ -29,6 +29,28 @@ Para facilitar o nosso fluxo de desenvolvimento na **Agência CCM**, construímo
 **Assets para produção** | [Gulp-rev-all](https://github.com/smysnk/gulp-rev-all)
 **Deploy** | Para FTP use [Git-FTP](https://github.com/git-ftp/git-ftp)
 
+##Como Instalar
+
+```
+cd PATH/wp/wp-content/themes/
+composer create-project CC-Mkt/setRobot nome_do_tema --stability=dev
+
+npm install
+bower install
+composer install
+
+# Ou
+
+npm run build
+```
+
+###Tasks do gulp
+```shell
+gulp assets-build #Criar os arquivos
+gulp assets-build --production #Criar os arquivos e criar o manifesto
+gulp w #Observar os arquivos durante o desenvolvimento.
+```
+
 ##Inspirações
  - https://github.com/roots/sage
  - https://github.com/wpbrasil/odin

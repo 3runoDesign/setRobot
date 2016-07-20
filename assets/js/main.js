@@ -1,1 +1,3 @@
-console.log("OI"),console.log("Oi sou a pasta modules");
+console.log('OI');
+
+console.log('Oi sou a pasta modules');
