@@ -26,7 +26,7 @@ Para facilitar o nosso fluxo de desenvolvimento na **Agência CCM**, construímo
 **Framework para Sass** | [Bourbon](Bourbon.io) e [Neat](neat.bourbon.io)
 **Images** | [ImageMin](https://www.npmjs.com/package/gulp-imagemin)
 **Live Updating** |  em breve
-**Assets para produção** | em breve
+**Assets para produção** | [Gulp-rev-all](https://github.com/smysnk/gulp-rev-all)
 **Deploy** | Para FTP use [Git-FTP](https://github.com/git-ftp/git-ftp)
 
 ##Inspirações
