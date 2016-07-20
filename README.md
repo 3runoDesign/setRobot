@@ -31,7 +31,7 @@ Para facilitar o nosso fluxo de desenvolvimento na **Agência CCM**, construímo
 
 ##Como Instalar
 
-```
+```shell
 cd PATH/wp/wp-content/themes/
 composer create-project CC-Mkt/setRobot nome_do_tema --stability=dev
 
