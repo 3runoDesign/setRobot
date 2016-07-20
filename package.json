@@ -1,26 +1,40 @@
 {
-    "name": "setrobot",
-    "version": "1.0.0-alpha",
-    "author": "Team CCM <dev@agenciaccm.com.br>",
-    "homepage": "https://github.com/CC-Mkt/setRobot",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/CC-Mkt/setRobot.git"
-    },
-    "bugs": {
-        "url": "https://github.com/CC-Mkt/setRobot/issues"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://opensource.org/licenses/MIT"
-        }
-    ],
-    "scripts": {
-        "build": "bower install"
-    },
-    "engines": {
-        "node": ">= 0.12.0",
-        "npm": ">=2.1.5"
+  "name": "setrobot",
+  "version": "1.0.0-alpha",
+  "author": "Team CCM <dev@agenciaccm.com.br>",
+  "homepage": "https://github.com/CC-Mkt/setRobot",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CC-Mkt/setRobot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CC-Mkt/setRobot/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
     }
+  ],
+  "scripts": {
+    "build": "bower install"
+  },
+  "engines": {
+    "node": ">= 0.12.0",
+    "npm": ">=2.1.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-filter": "^4.0.0",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rev-all": "^0.8.24",
+    "gulp-sass": "^2.3.2",
+    "gulp-sequence": "^0.4.5",
+    "imagemin-pngcrush": "^5.0.0",
+    "main-bower-files": "^2.13.1"
+  }
 }
