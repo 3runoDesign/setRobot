@@ -37,14 +37,8 @@ Para facilitar o nosso fluxo de desenvolvimento na **Agência CCM**, construímo
 ```shell
 cd PATH/wp/wp-content/themes/
 composer create-project CC-Mkt/setRobot nome_do_tema --stability=dev
-
-npm install
-bower install
-composer install
-
-# Ou
-
 npm run build
+composer install
 ```
 
 ###Tasks do gulp
