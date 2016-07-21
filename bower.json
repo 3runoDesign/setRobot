@@ -21,6 +21,7 @@
     "family.scss": "^1.0.8"
   },
   "dependencies": {
-    "slick-carousel": "slick.js#^1.6.0"
+    "slick-carousel": "slick.js#^1.6.0",
+    "jquery-meiomask": "^1.1.14"
   }
 }
