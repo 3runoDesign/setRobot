@@ -2,11 +2,14 @@
 $setrobot_includes = [
     'core/bootstrap.php',
 
-    'core/helpers/copyright-data.php',
-
+    'core/classes/breadcrumb-navigation.php',
     'core/classes/revisioning-json.php',
     'core/classes/taxonomy-single-term.php',
     'core/classes/thumbs-media-downsize.php',
+
+    'core/helpers/copyright-data.php',
+    'core/helpers/read.php',
+    'core/helpers/image.php',
 
     'inc/admin.php',
     'inc/assets.php',
