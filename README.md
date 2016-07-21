@@ -4,6 +4,11 @@
 [![Code Climate](https://codeclimate.com/github/CC-Mkt/setRobot/badges/gpa.svg)](https://codeclimate.com/github/CC-Mkt/setRobot)
 [![Issue Count](https://codeclimate.com/github/CC-Mkt/setRobot/badges/issue_count.svg)](https://codeclimate.com/github/CC-Mkt/setRobot)
 
+[![Total Downloads](https://poser.pugx.org/cc-mkt/setrobot/downloads)](https://packagist.org/packages/cc-mkt/setrobot)
+[![License](https://poser.pugx.org/cc-mkt/setrobot/license)](https://packagist.org/packages/cc-mkt/setrobot)
+[![Latest Stable Version](https://poser.pugx.org/cc-mkt/setrobot/v/stable)](https://packagist.org/packages/cc-mkt/setrobot)
+[![Latest Unstable Version](https://poser.pugx.org/cc-mkt/setrobot/v/unstable)](https://packagist.org/packages/cc-mkt/setrobot)
+
 SetRobot é um tema base criado pelo time **Agência CCM**, para auxiliar no desenvolvimento ágil de temas para WordPress.
 
 ##Motivação
@@ -12,11 +17,11 @@ Para facilitar o nosso fluxo de desenvolvimento na **Agência CCM**, construímo
 ##Requisitos
 | Pré-requisitos    | Como verificar | Como instalar
 | --------------- | ------------ | ------------- |
-| PHP >= 5.4.x    | `php -v`     | [php.net](http://php.net/manual/en/install.php) |
+| PHP >= 5.6.x    | `php -v`     | [php.net](http://php.net/manual/en/install.php) |
 | Composer        | `composer -v`| [Composer](https://getcomposer.org/download/)|
-| Node.js 0.12.x  | `node -v`    | [nodejs.org](http://nodejs.org/) |
-| gulp >= 3.8.10  | `gulp -v`    | `npm install -g gulp` |
-| Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
+| Node.js 6.2.x  | `node -v`    | [nodejs.org](http://nodejs.org/) |
+| gulp >= 3.9.1  | `gulp -v`    | `npm install -g gulp` |
+| Bower >= 1.7.9 | `bower -v`   | `npm install -g bower` |
 
 ##Referências
  Features    | ferramentas usadas
@@ -25,9 +30,7 @@ Para facilitar o nosso fluxo de desenvolvimento na **Agência CCM**, construímo
 **CSS** | [Sass](http://sass-lang.com/) ([Libsass](http://sass-lang.com/libsass) via [node-sass](https://github.com/sass/node-sass)), [CSSNano](https://github.com/ben-eb/cssnano), Source Maps
 **Framework para Sass** | [Bourbon](Bourbon.io) e [Neat](neat.bourbon.io)
 **Images** | [ImageMin](https://www.npmjs.com/package/gulp-imagemin)
-**Live Updating** |  em breve
 **Assets para produção** | [Gulp-rev-all](https://github.com/smysnk/gulp-rev-all)
-**Deploy** | Para FTP use [Git-FTP](https://github.com/git-ftp/git-ftp)
 
 ##Como Instalar
 
