@@ -39,6 +39,7 @@
     "gulp-sequence": "^0.4.5",
     "gulp-uglify": "^1.5.4",
     "imagemin-pngcrush": "^5.0.0",
-    "main-bower-files": "^2.13.1"
+    "main-bower-files": "^2.13.1",
+    "yargs": "^4.8.1"
   }
 }
