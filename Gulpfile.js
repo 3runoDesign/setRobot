@@ -25,7 +25,6 @@ var paths = {
       'bower'    : bowerrc.directory,
       'bourbon'  : bowerrc.directory + '/bourbon/app/assets',
       'neat'     : bowerrc.directory + '/neat/app/assets',
-      'bitters'  : bowerrc.directory + '/bitters/app/assets'
     },
 
     includeSass = [
