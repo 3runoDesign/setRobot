@@ -1,18 +1,9 @@
 ![SetRobot Logo](http://agenciaccm.s3-sa-east-1.amazonaws.com/uploads/2016/07/16165134/setrobot_logo.svg "SetRobot")
-[![Build Status](https://travis-ci.org/CC-Mkt/setRobot.svg?branch=master)](https://travis-ci.org/CC-Mkt/setRobot)
-[![Dependency Status](https://david-dm.org/CC-Mkt/setRobot.svg)](https://david-dm.org/CC-Mkt/setRobot)
-[![Code Climate](https://codeclimate.com/github/CC-Mkt/setRobot/badges/gpa.svg)](https://codeclimate.com/github/CC-Mkt/setRobot)
-[![Issue Count](https://codeclimate.com/github/CC-Mkt/setRobot/badges/issue_count.svg)](https://codeclimate.com/github/CC-Mkt/setRobot)
 
-[![Total Downloads](https://poser.pugx.org/cc-mkt/setrobot/downloads)](https://packagist.org/packages/cc-mkt/setrobot)
-[![License](https://poser.pugx.org/cc-mkt/setrobot/license)](https://packagist.org/packages/cc-mkt/setrobot)
-[![Latest Stable Version](https://poser.pugx.org/cc-mkt/setrobot/v/stable)](https://packagist.org/packages/cc-mkt/setrobot)
-[![Latest Unstable Version](https://poser.pugx.org/cc-mkt/setrobot/v/unstable)](https://packagist.org/packages/cc-mkt/setrobot)
-
-SetRobot é um tema base criado pelo time **Agência CCM**, para auxiliar no desenvolvimento ágil de temas para WordPress.
+setRobot é um tema base para auxiliar no desenvolvimento ágil de temas para WordPress.
 
 ##Motivação
-Para facilitar o nosso fluxo de desenvolvimento na **Agência CCM**, construímos esse mini tema interno, pensando em agilizar o desenvolvimento de temas. Por padrão não tem estilo e nem JavaScript mágico, somente a organização que amamos seguir.
+Para facilitar o fluxo e agilizar o desenvolvimento de temas. Por padrão não tem estilo e nem JavaScript mágico, somente a organização que amamos seguir.
 
 ##Requisitos
 | Pré-requisitos    | Como verificar | Como instalar
@@ -36,7 +27,8 @@ Para facilitar o nosso fluxo de desenvolvimento na **Agência CCM**, construímo
 
 ```shell
 cd PATH/wp/wp-content/themes/
-composer create-project CC-Mkt/setRobot nome_do_tema --stability=dev
+git clone git@github.com:3runoDesign/setRobot.git nome_do_tema
+cd nome_do_tema/
 npm run build
 composer install
 ```
@@ -59,17 +51,14 @@ Se você usa [Atom.io](https://atom.io/):
 - [PHPmd](https://atom.io/packages/linter-phpmd)
 
 Se você usa [Sublime Text](https://www.sublimetext.com/):
-- [PHP CS Fixer](https://github.com/benmatselby/sublime-phpcs)
+- [PHP CS Fixer (PSR-2)](https://github.com/benmatselby/sublime-phpcs)
 - [PHPmd](https://github.com/SublimeLinter/SublimeLinter-phpmd)
 
 Depois basta fazer o **Fork** e nos mandar uma **Pull Request**.
 
 ##Versionamento
-setRobot sem o [Versionamento Semântico](http://semver.org/lang/pt-BR/).
+**setRobot** sem o [Versionamento Semântico](http://semver.org/lang/pt-BR/).
 
 #Copyright e Licença
 Copyright 2016.
 O código PHP esta licenciado sob a Licença GPLv2. Todos os arquivos CSS, SCSS, JS, imagens e outros não incluindo arquivos PHP estão licenciados como MIT ou pela licença especificada dentro de seus arquivos.
-
-#Feito com amor por Agência CCM
-Esse tema foi criado e é mantido pela [Agência CCM](http://agenciaccm.com.br).
