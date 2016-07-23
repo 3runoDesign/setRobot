@@ -43,7 +43,7 @@ gulp.task('clean-all', function() {
 // Files SASS
 // ============
 gulp.task( 'sass', function () {
-    return gulp.src( paths.src + '/sass/**/*.scss' )
+    return gulp.src( paths.src + '/sass/main.scss' )
         .pipe( sass({
             includePaths   : includeSass,
             style          : 'expanded',
