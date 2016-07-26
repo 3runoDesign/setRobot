@@ -11,7 +11,7 @@ function admin_remove_dashboard_widgets() {
     remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'side' );
 
     // Yoast's SEO
-	remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'normal' );
+    remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'normal' );
 }
 add_action( 'wp_dashboard_setup', 'admin_remove_dashboard_widgets' );
 
