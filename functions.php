@@ -8,8 +8,8 @@ $setrobot_includes = [
     'core/classes/thumbs-media-downsize.php',
 
     'core/helpers/copyright-data.php',
-    'core/helpers/read.php',
     'core/helpers/image.php',
+    'core/helpers/read.php',
 
     'inc/admin.php',
     'inc/assets.php',
@@ -18,6 +18,7 @@ $setrobot_includes = [
     'inc/menu.php',
     'inc/optimize.php',
     'inc/thumbnails.php',
+    'inc/titles.php',
 ];
 
 /**
