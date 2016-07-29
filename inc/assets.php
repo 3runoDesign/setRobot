@@ -26,8 +26,9 @@ add_action('wp_enqueue_scripts', 'remove_head_scripts');
 
 function remove_script_version($src)
 {
-    $parts = explode('?', $src);
-    return $parts[0];
+    if ( strpos( $src, 'ver=' ) && !strpos( $src, 'style.css' ) )
+        $src = remove_query_arg( 'ver', $src );
+    return $src;
 }
 add_filter('script_loader_src', 'remove_script_version', 15, 1);
 add_filter('style_loader_src', 'remove_script_version', 15, 1);
