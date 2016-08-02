@@ -51,9 +51,12 @@ function breadcrumb()
 }
 
 function first_paragraph($content){
-    $content = substr_replace($content, '</span>', 4, 0);
-    $content = substr_replace($content, '<span class="first-letter">', 3, 0);
-    $content = preg_replace('/<p([^>]+)?>/', '<p$1 class="first-paragraph">', $content, 1);
-return $content;
+    if (strlen($content) > 0) {
+        $content = substr_replace($content, '</span>', 4, 0);
+        $content = substr_replace($content, '<span class="first-letter">', 3, 0);
+        $content = preg_replace('/<p([^>]+)?>/', '<p$1 class="first-paragraph">', $content, 1);
+    }
+
+    return $content;
 }
 add_filter('the_content', 'first_paragraph');
