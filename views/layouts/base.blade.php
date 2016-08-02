@@ -7,7 +7,7 @@
 
         <?php // TODO: Descrição da página ?>
         <?php // TODO: FavIcon ?>
-        
+
         {{ wp_head() }}
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
@@ -21,10 +21,12 @@
         </main>
 
         {{ wp_footer() }}
+        @yield('script') {{-- Inserir script por page --}}
 
-        <?php // TODO: Script por conteúdo ?>
-
-        {{-- Google Analytics: change UA-XXXXX-X to be your site's ID. --}}
+        {{--
+            TODO: Criar um metodo para criar esse script.
+            Google Analytics: change UA-XXXXX-X to be your site's ID.
+        --}}
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
