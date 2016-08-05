@@ -1,12 +1,12 @@
-/* line 4, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+/* line 4, C:/laragon/www/SetRobot/wp-content/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
 
-/* line 9, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+/* line 9, C:/laragon/www/SetRobot/wp-content/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/* line 1, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_buttons.scss */
+/* line 1, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_buttons.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -32,40 +32,40 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
-/* line 21, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_buttons.scss */
+/* line 21, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_buttons.scss */
 button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
   background-color: #11519a;
   color: #fff; }
 
-/* line 27, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_buttons.scss */
+/* line 27, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_buttons.scss */
 button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
   cursor: not-allowed;
   opacity: 0.5; }
 
-/* line 31, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_buttons.scss */
+/* line 31, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_buttons.scss */
 button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
   background-color: #1565c0; }
 
-/* line 1, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 1, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 fieldset {
   background-color: transparent;
   border: 0;
   margin: 0;
   padding: 0; }
 
-/* line 8, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 8, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 legend {
   font-weight: 600;
   margin-bottom: 0.375em;
   padding: 0; }
 
-/* line 14, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 14, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 label {
   display: block;
   font-weight: 600;
   margin-bottom: 0.375em; }
 
-/* line 20, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 20, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 input,
 select,
 textarea {
@@ -73,7 +73,7 @@ textarea {
   font-family: "sans";
   font-size: 1em; }
 
-/* line 28, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 28, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
 select[multiple] {
   background-color: #fff;
@@ -86,30 +86,30 @@ select[multiple] {
   transition: border-color 150ms ease;
   width: 100%; }
 
-/* line 39, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 39, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
 select[multiple]:hover {
   border-color: #b1b1b1; }
 
-/* line 43, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 43, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
 select[multiple]:focus {
   border-color: #1565c0;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
   outline: none; }
 
-/* line 49, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 49, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
 select[multiple]:disabled {
   background-color: #f2f2f2;
   cursor: not-allowed; }
 
-/* line 53, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 53, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
 select[multiple]:disabled:hover {
   border: 1px solid #ddd; }
 
-/* line 58, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 58, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 input[type="color"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, input:not([type])::-webkit-input-placeholder, textarea::-webkit-input-placeholder,
 select[multiple]::-webkit-input-placeholder {
   color: #999; }
@@ -126,106 +126,106 @@ input[type="color"]::placeholder, input[type="date"]::placeholder, input[type="d
 select[multiple]::placeholder {
   color: #999; }
 
-/* line 63, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 63, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 textarea {
   resize: vertical; }
 
-/* line 67, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 67, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 [type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
 
-/* line 71, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 71, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 [type="checkbox"],
 [type="radio"] {
   display: inline;
   margin-right: 0.375em; }
 
-/* line 77, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 77, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 [type="file"] {
   margin-bottom: 0.75em;
   width: 100%; }
 
-/* line 82, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
+/* line 82, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_forms.scss */
 select {
   margin-bottom: 0.75em;
   max-width: 100%;
   width: auto; }
 
-/* line 1, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_layout.scss */
+/* line 1, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_layout.scss */
 html {
   box-sizing: border-box; }
 
-/* line 5, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_layout.scss */
+/* line 5, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_layout.scss */
 *,
 *::before,
 *::after {
   box-sizing: inherit; }
 
-/* line 1, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_lists.scss */
+/* line 1, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_lists.scss */
 ul,
 ol {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
-/* line 8, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_lists.scss */
+/* line 8, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_lists.scss */
 dl {
   margin: 0; }
 
-/* line 12, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_lists.scss */
+/* line 12, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_lists.scss */
 dt {
   font-weight: 600;
   margin: 0; }
 
-/* line 17, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_lists.scss */
+/* line 17, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_lists.scss */
 dd {
   margin: 0; }
 
-/* line 1, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_media.scss */
+/* line 1, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_media.scss */
 figure {
   margin: 0; }
 
-/* line 5, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_media.scss */
+/* line 5, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_media.scss */
 img,
 picture {
   margin: 0;
   max-width: 100%; }
 
-/* line 1, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_tables.scss */
+/* line 1, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_tables.scss */
 table {
   border-collapse: collapse;
   margin: 0.75em 0;
   table-layout: fixed;
   width: 100%; }
 
-/* line 8, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_tables.scss */
+/* line 8, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_tables.scss */
 th {
   border-bottom: 1px solid #a6a6a6;
   font-weight: 600;
   padding: 0.75em 0;
   text-align: left; }
 
-/* line 15, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_tables.scss */
+/* line 15, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_tables.scss */
 td {
   border-bottom: 1px solid #ddd;
   padding: 0.75em 0; }
 
-/* line 20, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_tables.scss */
+/* line 20, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_tables.scss */
 tr,
 td,
 th {
   vertical-align: middle; }
 
-/* line 1, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
+/* line 1, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_typography.scss */
 body {
   color: #333;
   font-family: "sans";
   font-size: 1em;
   line-height: 1.5; }
 
-/* line 8, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
+/* line 8, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_typography.scss */
 h1,
 h2,
 h3,
@@ -237,21 +237,21 @@ h6 {
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
-/* line 20, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
+/* line 20, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_typography.scss */
 p {
   margin: 0 0 0.75em; }
 
-/* line 24, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
+/* line 24, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_typography.scss */
 a {
   color: #1565c0;
   text-decoration: none;
   transition: color 150ms ease; }
 
-/* line 29, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
+/* line 29, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_typography.scss */
 a:active, a:focus, a:hover {
   color: #104c90; }
 
-/* line 36, /Volumes/STORAGE/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
+/* line 36, C:/laragon/www/SetRobot/wp-content/themes/setRobot/resources/sass/base/_typography.scss */
 hr {
   border-bottom: 1px solid #ddd;
   border-left: 0;
