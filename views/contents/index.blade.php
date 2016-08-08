@@ -1,11 +1,11 @@
-{{get_search_form()}}
-@wpposts
+<header class="cover" style="text-align: center;">
+    <div class="container">
 
-    {{ the_title() }}
-    @if (has_post_thumbnail())
-        {{ the_post_thumbnail('setrobot_thumbnail-loading') }}
-        <a href="{{ copyrightData('url') }}"><h1>{{ copyrightData() }}</h1></a>
-    @endif
-@wpempty
-    No posts found
-@wpend
+        <img src="http://agenciaccm.s3-sa-east-1.amazonaws.com/uploads/2016/07/16165134/setrobot_logo.svg" alt="setRobot - logo" width="800px" />
+
+        <p>
+            Olá, sou <strong>setRobot</strong>, <a href="https://github.com/3runoDesign/setRobot">veja a documentação</a>!
+        </p>
+
+    </div>
+</header>
