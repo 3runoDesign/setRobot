@@ -8,6 +8,8 @@
         <?php // TODO: Descrição da página ?>
         <?php // TODO: FavIcon ?>
 
+        <title>{{ wp_title('|', true, 'right') }}</title>
+
         {{ wp_head() }}
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
