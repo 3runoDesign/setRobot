@@ -14,6 +14,7 @@ $setrobot_includes = [
     'inc/admin.php',
     'inc/assets.php',
     'inc/blade.php',
+    'inc/content.php',
     'inc/copyright.php',
     'inc/menu.php',
     'inc/optimize.php',
