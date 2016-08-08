@@ -15,6 +15,18 @@ function excerpt($type = 'excerpt', $limit = 40)
     return wp_trim_words($excerpt, $limit);
 }
 
+function wps_highlight_results($text)
+{
+    if (is_search()) {
+        $sr = get_query_var('s');
+        $keys = explode(" ", $sr);
+        $text = preg_replace('/('.implode('|', $keys) .')/iu', '<strong class="search-excerpt">'.$sr.'</strong>', $text);
+    }
+    return $text;
+}
+add_filter('the_excerpt', 'wps_highlight_results');
+add_filter('the_title', 'wps_highlight_results');
+
 
 function title()
 {
@@ -50,7 +62,8 @@ function breadcrumb()
     new BreadcrumbNavigation($templates, $options, array(), true);
 }
 
-function first_paragraph($content){
+function first_paragraph($content)
+{
     if (strlen($content) > 0) {
         $content = substr_replace($content, '</span>', 4, 0);
         $content = substr_replace($content, '<span class="first-letter">', 3, 0);

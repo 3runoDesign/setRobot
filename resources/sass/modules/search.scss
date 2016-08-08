@@ -1,0 +1,16 @@
+.search-excerpt {
+  color: #3D8EB9;
+  display: inline-block;
+  position: relative;
+  font-weight: inherit;
+
+  &::after {
+    @include h-aling();
+    content: "";
+    position: absolute;
+    width: 107%;
+    height: 100%;
+    z-index: -1;
+    background-color: #F3F315;
+  }
+}

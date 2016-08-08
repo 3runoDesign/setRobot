@@ -11,18 +11,22 @@
         <ul>
         @while (have_posts()) {{ the_post() }}
 
-            <?php
-                $title = get_the_title();
-                $keys= explode(" ", get_search_query());
+            <li>
+                <h1>
+                    {{ the_title() }}
+                </h1>
+                @if (get_post_type() === 'post')
+                    <time class="updated" datetime="{{ get_post_time('c', true) }}">
+                        {{ get_the_date() }}
+                    </time>
+                    <p class="byline author vcard">
+                        Por <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">{{ get_the_author() }}</a>
+                    </p>
 
-                $title = preg_replace(
-                    '/('.implode('|', $keys) .')/iu',
-                    '<strong class="search-excerpt">\0</strong>',
-                    $title
-                );
-            ?>
+                    {{ the_excerpt() }}
+                @endif
 
-            <li><h1>{!! $title !!}</h1></li>
+            </li>
         @endwhile
         </ul>
 

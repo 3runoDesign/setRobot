@@ -11,9 +11,11 @@ $visual-grid-opacity: 0.4 !default;
         // 'helpers-scss',
         'family';
 
+@import "setrobot-front/helper/align";
 @import "setrobot-front/helper/grid";
 
 @import "core/reset";
 
 @import "modules/pagination";
 @import "modules/grid";
+@import "modules/search";

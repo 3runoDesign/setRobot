@@ -9,7 +9,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "sans";
+  font-family: "Lato", sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -62,7 +62,7 @@ input,
 select,
 textarea {
   display: block;
-  font-family: "sans";
+  font-family: "Lato", sans-serif;
   font-size: 1em; }
 
 /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
@@ -213,7 +213,7 @@ th {
 /* line 1, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
 body {
   color: #333;
-  font-family: "sans";
+  font-family: "Lato", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -224,7 +224,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 1.333em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -3005,3 +3005,21 @@ template {
   /* line 49, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .container {
     max-width: 1586px; } }
+
+/* line 1, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/modules/search.scss */
+.search-excerpt {
+  color: #3D8EB9;
+  display: inline-block;
+  position: relative;
+  font-weight: inherit; }
+
+/* line 7, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/modules/search.scss */
+.search-excerpt::after {
+  transform: translateX(50%);
+  right: 50%;
+  content: "";
+  position: absolute;
+  width: 107%;
+  height: 100%;
+  z-index: -1;
+  background-color: #F3F315; }
