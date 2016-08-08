@@ -1,0 +1,32 @@
+@mixin custom-select() {
+  & {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    select {
+      @include appearance(none); // http://bourbon.io/docs/#appearance
+      @include prefixer(box-sizing, border-box, webkit moz spec);
+
+      background: none;
+      border-radius: 0;
+      border: 1px solid transparent;
+      font-weight: bold;
+      line-height: rem(15px);
+      margin: 0;
+      outline: none;
+      padding: 15px 35px;
+      width: 100%;
+    }
+  }
+
+  @-moz-document url-prefix() {
+    .#{$_class-name-custom-select} select {
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: '';
+    }
+  }
+}

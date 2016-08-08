@@ -1,0 +1,4 @@
+@include create-grid( $xs-cols, false, $xs-screen, false, 'xs' );
+@include create-grid( $sm-cols, false, $small-screen, false, 'sm' );
+@include create-grid( $md-cols, true, $medium-screen, $md, 'md' );
+@include create-grid( $lg-cols, false, $large-screen, $lg, 'lg' );

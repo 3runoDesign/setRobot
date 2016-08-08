@@ -1,9 +1,19 @@
+$visual-grid        : true !default;
+$visual-grid-color  : #eee !default;
+$visual-grid-index  : front !default;
+$visual-grid-opacity: 0.4 !default;
+
 @import 'bourbon',
-        'neat',
+        'setting-grid',
         'base/base',
-        'helpers-scss',
+        'neat',
+        'breakpoints',
+        // 'helpers-scss',
         'family';
 
+@import "setrobot-front/helper/grid";
 
 @import "core/reset";
+
 @import "modules/pagination";
+@import "modules/grid";
