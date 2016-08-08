@@ -3,8 +3,8 @@
 // $large-screen: 900px;
 
 // Typography
-$base-font-family: 'sans';
-$heading-font-family: 'Lato';
+$base-font-family: 'Lato', sans-serif;
+$heading-font-family: $base-font-family;
 
 // Font Sizes
 $base-font-size: 1em;

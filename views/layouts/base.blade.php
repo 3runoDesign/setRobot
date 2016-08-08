@@ -10,15 +10,10 @@
 
         <title>{{ wp_title('|', true, 'right') }}</title>
 
-        {{ wp_head() }}
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
-        <style media="screen">
-            html, body {
-                font-family: 'Lato', sans-serif;
-            }
-        </style>
+        {{ wp_head() }}
     </head>
     <body>
         <!--[if lt IE 8]>
