@@ -1,4 +1,3 @@
-/* line 1, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_buttons.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -9,12 +8,12 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato",sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: 0.75em 1.5em;
+  padding: .75em 1.5em;
   text-decoration: none;
   transition: background-color 150ms ease;
   -webkit-user-select: none;
@@ -24,226 +23,167 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
-/* line 21, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_buttons.scss */
 button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
   background-color: #11519a;
   color: #fff; }
 
-/* line 27, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_buttons.scss */
 button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
   cursor: not-allowed;
   opacity: 0.5; }
 
-/* line 31, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_buttons.scss */
 button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
   background-color: #1565c0; }
 
-/* line 1, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
 fieldset {
   background-color: transparent;
   border: 0;
   margin: 0;
   padding: 0; }
 
-/* line 8, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
 legend {
   font-weight: 600;
-  margin-bottom: 0.375em;
+  margin-bottom: .375em;
   padding: 0; }
 
-/* line 14, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: 0.375em; }
+  margin-bottom: .375em; }
 
-/* line 20, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
-input,
-select,
-textarea {
+input, select, textarea {
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato",sans-serif;
   font-size: 1em; }
 
-/* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
-input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
-select[multiple] {
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea, select[multiple] {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  margin-bottom: 0.75em;
-  padding: 0.5em;
+  margin-bottom: .75em;
+  padding: .5em;
   transition: border-color 150ms ease;
   width: 100%; }
 
-/* line 39, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
-input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
-select[multiple]:hover {
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover, select[multiple]:hover {
   border-color: #b1b1b1; }
 
-/* line 43, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
-input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
-select[multiple]:focus {
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus, select[multiple]:focus {
   border-color: #1565c0;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
   outline: none; }
 
-/* line 49, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
-input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
-select[multiple]:disabled {
+input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled, select[multiple]:disabled {
   background-color: #f2f2f2;
   cursor: not-allowed; }
 
-/* line 53, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
-input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
-select[multiple]:disabled:hover {
+input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover, select[multiple]:disabled:hover {
   border: 1px solid #ddd; }
 
-/* line 58, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
-input[type="color"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, input:not([type])::-webkit-input-placeholder, textarea::-webkit-input-placeholder,
-select[multiple]::-webkit-input-placeholder {
+input[type="color"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, input:not([type])::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select[multiple]::-webkit-input-placeholder {
   color: #999; }
 
-input[type="color"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="week"]::-moz-placeholder, input:not([type])::-moz-placeholder, textarea::-moz-placeholder,
-select[multiple]::-moz-placeholder {
+input[type="color"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="week"]::-moz-placeholder, input:not([type])::-moz-placeholder, textarea::-moz-placeholder, select[multiple]::-moz-placeholder {
   color: #999; }
 
-input[type="color"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="datetime"]:-ms-input-placeholder, input[type="datetime-local"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="time"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder, input:not([type]):-ms-input-placeholder, textarea:-ms-input-placeholder,
-select[multiple]:-ms-input-placeholder {
+input[type="color"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="datetime"]:-ms-input-placeholder, input[type="datetime-local"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="time"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder, input:not([type]):-ms-input-placeholder, textarea:-ms-input-placeholder, select[multiple]:-ms-input-placeholder {
   color: #999; }
 
-input[type="color"]::placeholder, input[type="date"]::placeholder, input[type="datetime"]::placeholder, input[type="datetime-local"]::placeholder, input[type="email"]::placeholder, input[type="month"]::placeholder, input[type="number"]::placeholder, input[type="password"]::placeholder, input[type="search"]::placeholder, input[type="tel"]::placeholder, input[type="text"]::placeholder, input[type="time"]::placeholder, input[type="url"]::placeholder, input[type="week"]::placeholder, input:not([type])::placeholder, textarea::placeholder,
-select[multiple]::placeholder {
+input[type="color"]::placeholder, input[type="date"]::placeholder, input[type="datetime"]::placeholder, input[type="datetime-local"]::placeholder, input[type="email"]::placeholder, input[type="month"]::placeholder, input[type="number"]::placeholder, input[type="password"]::placeholder, input[type="search"]::placeholder, input[type="tel"]::placeholder, input[type="text"]::placeholder, input[type="time"]::placeholder, input[type="url"]::placeholder, input[type="week"]::placeholder, input:not([type])::placeholder, textarea::placeholder, select[multiple]::placeholder {
   color: #999; }
 
-/* line 63, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
 textarea {
   resize: vertical; }
 
-/* line 67, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
 [type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
 
-/* line 71, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
-[type="checkbox"],
-[type="radio"] {
+[type="checkbox"], [type="radio"] {
   display: inline;
-  margin-right: 0.375em; }
+  margin-right: .375em; }
 
-/* line 77, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
 [type="file"] {
-  margin-bottom: 0.75em;
+  margin-bottom: .75em;
   width: 100%; }
 
-/* line 82, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_forms.scss */
 select {
-  margin-bottom: 0.75em;
+  margin-bottom: .75em;
   max-width: 100%;
   width: auto; }
 
-/* line 1, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_layout.scss */
 html {
   box-sizing: border-box; }
 
-/* line 5, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_layout.scss */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit; }
 
-/* line 1, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_lists.scss */
-ul,
-ol {
+ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
-/* line 8, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_lists.scss */
 dl {
   margin: 0; }
 
-/* line 12, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_lists.scss */
 dt {
   font-weight: 600;
   margin: 0; }
 
-/* line 17, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_lists.scss */
 dd {
   margin: 0; }
 
-/* line 1, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_media.scss */
 figure {
   margin: 0; }
 
-/* line 5, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_media.scss */
-img,
-picture {
+img, picture {
   margin: 0;
   max-width: 100%; }
 
-/* line 1, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_tables.scss */
 table {
   border-collapse: collapse;
-  margin: 0.75em 0;
+  margin: .75em 0;
   table-layout: fixed;
   width: 100%; }
 
-/* line 8, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_tables.scss */
 th {
   border-bottom: 1px solid #a6a6a6;
   font-weight: 600;
-  padding: 0.75em 0;
+  padding: .75em 0;
   text-align: left; }
 
-/* line 15, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_tables.scss */
 td {
   border-bottom: 1px solid #ddd;
-  padding: 0.75em 0; }
+  padding: .75em 0; }
 
-/* line 20, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_tables.scss */
-tr,
-td,
-th {
+tr, td, th {
   vertical-align: middle; }
 
-/* line 1, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
 body {
   color: #333;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato",sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
-/* line 8, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lato", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato",sans-serif;
   font-size: 1.333em;
   line-height: 1.2;
-  margin: 0 0 0.75em; }
+  margin: 0 0 .75em; }
 
-/* line 20, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
 p {
-  margin: 0 0 0.75em; }
+  margin: 0 0 .75em; }
 
-/* line 24, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
 a {
   color: #1565c0;
   text-decoration: none;
   transition: color 150ms ease; }
 
-/* line 29, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
 a:active, a:focus, a:hover {
   color: #104c90; }
 
-/* line 36, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/base/_typography.scss */
 hr {
   border-bottom: 1px solid #ddd;
   border-left: 0;
@@ -251,2769 +191,1961 @@ hr {
   border-top: 0;
   margin: 1.5em 0; }
 
-/* line 4, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
 
-/* line 9, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/* line 4, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
 [class*="col-xs"], [class*="col-sm"], [class*="col-md"], [class*="col-lg"] {
   min-height: 1px; }
 
-/* line 8, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
 .container {
   margin-left: auto;
   margin-right: auto; }
 
-/* line 20, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .container::after {
   clear: both;
   content: "";
   display: table; }
 
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
- */
-/* Document
-   ========================================================================== */
-/* line 12, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 html {
   font-family: sans-serif;
-  /* 1 */
   line-height: 1.15;
-  /* 2 */
   -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+  -webkit-text-size-adjust: 100%; }
 
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers (opinionated).
- */
-/* line 26, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 body {
   margin: 0; }
 
-/**
- * Add the correct display in IE 9-.
- */
-/* line 34, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-article,
-aside,
-footer,
-header,
-nav,
-section {
+article, aside, footer, header, nav, section {
   display: block; }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-/* line 48, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/* Grouping content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-/* line 61, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-figcaption,
-figure,
-main {
-  /* 1 */
+figcaption, figure, main {
   display: block; }
 
-/**
- * Add the correct margin in IE 8.
- */
-/* line 71, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 figure {
   margin: 1em 40px; }
 
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-/* line 80, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 hr {
   box-sizing: content-box;
-  /* 1 */
   height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */ }
+  overflow: visible; }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-/* line 91, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 pre {
   font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
+  font-size: 1em; }
 
-/* Text-level semantics
-   ========================================================================== */
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-/* line 104, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 a {
   background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+  -webkit-text-decoration-skip: objects; }
 
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-/* line 114, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-a:active,
-a:hover {
+a:active, a:hover {
   outline-width: 0; }
 
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-/* line 124, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 abbr[title] {
   border-bottom: none;
-  /* 1 */
   text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */ }
+  text-decoration: underline dotted; }
 
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-/* line 134, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-b,
-strong {
+b, strong {
   font-weight: inherit; }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-/* line 143, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-b,
-strong {
+b, strong {
   font-weight: bolder; }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-/* line 153, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-code,
-kbd,
-samp {
+code, kbd, samp {
   font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
+  font-size: 1em; }
 
-/**
- * Add the correct font style in Android 4.3-.
- */
-/* line 164, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 dfn {
   font-style: italic; }
 
-/**
- * Add the correct background and color in IE 9-.
- */
-/* line 172, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 mark {
   background-color: #ff0;
   color: #000; }
 
-/**
- * Add the correct font size in all browsers.
- */
-/* line 181, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 small {
   font-size: 80%; }
 
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-/* line 190, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
-/* line 198, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 sub {
   bottom: -0.25em; }
 
-/* line 202, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 sup {
   top: -0.5em; }
 
-/* Embedded content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-/* line 213, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-audio,
-video {
+audio, video {
   display: inline-block; }
 
-/**
- * Add the correct display in iOS 4-7.
- */
-/* line 222, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/**
- * Remove the border on images inside links in IE 10-.
- */
-/* line 231, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 img {
   border-style: none; }
 
-/**
- * Hide the overflow in IE.
- */
-/* line 239, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 svg:not(:root) {
   overflow: hidden; }
 
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change font properties to `inherit` in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-/* line 251, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   font: inherit;
-  /* 1 */
-  margin: 0;
-  /* 2 */ }
+  margin: 0; }
 
-/**
- * Restore the font weight unset by the previous rule.
- */
-/* line 264, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 optgroup {
   font-weight: bold; }
 
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-/* line 273, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-button,
-input {
-  /* 1 */
+button, input {
   overflow: visible; }
 
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-/* line 283, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-button,
-select {
-  /* 1 */
+button, select {
   text-transform: none; }
 
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-/* line 294, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */ }
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button; }
 
-/**
- * Remove the inner border and padding in Firefox.
- */
-/* line 305, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0; }
 
-/**
- * Restore the focus styles unset by the previous rule.
- */
-/* line 317, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText; }
 
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
-/* line 328, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-/* line 341, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 legend {
   box-sizing: border-box;
-  /* 1 */
   color: inherit;
-  /* 2 */
   display: table;
-  /* 1 */
   max-width: 100%;
-  /* 1 */
   padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */ }
+  white-space: normal; }
 
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-/* line 355, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 progress {
   display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
+  vertical-align: baseline; }
 
-/**
- * Remove the default vertical scrollbar in IE.
- */
-/* line 364, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 textarea {
   overflow: auto; }
 
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-/* line 373, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-[type="checkbox"],
-[type="radio"] {
+[type="checkbox"], [type="radio"] {
   box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
+  padding: 0; }
 
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-/* line 383, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-/* line 393, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 [type="search"] {
   -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */ }
+  outline-offset: -2px; }
 
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
- */
-/* line 402, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-/* line 412, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */ }
+  font: inherit; }
 
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- */
-/* line 425, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
-details,
-menu {
+details, menu {
   display: block; }
 
-/*
- * Add the correct display in all browsers.
- */
-/* line 434, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 summary {
   display: list-item; }
 
-/* Scripting
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-/* line 445, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 canvas {
   display: inline-block; }
 
-/**
- * Add the correct display in IE.
- */
-/* line 453, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 template {
   display: none; }
 
-/* Hidden
-   ========================================================================== */
-/**
- * Add the correct display in IE 10-.
- */
-/* line 464, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/core/reset.scss */
 [hidden] {
   display: none; }
 
-/* line 2, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/modules/pagination.scss */
 .page-numbers li {
   display: inline-block; }
 
-/* line 5, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/modules/pagination.scss */
 .page-numbers li .page-numbers {
   border-radius: 4px;
   display: inline-block;
   padding: 8px 16px; }
 
-/* line 10, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/modules/pagination.scss */
 .page-numbers li .page-numbers.current {
   background-color: #eee;
   color: #444;
   font-weight: bold; }
 
 @media screen and (min-width: 321px) {
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-1 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 19.43277%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-1:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-1 .col-xs-1-1 {
     float: left;
     display: block;
     margin-right: 38.19821%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-1 .col-xs-1-1:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-2 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 46.28851%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-2:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-2 .col-xs-1-2 {
     float: left;
     display: block;
     margin-right: 16.03631%;
     width: 41.98184%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-2 .col-xs-1-2:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-2 .col-xs-2-2 {
     float: left;
     display: block;
     margin-right: 16.03631%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-2 .col-xs-2-2:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-3 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 73.14426%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-3 .col-xs-1-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 26.56773%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-3 .col-xs-1-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-3 .col-xs-2-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 63.28387%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-3 .col-xs-2-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-3 .col-xs-3-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-3 .col-xs-3-3:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-4 .col-xs-1-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 19.43277%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-4 .col-xs-1-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-4 .col-xs-2-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 46.28851%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-4 .col-xs-2-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-4 .col-xs-3-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 73.14426%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-4 .col-xs-3-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-4 .col-xs-4-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-xs-4 .col-xs-4-4:last-child {
     margin-right: 0; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-offset-1 {
     margin-left: 26.85574%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-offset-2 {
     margin-left: 53.71149%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-xs-offset-3 {
     margin-left: 80.56723%; } }
 
 @media screen and (min-width: 768px) {
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-1 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 9.36867%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-1:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-1 .col-sm-1-1 {
     float: left;
     display: block;
     margin-right: 38.19821%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-1 .col-sm-1-1:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-2 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 22.316%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-2:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-2 .col-sm-1-2 {
     float: left;
     display: block;
     margin-right: 16.03631%;
     width: 41.98184%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-2 .col-sm-1-2:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-2 .col-sm-2-2 {
     float: left;
     display: block;
     margin-right: 16.03631%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-2 .col-sm-2-2:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-3 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 35.26334%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-3 .col-sm-1-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 26.56773%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-3 .col-sm-1-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-3 .col-sm-2-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 63.28387%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-3 .col-sm-2-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-3 .col-sm-3-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-3 .col-sm-3-3:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-4 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 48.21067%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-4 .col-sm-1-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 19.43277%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-4 .col-sm-1-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-4 .col-sm-2-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 46.28851%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-4 .col-sm-2-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-4 .col-sm-3-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 73.14426%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-4 .col-sm-3-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-4 .col-sm-4-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-4 .col-sm-4-4:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-5 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 61.158%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-5 .col-sm-1-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 15.3188%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-5 .col-sm-1-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-5 .col-sm-2-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 36.4891%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-5 .col-sm-2-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-5 .col-sm-3-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 57.6594%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-5 .col-sm-3-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-5 .col-sm-4-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 78.8297%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-5 .col-sm-4-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-5 .col-sm-5-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-5 .col-sm-5-5:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-6 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 74.10533%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-6 .col-sm-1-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 12.64237%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-6 .col-sm-1-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-6 .col-sm-2-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 30.11389%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-6 .col-sm-2-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-6 .col-sm-3-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 47.58542%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-6 .col-sm-3-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-6 .col-sm-4-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 65.05695%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-6 .col-sm-4-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-6 .col-sm-5-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 82.52847%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-6 .col-sm-5-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-6 .col-sm-6-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-6 .col-sm-6-6:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-7 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 87.05267%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-7 .col-sm-1-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 10.76207%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-7 .col-sm-1-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-7 .col-sm-2-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 25.63506%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-7 .col-sm-2-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-7 .col-sm-3-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 40.50805%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-7 .col-sm-3-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-7 .col-sm-4-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 55.38104%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-7 .col-sm-4-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-7 .col-sm-5-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 70.25402%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-7 .col-sm-5-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-7 .col-sm-6-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 85.12701%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-7 .col-sm-6-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-7 .col-sm-7-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-7 .col-sm-7-7:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-8 .col-sm-1-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 9.36867%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-8 .col-sm-1-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-8 .col-sm-2-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 22.316%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-8 .col-sm-2-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-8 .col-sm-3-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 35.26334%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-8 .col-sm-3-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-8 .col-sm-4-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 48.21067%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-8 .col-sm-4-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-8 .col-sm-5-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 61.158%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-8 .col-sm-5-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-8 .col-sm-6-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 74.10533%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-8 .col-sm-6-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-8 .col-sm-7-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 87.05267%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-8 .col-sm-7-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-8 .col-sm-8-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-sm-8 .col-sm-8-8:last-child {
     margin-right: 0; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-offset-1 {
     margin-left: 12.94733%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-offset-2 {
     margin-left: 25.89467%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-offset-3 {
     margin-left: 38.842%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-offset-4 {
     margin-left: 51.78933%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-offset-5 {
     margin-left: 64.73666%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-offset-6 {
     margin-left: 77.684%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-sm-offset-7 {
     margin-left: 90.63133%; } }
 
 @media screen and (min-width: 1220px) {
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-1 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 6.17215%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-1:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-1 .col-md-1-1 {
     float: left;
     display: block;
     margin-right: 38.19821%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-1 .col-md-1-1:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-2 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-2:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-2 .col-md-1-2 {
     float: left;
     display: block;
     margin-right: 16.03631%;
     width: 41.98184%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-2 .col-md-1-2:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-2 .col-md-2-2 {
     float: left;
     display: block;
     margin-right: 16.03631%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-2 .col-md-2-2:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-3 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-3 .col-md-1-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 26.56773%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-3 .col-md-1-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-3 .col-md-2-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 63.28387%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-3 .col-md-2-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-3 .col-md-3-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-3 .col-md-3-3:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-4 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-4 .col-md-1-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 19.43277%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-4 .col-md-1-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-4 .col-md-2-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 46.28851%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-4 .col-md-2-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-4 .col-md-3-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 73.14426%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-4 .col-md-3-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-4 .col-md-4-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-4 .col-md-4-4:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-5 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 40.29137%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-5 .col-md-1-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 15.3188%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-5 .col-md-1-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-5 .col-md-2-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 36.4891%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-5 .col-md-2-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-5 .col-md-3-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 57.6594%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-5 .col-md-3-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-5 .col-md-4-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 78.8297%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-5 .col-md-4-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-5 .col-md-5-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-5 .col-md-5-5:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-6 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-6 .col-md-1-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 12.64237%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-6 .col-md-1-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-6 .col-md-2-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 30.11389%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-6 .col-md-2-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-6 .col-md-3-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 47.58542%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-6 .col-md-3-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-6 .col-md-4-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 65.05695%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-6 .col-md-4-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-6 .col-md-5-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 82.52847%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-6 .col-md-5-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-6 .col-md-6-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-6 .col-md-6-6:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-7 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-7 .col-md-1-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 10.76207%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-7 .col-md-1-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-7 .col-md-2-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 25.63506%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-7 .col-md-2-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-7 .col-md-3-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 40.50805%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-7 .col-md-3-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-7 .col-md-4-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 55.38104%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-7 .col-md-4-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-7 .col-md-5-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 70.25402%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-7 .col-md-5-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-7 .col-md-6-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 85.12701%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-7 .col-md-6-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-7 .col-md-7-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-7 .col-md-7-7:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-8 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-8 .col-md-1-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 9.36867%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-8 .col-md-1-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-8 .col-md-2-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 22.316%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-8 .col-md-2-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-8 .col-md-3-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 35.26334%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-8 .col-md-3-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-8 .col-md-4-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 48.21067%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-8 .col-md-4-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-8 .col-md-5-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 61.158%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-8 .col-md-5-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-8 .col-md-6-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 74.10533%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-8 .col-md-6-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-8 .col-md-7-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 87.05267%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-8 .col-md-7-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-8 .col-md-8-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-8 .col-md-8-8:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-9 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-9 .col-md-1-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 8.29472%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-9 .col-md-1-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-9 .col-md-2-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 19.75788%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-9 .col-md-2-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-9 .col-md-3-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 31.22104%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-9 .col-md-3-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-9 .col-md-4-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 42.6842%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-9 .col-md-4-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-9 .col-md-5-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 54.14736%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-9 .col-md-5-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-9 .col-md-6-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 65.61052%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-9 .col-md-6-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-9 .col-md-7-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 77.07368%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-9 .col-md-7-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-9 .col-md-8-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 88.53684%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-9 .col-md-8-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-9 .col-md-9-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-9 .col-md-9-9:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 .col-md-1-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 7.44167%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10 .col-md-1-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 .col-md-2-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 17.72593%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10 .col-md-2-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 .col-md-3-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 28.01019%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10 .col-md-3-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 .col-md-4-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 38.29445%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10 .col-md-4-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 .col-md-5-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 48.57871%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10 .col-md-5-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 .col-md-6-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 58.86297%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10 .col-md-6-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 .col-md-7-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 69.14722%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10 .col-md-7-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 .col-md-8-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 79.43148%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10 .col-md-8-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 .col-md-9-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 89.71574%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10 .col-md-9-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-10 .col-md-10-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-10 .col-md-10-10:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 91.4702%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-1-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 6.74772%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-1-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-2-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 16.07295%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-2-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-3-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 25.39818%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-3-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-4-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 34.7234%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-4-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-5-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 44.04863%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-5-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-6-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 53.37386%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-6-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-7-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 62.69909%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-7-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-8-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 72.02432%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-8-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-9-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 81.34954%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-9-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-10-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 90.67477%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-10-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-11 .col-md-11-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-11 .col-md-11-11:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-1-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 6.17215%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-1-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-2-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-2-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-3-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-3-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-4-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-4-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-5-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 40.29137%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-5-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-6-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-6-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-7-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-7-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-8-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-8-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-9-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-9-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-10-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-10-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-11-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 91.4702%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-11-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-12 .col-md-12-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-md-12 .col-md-12-12:last-child {
     margin-right: 0; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-1 {
     margin-left: 8.5298%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-2 {
     margin-left: 17.05961%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-3 {
     margin-left: 25.58941%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-4 {
     margin-left: 34.11922%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-5 {
     margin-left: 42.64902%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-6 {
     margin-left: 51.17883%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-7 {
     margin-left: 59.70863%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-8 {
     margin-left: 68.23843%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-9 {
     margin-left: 76.76824%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-10 {
     margin-left: 85.29804%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-md-offset-11 {
     margin-left: 93.82785%; }
-  /* line 49, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .container {
     max-width: 1220px; } }
 
-/* line 85, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
 .row {
   display: block; }
 
-/* line 20, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 .row::after {
   clear: both;
   content: "";
   display: table; }
 
-/* line 86, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
 .omega {
   margin-right: 0; }
 
 @media screen and (min-width: 1586px) {
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-1 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 6.17215%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-1:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-1 .col-lg-1-1 {
     float: left;
     display: block;
     margin-right: 38.19821%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-1 .col-lg-1-1:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-2 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-2:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-2 .col-lg-1-2 {
     float: left;
     display: block;
     margin-right: 16.03631%;
     width: 41.98184%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-2 .col-lg-1-2:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-2 .col-lg-2-2 {
     float: left;
     display: block;
     margin-right: 16.03631%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-2 .col-lg-2-2:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-3 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-3 .col-lg-1-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 26.56773%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-3 .col-lg-1-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-3 .col-lg-2-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 63.28387%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-3 .col-lg-2-3:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-3 .col-lg-3-3 {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-3 .col-lg-3-3:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-4 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-4 .col-lg-1-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 19.43277%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-4 .col-lg-1-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-4 .col-lg-2-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 46.28851%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-4 .col-lg-2-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-4 .col-lg-3-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 73.14426%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-4 .col-lg-3-4:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-4 .col-lg-4-4 {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-4 .col-lg-4-4:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-5 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 40.29137%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-5 .col-lg-1-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 15.3188%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-5 .col-lg-1-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-5 .col-lg-2-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 36.4891%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-5 .col-lg-2-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-5 .col-lg-3-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 57.6594%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-5 .col-lg-3-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-5 .col-lg-4-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 78.8297%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-5 .col-lg-4-5:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-5 .col-lg-5-5 {
     float: left;
     display: block;
     margin-right: 5.85151%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-5 .col-lg-5-5:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-6 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-6 .col-lg-1-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 12.64237%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-6 .col-lg-1-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-6 .col-lg-2-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 30.11389%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-6 .col-lg-2-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-6 .col-lg-3-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 47.58542%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-6 .col-lg-3-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-6 .col-lg-4-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 65.05695%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-6 .col-lg-4-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-6 .col-lg-5-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 82.52847%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-6 .col-lg-5-6:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-6 .col-lg-6-6 {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-6 .col-lg-6-6:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-7 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-7 .col-lg-1-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 10.76207%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-7 .col-lg-1-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-7 .col-lg-2-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 25.63506%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-7 .col-lg-2-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-7 .col-lg-3-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 40.50805%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-7 .col-lg-3-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-7 .col-lg-4-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 55.38104%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-7 .col-lg-4-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-7 .col-lg-5-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 70.25402%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-7 .col-lg-5-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-7 .col-lg-6-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 85.12701%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-7 .col-lg-6-7:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-7 .col-lg-7-7 {
     float: left;
     display: block;
     margin-right: 4.11092%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-7 .col-lg-7-7:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-8 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-8 .col-lg-1-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 9.36867%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-8 .col-lg-1-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-8 .col-lg-2-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 22.316%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-8 .col-lg-2-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-8 .col-lg-3-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 35.26334%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-8 .col-lg-3-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-8 .col-lg-4-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 48.21067%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-8 .col-lg-4-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-8 .col-lg-5-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 61.158%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-8 .col-lg-5-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-8 .col-lg-6-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 74.10533%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-8 .col-lg-6-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-8 .col-lg-7-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 87.05267%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-8 .col-lg-7-8:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-8 .col-lg-8-8 {
     float: left;
     display: block;
     margin-right: 3.57866%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-8 .col-lg-8-8:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-9 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-9 .col-lg-1-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 8.29472%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-9 .col-lg-1-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-9 .col-lg-2-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 19.75788%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-9 .col-lg-2-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-9 .col-lg-3-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 31.22104%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-9 .col-lg-3-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-9 .col-lg-4-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 42.6842%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-9 .col-lg-4-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-9 .col-lg-5-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 54.14736%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-9 .col-lg-5-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-9 .col-lg-6-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 65.61052%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-9 .col-lg-6-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-9 .col-lg-7-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 77.07368%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-9 .col-lg-7-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-9 .col-lg-8-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 88.53684%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-9 .col-lg-8-9:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-9 .col-lg-9-9 {
     float: left;
     display: block;
     margin-right: 3.16844%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-9 .col-lg-9-9:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 .col-lg-1-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 7.44167%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10 .col-lg-1-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 .col-lg-2-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 17.72593%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10 .col-lg-2-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 .col-lg-3-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 28.01019%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10 .col-lg-3-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 .col-lg-4-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 38.29445%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10 .col-lg-4-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 .col-lg-5-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 48.57871%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10 .col-lg-5-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 .col-lg-6-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 58.86297%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10 .col-lg-6-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 .col-lg-7-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 69.14722%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10 .col-lg-7-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 .col-lg-8-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 79.43148%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10 .col-lg-8-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 .col-lg-9-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 89.71574%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10 .col-lg-9-10:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-10 .col-lg-10-10 {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-10 .col-lg-10-10:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 91.4702%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-1-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 6.74772%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-1-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-2-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 16.07295%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-2-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-3-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 25.39818%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-3-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-4-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 34.7234%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-4-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-5-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 44.04863%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-5-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-6-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 53.37386%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-6-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-7-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 62.69909%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-7-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-8-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 72.02432%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-8-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-9-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 81.34954%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-9-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-10-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 90.67477%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-10-11:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-11 .col-lg-11-11 {
     float: left;
     display: block;
     margin-right: 2.57751%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-11 .col-lg-11-11:last-child {
     margin-right: 0; }
-  /* line 23, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-1-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 6.17215%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-1-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-2-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-2-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-3-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-3-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-4-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-4-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-5-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 40.29137%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-5-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-6-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-6-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-7-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-7-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-8-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-8-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-9-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-9-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-10-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-10-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-11-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 91.4702%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-11-12:last-child {
     margin-right: 0; }
-  /* line 28, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-12 .col-lg-12-12 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-  /* line 89, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .col-lg-12 .col-lg-12-12:last-child {
     margin-right: 0; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-1 {
     margin-left: 8.5298%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-2 {
     margin-left: 17.05961%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-3 {
     margin-left: 25.58941%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-4 {
     margin-left: 34.11922%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-5 {
     margin-left: 42.64902%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-6 {
     margin-left: 51.17883%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-7 {
     margin-left: 59.70863%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-8 {
     margin-left: 68.23843%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-9 {
     margin-left: 76.76824%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-10 {
     margin-left: 85.29804%; }
-  /* line 37, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .col-lg-offset-11 {
     margin-left: 93.82785%; }
-  /* line 49, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/setrobot-front/helper/_grid.scss */
   .container {
     max-width: 1586px; } }
 
-/* line 1, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/modules/search.scss */
 .search-excerpt {
   color: #3D8EB9;
   display: inline-block;
   position: relative;
   font-weight: inherit; }
 
-/* line 7, /Users/bruno/_PHProjects/bedrock/web/app/themes/setRobot/resources/sass/modules/search.scss */
 .search-excerpt::after {
   transform: translateX(50%);
   right: 50%;
