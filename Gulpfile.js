@@ -147,7 +147,7 @@ gulp.task('rev', ['css-min', 'js-min'], function () {
 });
 
 gulp.task('w', ['assets-dev'], function() {
-    gulp.watch( paths.src + '/sass/**/*.scss'          , [ 'sass' ]);
+    gulp.watch( paths.src + '/sass/**/*.scss'          , [ 'sass-dev' ]);
     gulp.watch( paths.src + '/js/**/*.js'              , [ 'scripts' ]);
     gulp.watch( paths.src + '/img/**'                  , [ 'images' ]);
     gulp.watch( paths.src + '/fonts/**'                , [ 'fonts' ]);

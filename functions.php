@@ -17,6 +17,7 @@ $setrobot_includes = [
     'inc/copyright.php',
     'inc/menu.php',
     'inc/optimize.php',
+    'inc/pagination.php',
     'inc/thumbnails.php',
     'inc/titles.php',
 ];

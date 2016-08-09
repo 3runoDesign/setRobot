@@ -1,4 +1,6 @@
+{{get_search_form()}}
 @wpposts
+
     {{ the_title() }}
     @if (has_post_thumbnail())
         {{ the_post_thumbnail('setrobot_thumbnail-loading') }}

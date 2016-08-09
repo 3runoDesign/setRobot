@@ -1,0 +1,17 @@
+.page-numbers {
+  li {
+    display: inline-block;
+
+    .page-numbers {
+      border-radius: 4px;
+      display: inline-block;
+      padding: 8px 16px;
+
+      &.current {
+        background-color: #eee;
+        color: #444;
+        font-weight: bold;
+      }
+    }
+  }
+}
