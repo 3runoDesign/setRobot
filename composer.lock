@@ -4,9 +4,47 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "424cd28b5f3c2921eb4aeefc624464d0",
-    "content-hash": "72d84251548e4120dcc9efdc90cce00e",
+    "hash": "0269a60ef9ee36882322d390431b9ad4",
+    "content-hash": "c8475d66f6043b9f23d09331319d6448",
     "packages": [
+        {
+            "name": "jjgrainger/wp-custom-post-type-class",
+            "version": "v1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jjgrainger/wp-custom-post-type-class.git",
+                "reference": "f152d2c33a8ec0740e2fa2544168557e5fe1d5c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jjgrainger/wp-custom-post-type-class/zipball/f152d2c33a8ec0740e2fa2544168557e5fe1d5c7",
+                "reference": "f152d2c33a8ec0740e2fa2544168557e5fe1d5c7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "CPT": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Grainger",
+                    "email": "hello@joegrainger.co.uk",
+                    "homepage": "http://jjgrainger.co.uk"
+                }
+            ],
+            "description": "A single class to help you build more advanced custom post types quickly.",
+            "homepage": "https://github.com/jjgrainger/wp-custom-post-type-class",
+            "time": "2015-08-11 08:44:43"
+        },
         {
             "name": "tormjens/wp-blade",
             "version": "2.0.1",

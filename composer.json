@@ -17,6 +17,7 @@
     },
     "require": {
         "php": ">=5.4.0",
-        "tormjens/wp-blade": "^2.0"
+        "tormjens/wp-blade": "^2.0",
+        "jjgrainger/wp-custom-post-type-class": "^1.4"
     }
 }
