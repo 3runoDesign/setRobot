@@ -43,22 +43,34 @@ gulp.task('clean-all', function() {
 
 // Files SASS
 // ============
-gulp.task( 'sass', function () {
+gulp.task( 'sass-dev', function () {
     return gulp.src( paths.src + '/sass/main.scss' )
         .pipe( sass({
             includePaths   : includeSass,
-            style          : 'expanded',
+            outputStyle    : 'expanded',
             sourceComments : true
         }))
         .pipe( autoprefixer( 'last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1' ) )
         .pipe( sass().on('error', sass.logError) )
+        .pipe(gulp.dest(paths.dist + '/css'));
+});
+
+gulp.task( 'sass-prod', function () {
+    return gulp.src( paths.src + '/sass/main.scss' )
+        .pipe( sass({
+            includePaths   : includeSass,
+            outputStyle    : 'compressed',
+            sourceComments : false
+        }))
+        .pipe( autoprefixer( 'last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1' ) )
+        .pipe( sass().on('error', sass.logError) )
         .pipe(tap(function(file) {
-            // Melhorar o comentário de debug.
-            file.contents = new Buffer(
-                file.contents.toString().split(
-                    file.path.substr( 0, ( file.path.indexOf( '/themes/' ) + 1 ) )
-                ).join('/')
-            );
+            //:: Melhorar o comentário de debug.
+            // file.contents = new Buffer(
+            //     file.contents.toString().split(
+            //         file.path.substr( 0, ( file.path.indexOf( '/themes/' ) + 1 ) )
+            //     ).join('/')
+            // );
         }))
         .pipe(gulp.dest(paths.dist + '/css'));
 });
@@ -134,7 +146,7 @@ gulp.task('rev', ['css-min', 'js-min'], function () {
         .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('w', ['assets-build'], function() {
+gulp.task('w', ['assets-dev'], function() {
     gulp.watch( paths.src + '/sass/**/*.scss'          , [ 'sass' ]);
     gulp.watch( paths.src + '/js/**/*.js'              , [ 'scripts' ]);
     gulp.watch( paths.src + '/img/**'                  , [ 'images' ]);
@@ -149,10 +161,14 @@ gulp.task('w', ['assets-build'], function() {
     gulp.watch( paths.dist + '/fonts/**' ).on( 'change'  , livereload.changed );
 });
 
+gulp.task('assets-dev', function(callback) {
+    gulpSequence('clean-all', ['sass-dev', 'scripts', 'providers', 'fonts', 'images'], callback);
+});
+
 gulp.task('assets-build', function(callback) {
     if (argv.production === true) {
         gulpSequence(['clean-all'], ['providers', 'fonts', 'images', 'rev'], callback);
     } else {
-        gulpSequence('clean-all', ['sass', 'scripts', 'providers', 'fonts', 'images'], callback);
+        gulpSequence('clean-all', ['sass-prod', 'scripts', 'providers', 'fonts', 'images'], callback);
     }
 });
