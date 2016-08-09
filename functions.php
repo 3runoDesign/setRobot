@@ -3,6 +3,7 @@ $setrobot_includes = [
     'core/bootstrap.php',
 
     'core/classes/breadcrumb-navigation.php',
+    'core/classes/post-status.php',
     'core/classes/revisioning-json.php',
     'core/classes/taxonomy-single-term.php',
     'core/classes/thumbs-media-downsize.php',
@@ -21,6 +22,8 @@ $setrobot_includes = [
     'inc/pagination.php',
     'inc/thumbnails.php',
     'inc/titles.php',
+
+    'custom-post-types/post.php',
 ];
 
 /**
