@@ -9,6 +9,7 @@ $news->register_taxonomy(array(
     'plural'        => 'Seções',
 ));
 
+
 $news_tax_secao = new SetRobot_Taxonomy_Single_Term('secao', array($news->post_type_name), 'select');
 $news_tax_secao->set('metabox_title', 'Escolha a seção da notícia');
 $news_tax_secao->set('priority', 'high');
@@ -21,3 +22,12 @@ $args = array(
 
 
 new CustomPostStatus('archive', array($news->post_type_name), $args);
+
+$people = new CPT(array(
+    'post_type_name' => 'person',
+    'singular' => 'Person',
+    'plural' => 'People',
+    'slug' => 'people'
+));
+
+$people->flush();
