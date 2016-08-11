@@ -64,6 +64,7 @@ class AutoComplete
                     },
                     select: function(event, ui) {
                         window.location.href = ui.item.link;
+                        // console.log(ui.item);
                     },
                 })
 
@@ -101,7 +102,7 @@ class AutoComplete
 
         $suggestions = array();
 
-        // global $post;
+        global $post;
 
         foreach ($posts as $post):
 
