@@ -5,10 +5,12 @@ class AutoComplete
 
     private static $action;
     private static $type;
+    private static $search_form;
 
-    public function __construct(array $type) {
+    public function __construct(array $type, $id_form) {
         self::$action = 'my_autocomplete';
         self::$type   = $type;
+        self::$search_form = $id_form;
 
         add_action('init', array( __CLASS__, 'init'));
     }
@@ -16,7 +18,7 @@ class AutoComplete
     public static function init()
     {
         //Register style - you can create your own jQuery UI theme and store it in the plug-in folder
-        // wp_register_style('my-jquery-ui','http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css');
+        // wp_register_style('my-jquery-ui','https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.theme.min.css');
         add_action('get_search_form', array( __CLASS__, 'get_search_form' ));
         add_action('wp_ajax_'. self::$action, array( __CLASS__, 'autocomplete_suggestions' ));
         add_action('wp_ajax_nopriv_'. self::$action, array( __CLASS__, 'autocomplete_suggestions' ));
@@ -24,10 +26,14 @@ class AutoComplete
 
     public static function get_search_form($form)
     {
-        wp_enqueue_script('jquery-ui-autocomplete');
-        wp_enqueue_style('my-jquery-ui');
+        preg_match('/id="(.*)"/', $form, $match);
 
-        add_action('wp_print_footer_scripts', array( __CLASS__, 'print_footer_scripts' ), 11);
+        if ($match[1] == self::$search_form) {
+            wp_enqueue_script('jquery-ui-autocomplete');
+            wp_enqueue_style('my-jquery-ui');
+
+            add_action('wp_print_footer_scripts', array( __CLASS__, 'print_footer_scripts' ), 11);
+        }
 
         return $form;
     }
@@ -36,47 +42,50 @@ class AutoComplete
     {
         ?>
     <script type="text/javascript">
-    jQuery(document).ready(function ($){
-        var inputSearch = $("#s");
-            ajaxurl = '<?php echo admin_url('admin-ajax.php');?>',
-            ajaxaction = '<?php echo self::$action ?>'
-            delay = (function(){
-                var timer = 0;
-                return function(callback, ms){
-                clearTimeout (timer);
-                timer = setTimeout(callback, ms);
-                };
-            })();
+        // TODO: Quando não tiver Resultado.
+        jQuery(document).ready(function ($){
+            var inputSearch = $('#<?php echo self::$search_form; ?>').find("input[name='s']");
+                ajaxurl = '<?php echo admin_url('admin-ajax.php');?>',
+                ajaxaction = '<?php echo self::$action ?>';
 
-            inputSearch.autocomplete({
-                delay: 400,
-                minLength: 0,
-                source: function(req, response){
-                    // $.getJSON(ajaxurl+'?callback=?&action='+ajaxaction, req, response);
-                    $.ajax({
-                        'url': ajaxurl+'?callback=?&action='+ajaxaction,
-                        'data': req,
-                        'method': "GET",
-                        'dataType': "json",
-                        'success': function(data) {
-                            return response(data);
-                        }
-                    });
-                },
-                select: function(event, ui) {
-                    // window.location.href = ui.item.link;
-                    console.log( ui.item.excerpt );
-                },
-            }).data("ui-autocomplete")._renderItem = function (ul, item) {
-                return $("<li></li>")
+                var autos = inputSearch.autocomplete({
+                    delay: 400,
+                    minLength: 2,
+                    source: function(req, response){
+                        $.ajax({
+                            'url': ajaxurl+'?callback=?&action='+ajaxaction,
+                            'data': req,
+                            'method': "GET",
+                            'dataType': "json",
+                            'success': function(data) {
+                                return response(data);
+                            }
+                        });
+                    },
+                    select: function(event, ui) {
+                        window.location.href = ui.item.link;
+                    },
+                })
+
+                autos.data("ui-autocomplete")._renderItem = function (ul, item) {
+                    var listItem = $("<li></li>")
                         .data("item.autocomplete", item)
-                        .append(
-                            // "<a>" + item.label + "</a>"
-                            "<h1>" + item.label + "</h1><p>" + item.excerpt + "</p>"
-                            )
+                        .append('<h1>' + item.label + '</h1><p>' + item.excerpt + '</p> <span class="search-item__arrow">&rarr;</span>')
                         .appendTo(ul);
-            };
-    });
+
+                    return listItem;
+                };
+
+                autos.data("ui-autocomplete")._renderMenu = function( ul, items ) {
+                  var that = this;
+                  $.each( items, function( index, item ) {
+                    that._renderItemData( ul, item );
+                  });
+                //   var more_result =
+                //     $("<li>Veja mais resultados</li>")
+                //     .appendTo($( ul ).find( "li:odd" ));
+              };
+        });
     </script>
 
     <?php
@@ -112,4 +121,4 @@ class AutoComplete
     }
 }
 
-$searchCustom = new AutoComplete(['post']);
+$searchCustom = new AutoComplete(['post'], 'searchform');

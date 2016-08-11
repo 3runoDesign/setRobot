@@ -22,12 +22,3 @@ $args = array(
 
 
 new CustomPostStatus('archive', array($news->post_type_name), $args);
-
-$people = new CPT(array(
-    'post_type_name' => 'person',
-    'singular' => 'Person',
-    'plural' => 'People',
-    'slug' => 'people'
-));
-
-$people->flush();
