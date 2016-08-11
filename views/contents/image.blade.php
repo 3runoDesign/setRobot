@@ -7,7 +7,7 @@
             <section class="entry-meta entry-content">
                 <?php
                 $metadata = wp_get_attachment_metadata();
-                printf( __( 'Image total size: %s pixels', 'odin' ), sprintf( '<a href="%1$s" title="%2$s"><span>%3$s</span> &times; <span>%4$s</span></a>', wp_get_attachment_url(), esc_attr( __( 'Full image link', 'odin' ) ), $metadata['width'], $metadata['height'] ) );
+                printf( 'Tamanho total da imagem: %s pixels', sprintf( '<a href="%1$s" title="%2$s"><span>%3$s</span> &times; <span>%4$s</span></a>', wp_get_attachment_url(), esc_attr( 'Link para imagem normal' ), $metadata['width'], $metadata['height'] ) );
                 ?>
             </section>
         </header>
@@ -39,7 +39,7 @@
             @if (! empty( $GLOBALS['post']->post_parent ))
                 <ul class="pager page-title">
                     <li class="previous">
-                        <a href="{{ esc_url( get_permalink( $GLOBALS['post']->post_parent ) ) }}" title="{{ esc_attr( sprintf( __( 'Back to %s', 'odin' ), strip_tags( get_the_title( $GLOBALS['post']->post_parent ) ) ) ) }}" rel="gallery">
+                        <a href="{{ esc_url( get_permalink( $GLOBALS['post']->post_parent ) ) }}" title="{{ esc_attr( sprintf( 'Voltar para %s', strip_tags( get_the_title( $GLOBALS['post']->post_parent ) ) ) ) }}" rel="gallery">
                             <?php
                                 printf(
                                     '<span class="meta-nav">&larr;</span> %s',
@@ -50,7 +50,7 @@
                     </li>
                 </ul>
             @endif
-            
+
         </section>
     </article>
 @endwhile
