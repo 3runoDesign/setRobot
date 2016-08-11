@@ -62,6 +62,7 @@ function breadcrumb()
     new BreadcrumbNavigation($templates, $options, array(), true);
 }
 
+/*
 function first_paragraph($content)
 {
     if (strlen($content) > 0) {
@@ -73,3 +74,4 @@ function first_paragraph($content)
     return $content;
 }
 add_filter('the_content', 'first_paragraph');
+*/
