@@ -15,6 +15,7 @@
                 <h1>
                     {{ the_title() }}
                 </h1>
+                
                 @if (get_post_type() === 'post')
                     <time class="updated" datetime="{{ get_post_time('c', true) }}">
                         {{ get_the_date() }}

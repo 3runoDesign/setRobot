@@ -1,0 +1,11 @@
+%truncate_text {
+  display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin truncate_text( $with_size ) {
+  @extend %truncate_text;
+  width:$with_size;
+}

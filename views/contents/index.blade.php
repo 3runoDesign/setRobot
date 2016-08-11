@@ -1,3 +1,9 @@
+@section('script')
+
+@endsection
+
+{{ get_search_form() }}
+
 <header class="cover" style="text-align: center;">
     <div class="container">
 
