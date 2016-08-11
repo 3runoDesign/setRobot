@@ -13,6 +13,8 @@ $setrobot_includes = [
     'core/helpers/image.php',
     'core/helpers/read.php',
 
+    'core/login.php',
+
     'inc/admin.php',
     'inc/assets.php',
     'inc/blade.php',
@@ -37,14 +39,3 @@ foreach ($setrobot_includes as $file) {
     require_once $filepath;
 }
 unset($file, $filepath);
-
-
-/**
- * Função que informa erro ao digitar login ou senha incorretos.
- */
-
-function failed_login () {
-    return 'Seu usuário ou senha informados estão incorretos.';
-}
-
-add_filter ( 'login_errors', 'failed_login' );
