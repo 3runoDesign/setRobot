@@ -1,5 +1,6 @@
 ![SetRobot Logo](http://agenciaccm.s3-sa-east-1.amazonaws.com/uploads/2016/07/16165134/setrobot_logo.svg "SetRobot")
 [![Build Status](https://travis-ci.org/3runoDesign/setRobot.svg?branch=master)](https://travis-ci.org/3runoDesign/setRobot)
+[![Code Climate](https://codeclimate.com/github/3runoDesign/setRobot/badges/gpa.svg)](https://codeclimate.com/github/3runoDesign/setRobot)
 
 setRobot é um tema base para auxiliar no desenvolvimento ágil de temas para WordPress.
 
