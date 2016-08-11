@@ -37,3 +37,14 @@ foreach ($setrobot_includes as $file) {
     require_once $filepath;
 }
 unset($file, $filepath);
+
+
+/**
+ * Função que informa erro ao digitar login ou senha incorretos.
+ */
+
+function failed_login () {
+    return 'Seu usuário ou senha informados estão incorretos.';
+}
+
+add_filter ( 'login_errors', 'failed_login' );
