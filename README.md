@@ -53,7 +53,7 @@ Se você usa [Sublime Text](https://www.sublimetext.com/):
 - [PHP CS Fixer (PSR-2)](https://github.com/benmatselby/sublime-phpcs)
 - [PHPmd](https://github.com/SublimeLinter/SublimeLinter-phpmd)
 
-Depois basta fazer o **Fork** e nos mandar uma **Pull Request**.
+Por favor, veja [CONTRIBUTING.md](https://github.com/3runoDesign/setRobot/blob/master/CONTRIBUTING.md) para mais detalhes.
 
 ##Versionamento
 **setRobot** sem o [Versionamento Semântico](http://semver.org/lang/pt-BR/).
