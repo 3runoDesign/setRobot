@@ -5,7 +5,7 @@
 setRobot é um tema base para auxiliar no desenvolvimento ágil de temas para WordPress.
 
 ##Motivação
-Para facilitar o fluxo e agilizar o desenvolvimento de temas. Por padrão não temos estilo (coisas básicas) e nem JavaScript mágico.
+Para facilitar o fluxo e agilizar o desenvolvimento de temas.
 
 ##Requisitos
 | Pré-requisitos    | Como verificar | Como instalar
