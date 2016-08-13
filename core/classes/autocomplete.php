@@ -118,7 +118,7 @@ class AutoComplete
 
         $response = $_GET["callback"] . "(" . json_encode($suggestions) . ")";
         echo $response;
-        exit;
+        die();
     }
 }
 
