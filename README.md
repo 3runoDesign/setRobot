@@ -28,9 +28,9 @@ Para facilitar o fluxo e agilizar o desenvolvimento de temas.
 ##Como Instalar
 1. Abra seu terminal e entre na pasta themes do seu projeto. `$ cd PATH/wp-content/themes/`
 2. Execute o comando git clone:`$ git clone git@github.com:3runoDesign/setRobot.git nome_do_tema`
-3. No seu terminal, entre na pasta themes e em seguida na pasta **setRobot**:`$ cd PATH/wp-content/themes/nome_do_tema/`
-4. No terminal, dentro da pasta `nome_do_tema`, execute o comando: `$ npm run build`
-5.  Por fim, execute o comando para os pacotes do composer: `$ composer install`
+3. No seu terminal, entre na pasta do seu tema `nome_do_tema`:`$ cd PATH/wp-content/themes/nome_do_tema/`
+4. Ja dentro da pasta `nome_do_tema`, execute o comando: `$ npm run build`
+5. Por fim, execute o comando para os pacotes do composer: `$ composer install`
 
 ###Tasks do gulp
 
