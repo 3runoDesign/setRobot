@@ -29,7 +29,7 @@ ratings:
   - "**.py"
   - "**.rb"
 exclude_paths:
-- "gulpfile.js"
+- "Gulpfile.js"
 - "vendor/*"
 - "assets/*"
 - "node_modules/*"
