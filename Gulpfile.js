@@ -146,7 +146,7 @@ gulp.task('rev', ['css-min', 'js-min'], function () {
         .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('w', ['assets-dev'], function() {
+gulp.task('w', function() {
     gulp.watch( paths.src + '/sass/**/*.scss'          , [ 'sass-dev' ]);
     gulp.watch( paths.src + '/js/**/*.js'              , [ 'scripts' ]);
     gulp.watch( paths.src + '/img/**'                  , [ 'images' ]);
@@ -166,9 +166,12 @@ gulp.task('assets-dev', function(callback) {
 });
 
 gulp.task('assets-build', function(callback) {
-    if (argv.production === true) {
+    if (argv.p === true || argv.production === true ) {
         gulpSequence(['clean-all'], ['providers', 'fonts', 'images', 'rev'], callback);
     } else {
         gulpSequence('clean-all', ['sass-prod', 'scripts', 'providers', 'fonts', 'images'], callback);
     }
 });
+
+gulp.task('ab', ['assets-build']);
+gulp.task('ad', ['assets-dev']);
