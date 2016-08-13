@@ -25,14 +25,14 @@ var paths = {
       'src'      : './resources',
       'bower'    : bowerrc.directory,
       'bourbon'  : bowerrc.directory + '/bourbon/app/assets',
-      'neat'     : bowerrc.directory + '/neat/app/assets',
+      'neat'     : bowerrc.directory + '/neat/app/assets'
     },
 
     includeSass = [
         paths.bourbon + '/stylesheets/',
         paths.neat    + '/stylesheets/',
         paths.bower   + '/helpers-scss/',
-        paths.bower   + '/family.scss/source/src/',
+        paths.bower   + '/family.scss/source/src/'
     ];
 
 gulp.task('clean-all', function() {
