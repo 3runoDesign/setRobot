@@ -40,16 +40,6 @@ Para facilitar o fluxo e agilizar o desenvolvimento de temas.
 | [`gulp ab`](https://github.com/3runoDesign/setRobot/blob/master/Gulpfile.js#L176) | Cria arquivos final [Somente concatenados]. |
 | [`--production`](https://github.com/3runoDesign/setRobot/blob/master/Gulpfile.js#L169)/[`-p`](https://github.com/3runoDesign/setRobot/blob/master/Gulpfile.js#L169) | As tarefas `assets-build` e `ab`, tem uma flag para criar arquivo de produção. |
 |  [`gulp w`](https://github.com/3runoDesign/setRobot/blob/master/Gulpfile.js#L149) | Tarefa para observar os arquivos e pastas: `*.css`,`*.js`,`*.scss`,`*.php`,`img/**`,`fonts/**`|
- 
- 
-```shell
-gulp assets-dev # Cria arquivos com comentário para debug.
-gulp assets-build # Criar os arquivos
-gulp assets-build --production #Criar os arquivos e criar o manifesto
-# OU
-
-gulp w #Observar os arquivos durante o desenvolvimento.
-```
 
 ##Inspirações
  - https://github.com/roots/sage
