@@ -64,14 +64,6 @@ gulp.task( 'sass-prod', function () {
         }))
         .pipe( autoprefixer( 'last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1' ) )
         .pipe( sass().on('error', sass.logError) )
-        .pipe(tap(function(file) {
-            //:: Melhorar o comentário de debug.
-            // file.contents = new Buffer(
-            //     file.contents.toString().split(
-            //         file.path.substr( 0, ( file.path.indexOf( '/themes/' ) + 1 ) )
-            //     ).join('/')
-            // );
-        }))
         .pipe(gulp.dest(paths.dist + '/css'));
 });
 
