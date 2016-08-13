@@ -11,6 +11,7 @@ $setrobot_includes = [
 
     'core/helpers/copyright-data.php',
     'core/helpers/image.php',
+    'core/helpers/pagination.php',
     'core/helpers/read.php',
 
     'core/login.php',
@@ -22,7 +23,6 @@ $setrobot_includes = [
     'inc/copyright.php',
     'inc/menu.php',
     'inc/optimize.php',
-    'inc/pagination.php',
     'inc/thumbnails.php',
     'inc/titles.php',
 
