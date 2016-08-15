@@ -32,5 +32,44 @@ function attachment_field_credit_save($post, $attachment)
 
     return $post;
 }
-
 add_filter('attachment_fields_to_save', 'attachment_field_credit_save', 10, 2);
+
+function img_caption_shortcode_filter($val, $attr, $content = null)
+{
+    global $post;
+
+    extract(shortcode_atts(array(
+        'id'      => '',
+        'align'   => 'aligncenter',
+        'width'   => '',
+        'caption' => ''
+    ), $attr));
+
+    if (1 > (int) $width || empty($caption)) {
+        return $val;
+    }
+
+    if ($id) {
+        $id_attachment = esc_attr($id);
+        $id_img = substr($id, strpos($id, '_') + 1);
+    }
+
+    $figcaption_author = '';
+
+    if ( copyrightData($id_img, 'name') ) {
+        $figcaption_author = '<figcaption id="figauthor_' . $id . "_" . $post->ID . '" class="author-figure">';
+
+        if (copyrightData($id_img, 'url')) {
+            $figcaption_author .= '<a target="_blank" href="' . copyrightData($id_img, 'url') . '">';
+            $figcaption_author .= copyrightData($id_img, 'name');
+            $figcaption_author .= '</a>';
+        } else {
+            $figcaption_author .= copyrightData($id_img, 'name');
+        }
+
+        $figcaption_author .= '</figcaption>';
+    }
+
+    return '<figure id="' . $id . "_" . $post->ID . '" class="figure-attachment-post '. $attr['align'] .'" style="width:' . (0 + (int) $width) . 'px">' . $figcaption_author . do_shortcode($content) . '<figcaption class="caption-figure" id="figcaption_' . $id . "_" . $post->ID . '" class="wp-caption-text">' . $caption . '</figcaption></figure>';
+}
+add_filter('img_caption_shortcode', 'img_caption_shortcode_filter', 10, 3);
