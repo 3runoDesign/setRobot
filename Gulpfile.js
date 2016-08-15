@@ -67,7 +67,7 @@ gulp.task( 'sass-prod', function () {
         .pipe(gulp.dest(paths.dist + '/css'));
 });
 
-gulp.task('css-min', ['sass'], function(){
+gulp.task('css-min', ['sass-prod'], function(){
     return gulp.src(paths.dist + '/css/*.css')
         .pipe(cssnano())
         .pipe(gulp.dest(paths.dist + '/css'));
