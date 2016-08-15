@@ -1,8 +1,8 @@
 <?php
 
-function copyrightData($type = 'name')
+function copyrightData($id_img, $type = 'name')
 {
     $type = (isset($type)) ? $type : 'name';
 
-    return get_post_meta(get_post_thumbnail_id(), "setrobot_copyright_{$type}", true);
+    return get_post_meta($id_img, "setrobot_copyright_{$type}", true);
 }
