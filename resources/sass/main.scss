@@ -19,6 +19,7 @@ $visual-grid-opacity: 0.4 !default;
 
 @import "core/reset";
 
+@import "modules/syntax-highlighter";
 @import "modules/pagination";
 @import "modules/grid";
 @import "modules/search";
