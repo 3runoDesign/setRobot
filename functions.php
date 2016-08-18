@@ -6,7 +6,6 @@ $setrobot_includes = [
     'core/classes/post-status.php',
     'core/classes/revisioning-json.php',
     'core/classes/taxonomy-single-term.php',
-    'core/classes/thumbs-media-downsize.php',
     'core/classes/autocomplete.php',
 
     'core/helpers/copyright-data.php',
@@ -27,7 +26,7 @@ $setrobot_includes = [
     'inc/optimize.php',
     'inc/thumbnails.php',
 
-    'custom-post-types/post.php',
+    'custom-post-types/post.php'
 ];
 
 /**

@@ -4,9 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0269a60ef9ee36882322d390431b9ad4",
-    "content-hash": "c8475d66f6043b9f23d09331319d6448",
+    "hash": "403a8959e13555416193d7567ee6a6f6",
+    "content-hash": "f626d9625ea88a9524da65d457efa81a",
     "packages": [
+        {
+            "name": "gambitph/WP-OTF-Regenerate-Thumbnails",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gambitph/WP-OTF-Regenerate-Thumbnails.git",
+                "reference": "master"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/gambitph/WP-OTF-Regenerate-Thumbnails/archive/master.zip",
+                "reference": "master",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "otf_regen_thumbs.php"
+                ]
+            },
+            "time": "2015-07-20 06:13:47"
+        },
         {
             "name": "jjgrainger/wp-custom-post-type-class",
             "version": "v1.4",
@@ -47,16 +69,16 @@
         },
         {
             "name": "tormjens/wp-blade",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tormjens/wp-blade.git",
-                "reference": "838bbc5d31582f15cc88f5c3b462c6ee5d88be4a"
+                "reference": "88335a3d0ebeb3ea92eef2eff8bbdb3b5280045a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tormjens/wp-blade/zipball/838bbc5d31582f15cc88f5c3b462c6ee5d88be4a",
-                "reference": "838bbc5d31582f15cc88f5c3b462c6ee5d88be4a",
+                "url": "https://api.github.com/repos/tormjens/wp-blade/zipball/88335a3d0ebeb3ea92eef2eff8bbdb3b5280045a",
+                "reference": "88335a3d0ebeb3ea92eef2eff8bbdb3b5280045a",
                 "shasum": ""
             },
             "require": {
@@ -80,7 +102,7 @@
                 }
             ],
             "description": "Use Blade templates in your WordPress theme",
-            "time": "2016-06-24 10:09:08"
+            "time": "2016-08-08 07:09:39"
         },
         {
             "name": "xiaoler/blade",
@@ -126,7 +148,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "gambitph/wp-otf-regenerate-thumbnails": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
