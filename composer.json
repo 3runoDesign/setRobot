@@ -19,13 +19,6 @@
             "url": "https://github.com/gambitph/WP-OTF-Regenerate-Thumbnails.git",
             "type": "git",
             "reference": "master"
-          },
-          "autoload": {
-            "classmap": ["otf_regen_thumbs.php"]
-          },
-          "dist": {
-            "url": "https://github.com/gambitph/WP-OTF-Regenerate-Thumbnails/archive/master.zip",
-            "type": "zip"
           }
         }
       }
@@ -41,5 +34,11 @@
         "tormjens/wp-blade": "^2.0",
         "jjgrainger/wp-custom-post-type-class": "^1.4",
         "gambitph/WP-OTF-Regenerate-Thumbnails": "dev-master"
+    },
+
+    "autoload": {
+        "files": [
+            "vendor/gambitph/WP-OTF-Regenerate-Thumbnails/otf_regen_thumbs.php"
+        ]
     }
 }

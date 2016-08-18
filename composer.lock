@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "403a8959e13555416193d7567ee6a6f6",
-    "content-hash": "f626d9625ea88a9524da65d457efa81a",
+    "hash": "dee4340998ff6e65e1dbe4d6c98af1fc",
+    "content-hash": "dae703e3d854e35e5c0a6f1901dd45e3",
     "packages": [
         {
             "name": "gambitph/WP-OTF-Regenerate-Thumbnails",
@@ -15,18 +15,7 @@
                 "url": "https://github.com/gambitph/WP-OTF-Regenerate-Thumbnails.git",
                 "reference": "master"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/gambitph/WP-OTF-Regenerate-Thumbnails/archive/master.zip",
-                "reference": "master",
-                "shasum": null
-            },
             "type": "library",
-            "autoload": {
-                "classmap": [
-                    "otf_regen_thumbs.php"
-                ]
-            },
             "time": "2015-07-20 06:13:47"
         },
         {
