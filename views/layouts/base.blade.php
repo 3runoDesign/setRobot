@@ -10,44 +10,7 @@
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-
-        <style media="screen">
-        .ui-autocomplete { position: absolute; cursor: default; background:#CCC }
-
-/* workarounds */
-html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
-.ui-menu {
-list-style:none;
-padding: 2px;
-margin: 0;
-display:block;
-float: left;
-}
-.ui-menu .ui-menu {
-margin-top: -3px;
-}
-.ui-menu .ui-menu-item {
-margin:0;
-padding: 0;
-zoom: 1;
-float: left;
-clear: left;
-width: 100%;
-}
-.ui-menu .ui-menu-item a {
-text-decoration:none;
-display:block;
-padding:.2em .4em;
-line-height:1.5;
-zoom:1;
-}
-.ui-menu .ui-menu-item a.ui-state-hover,
-.ui-menu .ui-menu-item a.ui-state-active {
-font-weight: normal;
-margin: -1px;
-}
-        </style>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 
         {{ wp_head() }}
     </head>
