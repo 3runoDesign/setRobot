@@ -4,7 +4,15 @@
     overflow: hidden;
     padding: 0;
     position: relative;
-    width: 100%;
+
+    &::after {
+      @include v-aling();
+      content: "\f107";
+      font-family: FontAwesome;
+      font-size: rem(22px);
+      position: absolute;
+      right: 10px;
+    }
 
     select {
       @include appearance(none); // http://bourbon.io/docs/#appearance
@@ -17,16 +25,18 @@
       line-height: rem(15px);
       margin: 0;
       outline: none;
-      padding: 15px 35px;
+      padding: 15px 30px; // of your choice
       width: 100%;
     }
   }
 
   @-moz-document url-prefix() {
-    .#{$_class-name-custom-select} select {
+    & select {
       -moz-appearance: none;
       text-indent: 0.01px;
       text-overflow: '';
     }
   }
+
+  @content;
 }
