@@ -61,6 +61,9 @@ Por favor, veja [CONTRIBUTING.md](https://github.com/3runoDesign/setRobot/blob/m
 ##Versionamento
 **setRobot** sem o [Versionamento Semântico](http://semver.org/lang/pt-BR/).
 
+##Lançamentos
+Para saber mais, veja o [CHANGELOG.md](https://github.com/3runoDesign/setRobot/blob/master/CHANGELOG.md) para mais detalhes.
+
 #Copyright e Licença
 Copyright 2016.
 O código PHP esta licenciado sob a Licença GPLv2. Todos os arquivos CSS, SCSS, JS, imagens e outros não incluindo arquivos PHP estão licenciados como MIT ou pela licença especificada dentro de seus arquivos.
