@@ -56,7 +56,7 @@ function img_caption_shortcode_filter($val, $attr, $content = null)
 
     $figcaption_author = '';
 
-    if ( copyrightData($id_img, 'name') ) {
+    if (copyrightData($id_img, 'name')) {
         $figcaption_author = '<figcaption id="figauthor_' . $id . "_" . $post->ID . '" class="author-figure">';
 
         if (copyrightData($id_img, 'url')) {

@@ -8,7 +8,7 @@ class CustomPostStatus
      * status will be applied to.
      * @var array
      */
-    protected $post_types = array("post");
+    protected $post_types = array('post');
     /**
      * Text used to display the post status
      * when it can be applied to a post.
@@ -44,20 +44,20 @@ class CustomPostStatus
     {
         $this->post_status = $post_status;
         $this->post_types = $post_types;
-        $this->action_label = isset($args["label"]) ? $args["label"] : $post_status;
-        $this->applied_label = isset($args["applied_label"]) ? $args["applied_label"] : $this->action_label;
+        $this->action_label = isset($args['label']) ? $args['label'] : $post_status;
+        $this->applied_label = isset($args['applied_label']) ? $args['applied_label'] : $this->action_label;
         $this->args = $args;
         // get rid of elements that don't belong in the args for register_post_status
-        unset($this->args["applied_label"]);
+        unset($this->args['applied_label']);
         // set a default label count
-        if (!isset($this->args["label_count"])) {
-            $this->args["label_count"] = _n_noop("{$this->applied_label} <span class=\"count\">(%s)</span>", "{$this->applied_label} <span class=\"count\">(%s)</span>");
+        if (!isset($this->args['label_count'])) {
+            $this->args['label_count'] = _n_noop("{$this->applied_label} <span class=\"count\">(%s)</span>", "{$this->applied_label} <span class=\"count\">(%s)</span>");
         }
         // setup the actions
-        add_action("init", array($this, "register_post_status"));
-        add_action("admin_footer-post.php", array($this, "append_to_post_status_dropdown"));
-        add_action("admin_footer-edit.php", array($this, "append_to_inline_status_dropdown"));
-        add_filter("display_post_states", array($this, "update_post_status"));
+        add_action('init', array($this, 'register_post_status'));
+        add_action('admin_footer-post.php', array($this, 'append_to_post_status_dropdown'));
+        add_action('admin_footer-edit.php', array($this, 'append_to_inline_status_dropdown'));
+        add_filter('display_post_states', array($this, 'update_post_status'));
     }
     /**
      * Register the custom post status with WordPress
@@ -80,12 +80,11 @@ class CustomPostStatus
         $selected = "";
         $label = "";
         if (in_array($post->post_type, $this->post_types)) {
-
-          if ($post->post_status === $this->post_status) {
-               $selected = " selected=\"selected\"";
-               $label = "<span id=\"post-status-display\"> {$this->applied_label}</span>";
-          }
-          echo "
+            if ($post->post_status === $this->post_status) {
+                $selected = ' selected="selected"';
+                $label = "<span id=\"post-status-display\"> {$this->applied_label}</span>";
+            }
+            echo "
               <script>
                   jQuery(document).ready(function ($){
                        $('select#post_status').append('<option value=\"{$this->post_status}\"{$selected}>{$this->action_label}</option>');
@@ -105,7 +104,9 @@ class CustomPostStatus
     {
         global $post;
         // no posts
-        if (!$post) return;
+        if (!$post) {
+            return;
+        }
 
         if (in_array($post->post_type, $this->post_types)) {
             echo "
@@ -126,8 +127,8 @@ class CustomPostStatus
     public function update_post_status($states)
     {
         global $post;
-        $status = get_query_var("post_status");
-        if ($status !== $this->post_status && $post->post_status === $this->post_status){
+        $status = get_query_var('post_status');
+        if ($status !== $this->post_status && $post->post_status === $this->post_status) {
             return array($this->applied_label);
         }
         return $states;

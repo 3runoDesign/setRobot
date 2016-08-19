@@ -1,13 +1,5 @@
 <?php
-/**
- * setRobot optimize functions.
- */
 
-require_once __DIR__ . '/../core/security.php';
-
-/**
- * Cleanup wp_head()
- */
 function head_cleanup()
 {
     // EditURI link
