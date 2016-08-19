@@ -116,7 +116,7 @@ class AutoComplete
             $suggestions[]= $suggestion;
         endforeach;
 
-        $response = $_GET["callback"] . "(" . json_encode($suggestions) . ")";
+        $response = $_GET['callback'] . "(" . json_encode($suggestions) . ")";
         echo $response;
         die();
     }
