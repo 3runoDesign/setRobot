@@ -1,5 +1,4 @@
 <?php
-
 function excerpt($type = 'excerpt', $limit = 40)
 {
     $limit = (int) $limit;
@@ -12,20 +11,71 @@ function excerpt($type = 'excerpt', $limit = 40)
             $excerpt = get_the_excerpt();
             break;
     }
+
     return wp_trim_words($excerpt, $limit);
 }
 
-function wps_highlight_results($text)
-{
-    if (is_search()) {
-        $sr = get_query_var('s');
-        $keys = explode(" ", $sr);
-        $text = preg_replace('/('.implode('|', $keys) .')/iu', '<strong class="search-excerpt">'.$sr.'</strong>', $text);
+function highlight_terms($phrase, $string) {
+    $non_letter_chars = '/[^\pL]/iu';
+    $words = preg_split($non_letter_chars, $phrase);
+
+    $search_words = array();
+
+    foreach ($words as $word) {
+        if (strlen(remove_accents($word)) >= 2 && !preg_match($non_letter_chars, $word)) {
+            $search_words[] = $word;
+        }
     }
-    return $text;
+
+    $search_words = array_unique($search_words);
+
+
+    foreach ($search_words as $word) {
+        $search = preg_quote($word);
+
+        /* repeat for each possible accented character */
+        $search = preg_replace('/(ae|æ|ǽ)/iu', '(ae|æ|ǽ)', $search);
+        $search = preg_replace('/(oe|œ)/iu', '(oe|œ)', $search);
+        $search = preg_replace('/[aàáâãäåǻāăą](?!e)/iu', '[aàáâãäåǻāăą]', $search);
+        $search = preg_replace('/[cçćĉċč]/iu', '[cçćĉċč]', $search);
+        $search = preg_replace('/[dďđ]/iu', '[dďđ]', $search);
+        $search = preg_replace('/(?<![ao])[eèéêëēĕėęě&]/iu', '[eèéêëēĕėęě&]', $search);
+        $search = preg_replace('/[gĝğġģ]/iu', '[gĝğġģ]', $search);
+        $search = preg_replace('/[hĥħ]/iu', '[hĥħ]', $search);
+        $search = preg_replace('/[iìíîïĩīĭįı]/iu', '[iìíîïĩīĭįı]', $search);
+        $search = preg_replace('/[jĵ]/iu', '[jĵ]', $search);
+        $search = preg_replace('/[kķĸ]/iu', '[kķĸ]', $search);
+        $search = preg_replace('/[lĺļľŀł]/iu', '[lĺļľŀł]', $search);
+        $search = preg_replace('/[nñńņňŉŋ]/iu', '[nñńņňŉŋ]', $search);
+        $search = preg_replace('/[oòóôõöōŏőǿơ](?!e)/iu', '[oòóôõöōŏőǿơ]', $search);
+        $search = preg_replace('/[rŕŗř]/iu', '[rŕŗř]', $search);
+        $search = preg_replace('/[sśŝşš]/iu', '[sśŝşš]', $search);
+        $search = preg_replace('/[tţťŧ]/iu', '[tţťŧ]', $search);
+        $search = preg_replace('/[uùúûüũūŭůűųǔǖǘǚǜ]/iu','[uùúûüũūŭůűųǔǖǘǚǜ]', $search);
+        $search = preg_replace('/[wŵ]/iu', '[wŵ]', $search);
+        $search = preg_replace('/[yýÿŷ]/iu', '[yýÿŷ]', $search);
+        $search = preg_replace('/[zźżž]/iu', '[zźżž]', $search);
+
+        $string = preg_replace('/\b' . $search . '/iu', '<span class="keysearch">$0</span>', $string);
+    }
+
+    return $string;
+
 }
-add_filter('the_excerpt', 'wps_highlight_results');
-add_filter('the_title', 'wps_highlight_results');
+
+
+
+function results_highlight_search($text)
+{
+    if(is_search()){
+        $text = highlight_terms(get_query_var('s'), $text);
+    }
+
+    return $text;
+
+}
+add_filter('the_excerpt', 'results_highlight_search');
+add_filter('the_title', 'results_highlight_search');
 
 
 function title()
