@@ -1,4 +1,4 @@
 @extends('layouts.base')
 @section('content')
-    @include('contents.autor')
+    @include('contents.author')
 @endsection

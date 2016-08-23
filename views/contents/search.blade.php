@@ -8,14 +8,16 @@
             </h1>
         </header>
 
-        <ul>
+        @include('partials.content')
+
+        {{-- <ul>
         @while (have_posts()) {{ the_post() }}
 
             <li>
                 <h1>
                     {{ the_title() }}
                 </h1>
-                
+
                 @if (get_post_type() === 'post')
                     <time class="updated" datetime="{{ get_post_time('c', true) }}">
                         {{ get_the_date() }}
@@ -31,7 +33,7 @@
         @endwhile
         </ul>
 
-        {!! setrobot_pagination([]) !!}
+        {!! setrobot_pagination([]) !!} --}}
 
     @else
         <h1>Nada encontrado!</h1>
