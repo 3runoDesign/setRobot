@@ -2,7 +2,7 @@
 
 function wp_title_app($title)
 {
-    global $paged, $page;
+    global $page;
     if (is_feed()) {
         return $title;
     }
