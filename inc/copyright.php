@@ -40,7 +40,7 @@ function img_caption_shortcode_filter($val, $attr, $content = null)
 
     extract(shortcode_atts(array(
         'id'      => '',
-        'align'   => 'aligncenter',
+        'align'   => '',
         'width'   => '',
         'caption' => ''
     ), $attr));
@@ -49,10 +49,7 @@ function img_caption_shortcode_filter($val, $attr, $content = null)
         return $val;
     }
 
-    if ($id) {
-        $id_attachment = esc_attr($id);
-        $id_img = substr($id, strpos($id, '_') + 1);
-    }
+    $id_img = !$id ?: substr($id, strpos($id, '_') + 1);
 
     $figcaption_author = '';
 
