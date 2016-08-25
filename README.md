@@ -48,6 +48,8 @@ Para facilitar o fluxo e agilizar o desenvolvimento de temas.
  - https://github.com/zach-adams/cutlass-wp-theme
 
 ##Como contribuir
+Veja o que ta rolando nas [issues](https://github.com/3runoDesign/setRobot/issues). Para melhorar gerenciamento das issues você pode usar o [waffle](https://waffle.io/3runoDesign/setRobot/join).
+
 Se você usa [Atom.io](https://atom.io/):
 - [PHP CS Fixer (PSR-2)](https://atom.io/packages/php-cs-fixer)
 - [PHPmd](https://atom.io/packages/linter-phpmd)
