@@ -117,8 +117,8 @@ gulp.task('providers', function() {
     gulp.src( mainBowerFiles(), { base: bowerrc.directory } )
         .pipe( filter(['**/*.css'], {restore: true}) )
         .pipe( flatten() )
-        .pipe( cssnano() )
         .pipe( concat('vendor.css') )
+        .pipe( cssnano() )
         .pipe( gulp.dest( paths.dist + '/css/' ) );
 
     gulp.src([ bowerrc.directory + '/**/*.{eot,svg,ttf,woff,woff2}' ])
