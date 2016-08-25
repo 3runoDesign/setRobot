@@ -9,22 +9,10 @@
             "email": "dev@agenciaccm.com.br"
         }
     ],
-    "repositories": [
-      {
-        "type": "package",
-        "package": {
-          "version": "dev-master",
-          "name": "gambitph/WP-OTF-Regenerate-Thumbnails",
-          "source": {
-            "url": "https://github.com/gambitph/WP-OTF-Regenerate-Thumbnails.git",
-            "type": "git",
-            "reference": "master"
-          }
-        }
-      }
-    ],
     "keywords": [
-        "wordpress"
+        "wordpress",
+        "theme",
+        "wp"
     ],
     "support": {
         "issues": "https://github.com/CC-Mkt/setRobot/issues"
@@ -32,13 +20,6 @@
     "require": {
         "php": ">=5.4.0",
         "tormjens/wp-blade": "^2.0",
-        "jjgrainger/wp-custom-post-type-class": "^1.4",
-        "gambitph/WP-OTF-Regenerate-Thumbnails": "dev-master"
-    },
-
-    "autoload": {
-        "files": [
-            "vendor/gambitph/WP-OTF-Regenerate-Thumbnails/otf_regen_thumbs.php"
-        ]
+        "jjgrainger/wp-custom-post-type-class": "^1.4"
     }
 }
