@@ -2,12 +2,12 @@
 $setrobot_includes = [
     'core/bootstrap.php',
 
-    'core/classes/breadcrumb-navigation.php',
     'core/classes/post-status.php',
     'core/classes/revisioning-json.php',
     'core/classes/taxonomy-single-term.php',
     'core/classes/autocomplete.php',
 
+    'core/helpers/breadcrumb-navigation.php',
     'core/helpers/copyright-data.php',
     'core/helpers/image.php',
     'core/helpers/pagination.php',
