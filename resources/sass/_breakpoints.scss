@@ -1,4 +1,4 @@
-$xs-screen    : new-breakpoint( min-width $xs $xs-cols );
-$small-screen : new-breakpoint( min-width $sm $sm-cols );
-$medium-screen: new-breakpoint( min-width $md $md-cols );
-$large-screen : new-breakpoint( min-width $lg $lg-cols );
+$xs-screen: new-breakpoint(min-width $xs $xs-cols);
+$small-screen: new-breakpoint(min-width $sm $sm-cols);
+$medium-screen: new-breakpoint(min-width $md $md-cols);
+$large-screen: new-breakpoint(min-width $lg $lg-cols);

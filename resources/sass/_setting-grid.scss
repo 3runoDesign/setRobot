@@ -1,11 +1,11 @@
 $max-width: 1220px;
 
-$slugs : ('xs', 'sm', 'md', 'lg');
+$slugs: ('xs', 'sm', 'md', 'lg');
 
 $xs: 321px;
 $sm: 768px;
 $md: $max-width;
-$lg: $max-width+($max-width*30/100); // 50% maior que a tela nomal
+$lg: $max-width + ($max-width * 30 / 100); // 50% maior que a tela nomal
 
 $xs-cols: 4;
 $sm-cols: 8;
