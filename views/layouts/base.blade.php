@@ -18,6 +18,7 @@
         <!--[if lt IE 8]>
         <p class="browserupgrade">Você está usando um navegador <strong>ultrapassada</strong>. <a href="http://browsehappy.com/">Atualize</a> o seu navegador para melhorar a sua experiência.</p>
         <![endif]-->
+        <div id="fb-root"></div>
 
         <main>
             @yield('content')
@@ -33,6 +34,14 @@
             TODO: Criar um metodo para criar esse script.
             Google Analytics: change UA-XXXXX-X to be your site's ID.
         --}}
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7&appId=1150435645030422";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
