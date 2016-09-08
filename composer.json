@@ -1,5 +1,5 @@
 {
-    "name": "cc-mkt/setrobot",
+    "name": "3runoDesign/setRobot",
     "type": "wordpress-theme",
     "license": "MIT",
     "description": "Tema base para o desenvolvimento com o WordPress.",
@@ -15,7 +15,7 @@
         "wp"
     ],
     "support": {
-        "issues": "https://github.com/CC-Mkt/setRobot/issues"
+        "issues": "https://github.com/3runoDesign/setRobot/issues"
     },
     "require": {
         "php": ">=5.4.0",

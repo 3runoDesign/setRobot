@@ -4,68 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca28b3e6fef271d94d59dae3fd71dcf9",
-    "content-hash": "56af7ca1128e3a1ffb5ce973770fb441",
+    "hash": "cb26bbb7121680735f22f8c68b2de6d5",
+    "content-hash": "c3438335d38a9d9c97198f01bf2e3d89",
     "packages": [
-        {
-            "name": "gambitph/WP-OTF-Regenerate-Thumbnails",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gambitph/WP-OTF-Regenerate-Thumbnails.git",
-                "reference": "master"
-            },
-            "type": "library",
-            "time": "2015-07-20 06:13:47"
-        },
-        {
-            "name": "jansenfelipe/utils",
-            "version": "v2.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jansenfelipe/utils.git",
-                "reference": "a1da80ab04e8d2889f73f26a69ebf567cebe407e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jansenfelipe/utils/zipball/a1da80ab04e8d2889f73f26a69ebf567cebe407e",
-                "reference": "a1da80ab04e8d2889f73f26a69ebf567cebe407e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "JansenFelipe\\Utils\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jansen Felipe",
-                    "email": "jansen.felipe@gmail.com"
-                }
-            ],
-            "description": "Uma simples classe utilitária com métodos que podem salvar sua vida (ou não)",
-            "keywords": [
-                "php",
-                "util"
-            ],
-            "time": "2016-05-04 18:01:12"
-        },
         {
             "name": "jjgrainger/wp-custom-post-type-class",
             "version": "v1.4",
@@ -185,9 +126,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "gambitph/wp-otf-regenerate-thumbnails": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
