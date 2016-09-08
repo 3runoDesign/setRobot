@@ -6,6 +6,7 @@ $setrobot_includes = [
     'core/classes/revisioning-json.php',
     'core/classes/taxonomy-single-term.php',
     'core/classes/autocomplete.php',
+    'core/classes/html-compression.php',
 
     'core/helpers/breadcrumb-navigation.php',
     'core/helpers/copyright-data.php',
