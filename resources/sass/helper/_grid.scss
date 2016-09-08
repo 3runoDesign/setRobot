@@ -96,13 +96,3 @@ $_class-name-grid : col !default;
     .container { @extend %container; }
   }
 }
-
-
-[class*="col-"] {
-  background-color: purple;
-  text-align: center;
-  box-shadow: 0px 0px 1px #000 inset;
-  color: #fff; }
-
-[class*="col-"] [class*="col-"] {
-  background-color: #570057; }
