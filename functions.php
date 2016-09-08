@@ -15,7 +15,6 @@ $setrobot_includes = [
     'core/helpers/read.php',
 
     'core/login.php',
-    'core/title-app.php',
     'core/escape-html.php',
 
     'inc/admin.php',
