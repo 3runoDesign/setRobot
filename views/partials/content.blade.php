@@ -4,13 +4,13 @@
     <ul>
         @while (have_posts()) {{ the_post() }}
             <li>
-                {{-- <a href="{{ get_permalink() }}" alt="{{ get_the_title() }}"> --}}
+                <a href="{{ get_permalink() }}" alt="{{ get_the_title() }}">
                     <h2>
                         {{ the_title() }}
                     </h2>
 
                     {{ the_excerpt() }}
-                {{-- </a> --}}
+                </a>
                 @include('partials.metas')
 
             </li>
