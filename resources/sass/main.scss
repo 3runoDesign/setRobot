@@ -1,6 +1,6 @@
-$visual-grid        : false !default;
-$visual-grid-color  : #eee !default;
-$visual-grid-index  : front !default;
+$visual-grid: false !default;
+$visual-grid-color: #eee !default;
+$visual-grid-index: front !default;
 $visual-grid-opacity: 0.4 !default;
 
 @import 'bourbon',
@@ -11,17 +11,17 @@ $visual-grid-opacity: 0.4 !default;
         // 'helpers-scss',
         'family';
 
-@import "variables";
+@import 'variables';
 
-@import "setrobot-front/helper/align";
-@import "setrobot-front/helper/grid";
-@import "setrobot-front/helper/common";
-@import "setrobot-front/helper/select";
+@import 'setrobot-front/helper/align';
+@import 'setrobot-front/helper/grid';
+@import 'setrobot-front/helper/common';
+@import 'setrobot-front/helper/select';
 
-@import "core/reset";
+@import 'core/reset';
 
-@import "modules/syntax-highlighter";
-@import "modules/pagination";
-@import "modules/grid";
-@import "modules/search";
-@import "modules/autocomplete";
+@import 'modules/syntax-highlighter';
+@import 'modules/pagination';
+@import 'modules/grid';
+@import 'modules/search';
+@import 'modules/autocomplete';

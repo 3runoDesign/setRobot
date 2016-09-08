@@ -1,0 +1,1 @@
+"use strict";!function(n){var o={common:{init:function(){console.log("oi")}},home:{init:function(){}}},i={fire:function(n,i,t){var e=o;i=void 0===i?"init":i,""!==n&&e[n]&&"function"==typeof e[n][i]&&e[n][i](t)},loadEvents:function(){i.fire("common"),n.each(document.body.className.replace(/-/g,"_").split(/\s+/),function(n,o){i.fire(o)})}};n(document).ready(i.loadEvents)}(jQuery);
