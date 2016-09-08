@@ -1,3 +1,19 @@
 {
-  "extends": "airbnb"
+    "rules": {
+        "indent": [ 2, 2 ],
+        "id-length": [2, {
+            "min": 4, "max": 30,
+            "properties": "never",
+            "exceptions": [
+                "$",
+                "i"
+            ]
+        }],
+        "no-console": 0
+    },
+    "env": {
+        "node": true,
+        "jquery" : true
+    },
+    "extends": "warner"
 }
