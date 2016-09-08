@@ -88,14 +88,3 @@ class WP_HTML_Compression {
         return $str;
     }
 }
-function wp_html_compression_finish($html) {
-    if (WP_ENV != 'development') {
-        return new WP_HTML_Compression($html);
-    }
-
-    return $html;
-}
-function wp_html_compression_start() {
-    ob_start('wp_html_compression_finish');
-}
-add_action('after_setup_theme', 'wp_html_compression_start');
