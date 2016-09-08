@@ -7,8 +7,8 @@ function add_assets_css()
     wp_enqueue_style('setrobot/vendor_css',  $manifest->getFile('css/vendor.css'), false, null);
     wp_enqueue_style('setrobot/css',         $manifest->getFile('css/main.css'), false, null);
 
-    wp_enqueue_script('setrobot/vendor_js',  $manifest->getFile('js/vendor.js'), array('jquery'), null, true);
-    wp_enqueue_script('setrobot/js',         $manifest->getFile('js/main.js'), array('setrobot/vendor_js'), null, true);
+    wp_enqueue_script('setrobot/vendor_js',  $manifest->getFile('scripts/vendor.js'), array('jquery'), null, true);
+    wp_enqueue_script('setrobot/js',         $manifest->getFile('scripts/main.js'), array('setrobot/vendor_js'), null, true);
 }
 add_action('wp_enqueue_scripts', 'add_assets_css');
 
