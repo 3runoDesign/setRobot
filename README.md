@@ -33,6 +33,13 @@ Para facilitar o fluxo e agilizar o desenvolvimento de temas.
 4. Ja dentro da pasta `nome_do_tema`, execute o comando: `$ npm run build`
 5. Por fim, execute o comando para os pacotes do composer: `$ composer install`
 
+**Via composer**
+```shell
+cd PATH/wp-content/themes/
+composer require 3runodesign/setrobot nome_do_tema
+npm run build
+```
+
 ###Tasks do gulp
 
 | Comandos    | Descrição |
