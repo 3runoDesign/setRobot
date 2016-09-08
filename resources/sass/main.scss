@@ -8,19 +8,21 @@ $visual-grid-opacity: 0.4 !default;
         'base/base',
         'neat',
         'breakpoints',
-        // 'helpers-scss',
         'family';
 
 @import 'variables';
 
-@import 'setrobot-front/helper/align';
-@import 'setrobot-front/helper/grid';
-@import 'setrobot-front/helper/common';
-@import 'setrobot-front/helper/select';
+@import 'helper/align';
+@import 'helper/common';
+@import 'helper/grid';
+@import 'helper/image';
+@import 'helper/select';
 
 @import 'core/reset';
+@import 'core/wp';
 
 @import 'modules/syntax-highlighter';
+@import 'modules/entry-content';
 @import 'modules/pagination';
 @import 'modules/grid';
 @import 'modules/search';

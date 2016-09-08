@@ -4,16 +4,13 @@ html {
 }
 
 body {
+  color: #555;
   margin: 0;
   font: 16px/1 sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3,
-h4,
 p,
 blockquote,
 figure,
@@ -23,16 +20,8 @@ ul {
   padding: 0;
 }
 
-main,
-li {
+main {
   display: block;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-size: inherit;
 }
 
 strong {
