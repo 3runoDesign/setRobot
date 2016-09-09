@@ -36,7 +36,7 @@ Para facilitar o fluxo e agilizar o desenvolvimento de temas.
 **Via composer**
 ```shell
 cd PATH/wp-content/themes/
-composer require 3runodesign/setrobot nome_do_tema
+composer create-project 3runodesign/setrobot nome_do_tema
 npm run build
 ```
 
