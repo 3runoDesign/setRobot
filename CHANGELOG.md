@@ -1,13 +1,15 @@
 #Changelog
 
-## 0.0.1 (Aug 19, 2016)
+## 1.0.0 (Aug 19, 2016)
 
 ### features
 - Created a base template for WordPress
+- News tasks
 
 ### improvements
 
 ### bug fixes
+- Removed internal resize
 
 ***
 
