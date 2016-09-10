@@ -9,11 +9,15 @@
                 "i"
             ]
         }],
+        new-cap: ["error", { "capIsNewExceptions": ["Module"] }],
         "no-console": 0
     },
     "env": {
         "node": true,
         "jquery" : true
+    },
+    "globals": {
+        "Module": true
     },
     "extends": "warner"
 }
