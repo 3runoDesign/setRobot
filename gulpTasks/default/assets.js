@@ -21,13 +21,13 @@ gulp.task('images', function() {
     .pipe(gulp.dest(path.to.images.destination));
 });
 
-gulp.task('sprite', function () {
+gulp.task('sprite', function() {
   var spriteData = gulp.src(path.to.images.sprite)
-      .pipe(spritesmith({
-        imgName: 'sprite.png',
-        cssName: 'sprite.css',
-        imgPath: '../images/sprite.png'
-      }));
+    .pipe(spritesmith({
+      imgName: 'sprite.png',
+      cssName: 'sprite.css',
+      imgPath: '../images/sprite.png'
+    }));
 
   var imgStream = spriteData.img
     .pipe(buffer())
@@ -43,7 +43,7 @@ gulp.task('sprite', function () {
 
 
 gulp.task('fonts', function() {
-  return gulp.src([ path.to.fonts.source ])
+  return gulp.src([path.to.fonts.source])
     .pipe(flatten())
     .pipe(gulp.dest(path.to.fonts.destination));
 });
