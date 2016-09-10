@@ -15,13 +15,13 @@
     "tests"
   ],
   "devDependencies": {
-    "helpers-scss": "git://github.com/3runoDesign/Helpers-scss.git",
     "bourbon": "^4.2.7",
     "neat": "^1.7.4",
     "family.scss": "^1.0.8"
   },
   "dependencies": {
     "slick-carousel": "slick.js#^1.6.0",
-    "jquery-meiomask": "^1.1.14"
+    "jquery-meiomask": "^1.1.14",
+    "module": "git@github.com:fnando/module.git"
   }
 }
