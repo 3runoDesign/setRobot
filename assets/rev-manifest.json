@@ -1,13 +1,6 @@
 {
-  "css/main.css": "css/main.56daebfc.css",
-  "css/vendor.css": "css/vendor.bc85845f.css",
-  "fonts/OpenSans-Light.ttf": "fonts/OpenSans-Light.ttf",
-  "fonts/OpenSans-Regular.ttf": "fonts/OpenSans-Regular.ttf",
-  "fonts/OpenSans-Semibold.ttf": "fonts/OpenSans-Semibold.ttf",
-  "fonts/slick.eot": "fonts/slick.eot",
-  "fonts/slick.svg": "fonts/slick.svg",
-  "fonts/slick.ttf": "fonts/slick.ttf",
-  "fonts/twitter-icon.svg": "fonts/twitter-icon.svg",
-  "scripts/main.js": "scripts/main.c7c44524.js",
-  "scripts/vendor.js": "scripts/vendor.98cb0de1.js"
+  "css/main.css": "css/main-56daebfcbf.css",
+  "css/vendor.css": "css/vendor-bc85845fe0.css",
+  "scripts/main.js": "scripts/main-c7c4452414.js",
+  "scripts/vendor.js": "scripts/vendor-98cb0de1a6.js"
 }
