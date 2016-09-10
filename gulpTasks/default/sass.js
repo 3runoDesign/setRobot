@@ -12,12 +12,6 @@ var error     = require('../error-handler.js');
 // == Task SASS
 // ============
 
-gulp.task('scss-lint', function() {
-    return gulp.src(path.to.sass.source)
-        .pipe(scsslint({ config: './.scss-lint.yml' }))
-        .on('error', error.handler);
-});
-
 gulp.task('sass', function () {
     return gulp.src(path.to.sass.main)
         .pipe(sass({
