@@ -9,7 +9,6 @@
                 "i"
             ]
         }],
-        new-cap: ["error", { "capIsNewExceptions": ["Module"] }],
         "no-console": 0
     },
     "env": {
