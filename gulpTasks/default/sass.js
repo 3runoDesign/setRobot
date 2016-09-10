@@ -13,7 +13,7 @@ var error     = require('../error-handler.js');
 // ============
 
 gulp.task('sass', function () {
-    return gulp.src(path.to.sass.main)
+    return gulp.src([path.to.sass.main, './resources/sass/*-app.scss'])
         .pipe(sass({
             includePaths : path.to.sass.includes,
             outputStyle : 'expanded',
