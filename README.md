@@ -1,4 +1,6 @@
 ![SetRobot Logo](http://agenciaccm.s3-sa-east-1.amazonaws.com/uploads/2016/07/16165134/setrobot_logo.svg "SetRobot")
+[![Latest Stable Version](https://poser.pugx.org/3runodesign/setrobot/v/stable)](https://packagist.org/packages/3runodesign/setrobot)
+[![Total Downloads](https://poser.pugx.org/3runodesign/setrobot/downloads)](https://packagist.org/packages/3runodesign/setrobot)
 [![Build Status](https://travis-ci.org/3runoDesign/setRobot.svg?branch=master)](https://travis-ci.org/3runoDesign/setRobot)
 [![Code Climate](https://codeclimate.com/github/3runoDesign/setRobot/badges/gpa.svg)](https://codeclimate.com/github/3runoDesign/setRobot)
 [![Issue Count](https://codeclimate.com/github/3runoDesign/setRobot/badges/issue_count.svg)](https://codeclimate.com/github/3runoDesign/setRobot)
