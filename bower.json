@@ -22,6 +22,6 @@
   "dependencies": {
     "slick-carousel": "slick.js#^1.6.0",
     "jquery-meiomask": "^1.1.14",
-    "module": "git@github.com:fnando/module.git"
+    "module": "fnando/module"
   }
 }
