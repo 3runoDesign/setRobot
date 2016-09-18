@@ -39,6 +39,7 @@ Para facilitar o fluxo e agilizar o desenvolvimento de temas.
 ```shell
 cd PATH/wp-content/themes/
 composer create-project 3runodesign/setrobot nome_do_tema
+cd nome_do_tema
 npm run build
 ```
 
