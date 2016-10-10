@@ -5,7 +5,6 @@
     // All pages
     common: {
       init: function() {
-        console.log('oi');
       }
     },
     // Home page
