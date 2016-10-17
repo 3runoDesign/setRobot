@@ -45,6 +45,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-open": "^2.0.0",
     "gulp-rev": "^7.1.2",
+    "gulp-rigger": "^0.5.8",
     "gulp-sass": "^2.3.2",
     "gulp-scss-lint": "^0.4.0",
     "gulp-sequence": "^0.4.5",
@@ -59,8 +60,5 @@
     "require-dir": "^0.3.0",
     "vinyl-buffer": "^1.0.0",
     "yargs": "^4.8.1"
-  },
-  "dependencies": {
-    "gulp-rigger": "^0.5.8"
   }
 }
