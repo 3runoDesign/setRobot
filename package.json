@@ -1,14 +1,14 @@
 {
   "name": "setrobot",
-  "version": "1.0.0",
-  "author": "Team CCM <dev@agenciaccm.com.br>",
-  "homepage": "https://github.com/CC-Mkt/setRobot",
+  "version": "2.0.0",
+  "author": "3runo Desing",
+  "homepage": "https://github.com/3runoDesign/setRobot",
   "repository": {
     "type": "git",
-    "url": "git://github.com/CC-Mkt/setRobot.git"
+    "url": "git://github.com/3runoDesign/setRobot.git"
   },
   "bugs": {
-    "url": "https://github.com/CC-Mkt/setRobot/issues"
+    "url": "https://github.com/3runoDesign/setRobot/issues"
   },
   "licenses": [
     {
@@ -24,42 +24,36 @@
     "npm": ">=2.1.5"
   },
   "devDependencies": {
-    "bower": "^1.8.0",
+    "browser-sync": "^2.18.8",
     "del": "^2.2.2",
-    "eslint": "^3.12.2",
-    "eslint-config-warner": "^1.0.0",
-    "eslint-config-xo": "^0.17.0",
-    "eslint-plugin-jsx-a11y": "^3.0.2",
-    "graceful-fs": "^4.1.11",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-cached": "^1.1.1",
-    "gulp-clean-css": "^2.3.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-connect": "^5.0.0",
-    "gulp-csscomb": "^3.0.8",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.7",
     "gulp-cssnano": "^2.1.2",
-    "gulp-eslint": "^3.0.1",
     "gulp-filter": "^4.0.0",
     "gulp-flatten": "^0.3.1",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-livereload": "^3.8.1",
-    "gulp-open": "^2.0.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-pug": "^3.0.4",
     "gulp-rev": "^7.1.2",
     "gulp-rigger": "^0.5.8",
-    "gulp-sass": "^3.0.0",
+    "gulp-sass": "^2.3.2",
     "gulp-scss-lint": "^0.4.0",
+    "gulp-semistandard": "^1.0.0",
     "gulp-sequence": "^0.4.6",
-    "gulp-tap": "^0.1.3",
     "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.8",
+    "gulp-util": "^3.0.7",
     "gulp.spritesmith": "^6.2.1",
     "imagemin-pngcrush": "^5.0.0",
     "main-bower-files": "^2.13.1",
-    "merge-stream": "^1.0.1",
-    "path": "^0.12.7",
-    "require-dir": "^0.3.1",
-    "vinyl-buffer": "^1.0.0",
-    "yargs": "^6.6.0"
+    "merge-stream": "^1.0.0",
+    "require-dir": "^0.3.0",
+    "vinyl-buffer": "^1.0.0"
+  },
+  "semistandard": {
+    "globals": [
+      "jQuery"
+    ]
   }
 }

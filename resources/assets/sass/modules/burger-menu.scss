@@ -1,0 +1,68 @@
+// Burger menu button
+$burger--thickness: 4px;
+$width: 28px;
+
+.burger {
+  @include transition(border-bottom 1s ease-in-out);
+  background: none;
+  border-bottom: $burger--thickness solid $action-color;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  outline: 0;
+  padding: 0;
+  width: $width;
+
+  // Fix for extra space in Firefox
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:before {
+    @include transition(transform 0.5s ease-in-out);
+    border-bottom: $burger--thickness solid $action-color;
+    content: "";
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  &:after {
+    @include transition(transform 0.5s ease-in-out);
+    border-bottom: $burger--thickness solid $action-color;
+    content: "";
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .burger {
+  @include transition(border-bottom 0.8s ease-in-out);
+  border-bottom: $burger--thickness solid transparent;
+
+  &:before {
+    @include transform(rotate(-405deg) translateY(1px) translateX(-3px));
+  }
+
+  &:after {
+    @include transform(rotate(405deg) translateY(-4px) translateX(-5px));
+  }
+}
+
+@media (max-width: 767px) {
+  .burger {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .burger {
+    display: inline-block;
+  }
+}

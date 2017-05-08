@@ -1,30 +1,40 @@
 'use strict';
 
-var path           = require('path');
+var path = require('path');
 var pathToThisFile = __dirname;
-var root           = path.dirname(pathToThisFile);
-
-var finder         = require('graceful-fs');
-var bowerrc        = JSON.parse(finder.readFileSync(root + '/.bowerrc'));
-
-var destination    = root + '/assets';
-var resources      = root + '/resources';
+var root = path.dirname(pathToThisFile);
+var files = require('graceful-fs');
+var bowerrc = JSON.parse(files.readFileSync(root + '/.bowerrc'));
+var destination = root + '/dist';
+var resources = root + '/resources/assets';
 var bowerDirectory = bowerrc.directory;
 
 module.exports = {
   to: {
     destination: destination,
     bowerDirectory: bowerDirectory,
+    manifest: 'assets.json',
+    proxyURL: '3runo.dev',
 
     sass: {
-      source: resources + '/sass/**/{*, *-app}.scss',
+      source: resources + '/sass/**/*.scss',
       main: resources + '/sass/main.scss',
       destination: destination + '/css',
       includes: [
         bowerDirectory + '/bourbon/app/assets/stylesheets/',
-        bowerDirectory + '/neat/app/assets/stylesheets/',
+        bowerDirectory + '/bootstrap-sass-grid/sass/',
         bowerDirectory + '/family.scss/source/src/'
       ]
+    },
+
+    pug: {
+      source: resources + '/views/**/*.pug',
+      pages: resources + '/views/*.pug',
+      destination: destination
+    },
+
+    php: {
+      source: './**/*.php'
     },
 
     scripts: {

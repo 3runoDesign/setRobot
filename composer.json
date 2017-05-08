@@ -1,25 +1,24 @@
 {
-    "name": "3runodesign/setrobot",
-    "type": "wordpress-theme",
-    "license": "MIT",
-    "description": "Tema base para o desenvolvimento com o WordPress.",
+    "name": "bruno/coelhotecnologia",
     "authors": [
         {
-            "name": "Team CCM",
-            "email": "dev@agenciaccm.com.br"
+            "name": "Bruno Fernando",
+            "email": "bruno2fernando@gmail.com"
         }
     ],
-    "keywords": [
-        "wordpress",
-        "theme",
-        "wp"
-    ],
-    "support": {
-        "issues": "https://github.com/3runoDesign/setRobot/issues"
+    "autoload": {
+      "psr-4": {
+        "SetRobot\\": "app/lib/SetRobot/"
+      }
     },
     "require": {
-        "php": ">=5.4.0",
-        "tormjens/wp-blade": "^2.0",
-        "jjgrainger/wp-custom-post-type-class": "^1.4"
+        "php": ">=5.6.4",
+        "composer/installers": "~1.0",
+        "illuminate/view": "~5.4.0",
+        "illuminate/config": "~5.4.0",
+        "jjgrainger/posttypes": "^1.1"
+    },
+    "require-dev": {
+      "squizlabs/php_codesniffer": "^2.8.0"
     }
 }
