@@ -11,8 +11,11 @@ use SetRobot\Template\Blade;
 use SetRobot\Template\BladeProvider;
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('setrobot/main.css', asset_path('css/main.css'), false, null);
-    wp_enqueue_script('setrobot/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+    wp_enqueue_style('setrobot/vendor.css', asset_path('assets/css/vendor.css'), false, null);
+    wp_enqueue_style('setrobot/main.css', asset_path('assets/css/main.css'), false, null);
+
+    wp_enqueue_script('setrobot/vendor.js', asset_path('assets/js/vendor.js'), ['jquery'], null, true);
+    wp_enqueue_script('setrobot/main.js', asset_path('assets/js/main.js'), ['setrobot/vendor.js'], null, true);
 }, 100);
 
 

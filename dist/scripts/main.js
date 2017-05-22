@@ -1,1 +1,0 @@
-"use strict";!function(n){var i={common:{init:function(){}},home:{init:function(){}}},o={fire:function(n,o,t){var e=i;o=void 0===o?"init":o,""!==n&&e[n]&&"function"==typeof e[n][o]&&e[n][o](t)},loadEvents:function(){o.fire("common"),n.each(document.body.className.replace(/-/g,"_").split(/\s+/),function(n,i){o.fire(i)})}};n(document).ready(o.loadEvents)}(jQuery);
