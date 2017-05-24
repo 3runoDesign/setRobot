@@ -14,7 +14,7 @@ class PostCreateProject
       $io->write('<info>Configure build settings. Press enter key for default.</info>');
 
       $browsersync_settings_default = [
-        'proxy'        => 'http://setrobot.dev'
+        'proxy'        => 'setrobot.dev'
       ];
 
       $browsersync_settings = [
