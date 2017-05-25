@@ -34,6 +34,7 @@ Make sure all dependencies have been installed before moving on:
 * Yarn
 
 # Theme structure
+The setRobot folder structure is optimized to give you the best experience when you are developing or migrating themes to wordpress.
 ```
 |-- repositories
     |-- .bowerrc
