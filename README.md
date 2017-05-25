@@ -43,7 +43,6 @@ The setRobot folder structure is optimized to give you the best experience when 
     |           |-- Assets
     |           |-- Template
     |-- dist
-    |   |-- assets.json
     |   |-- assets
     |       |-- css
     |       |-- fonts
