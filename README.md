@@ -54,10 +54,6 @@ The setRobot folder structure is optimized to give you the best experience when 
     |       |-- rev
     |-- post_types
     |-- resources
-    |   |-- functions.php
-    |   |-- index.php
-    |   |-- screenshot.png
-    |   |-- style.css
     |   |-- assets
     |   |   |-- images
     |   |   |-- js
