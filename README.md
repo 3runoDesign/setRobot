@@ -1,5 +1,6 @@
 # setRobot WP
 setRobot is a WordPress starter theme with a modern development workflow.
+> Note: This is currently an unstable version of setRobot, use it at your own risk, we are working hard on a fix to some common problems that are causing a bad developer experience.
 
 ## Features:
 * **Sass/CSS**:
