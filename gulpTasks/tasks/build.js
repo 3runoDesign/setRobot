@@ -10,6 +10,7 @@ gulp.task('build', function (cb) {
     ['sprite', 'images'],
     'styles:production',
     'scripts:production',
+    'fonts',
     'providers',
     'templates',
     'rev', cb);

@@ -8,6 +8,7 @@ gulp.task('default', function (cb) {
   ['sprite', 'images'],
   'styles',
   'scripts',
+  'fonts',
   'providers'
   , cb);
 });
