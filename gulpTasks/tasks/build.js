@@ -6,7 +6,7 @@ var argv = require('yargs').argv;
 
 gulp.task('build', function (cb) {
   if (argv.p === true || argv.production === true) {
-    gulpSequence('clean',
+    return gulpSequence('clean',
     ['sprite', 'images'],
     'styles:production',
     'scripts:production',
@@ -15,6 +15,6 @@ gulp.task('build', function (cb) {
     'templates',
     'rev', cb);
   } else {
-    gulpSequence('default', cb);
+    return gulpSequence('default', cb);
   }
 });

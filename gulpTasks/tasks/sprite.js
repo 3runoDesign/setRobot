@@ -2,7 +2,6 @@
 
 var gulp = require('gulp');
 var buffer = require('vinyl-buffer');
-var csscomb = require('gulp-csscomb');
 var imagemin = require('gulp-imagemin');
 var merge = require('merge-stream');
 var spritesmith = require('gulp.spritesmith');
