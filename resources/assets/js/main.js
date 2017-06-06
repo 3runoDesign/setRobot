@@ -1,3 +1,6 @@
+//= ./partials/a.js
+//= ./partials/c.js
+
 'use strict';
 
 (function ($) {
