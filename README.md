@@ -33,7 +33,7 @@ Coming Soon
   * CSS minifying with [cssnano](http://cssnano.co/)
   * CSS code beautiful [csscomb](http://csscomb.com/)
 * **Javascript**:
-  * Browserify
+  * [Rigger](https://github.com/kuzyk/gulp-rigger)
 * **Templating**:
   * [Laravel's Blade](https://laravel.com/docs/5.3/blade) as a templating engine
 * **Development**:
