@@ -2,6 +2,30 @@
 setRobot is a WordPress starter theme with a modern development workflow.
 > Note: This is currently an unstable version of setRobot, use it at your own risk, we are working hard on a fix for some common problems that are causing a bad developer experience.
 
+## Requirements
+Make sure all dependencies have been installed before moving on:
+
+* WordPress >= 4.7
+* PHP >= 5.6.4
+* Composer
+* Node.js >= 6.9.x
+* Yarn
+
+## Tasks
+* `gulp build` #Compilação normal para produção
+* `gulp build --p` #Compilação minificada para produção
+* `gulp build --production` #Compilação minificada para produção
+* `gulp cw` #Tarefas para durante o desenvolvimento
+
+# Theme structure
+The setRobot folder structure is optimized to give you the best experience when you are developing or migrating themes to wordpress.
+```
+Coming Soon
+```
+
+# Theme start
+* [Wiki](https://github.com/3runoDesign/setRobot/wiki)
+
 ## Features:
 * **Sass/CSS**:
   * Blazing fast Node Sass(libsass) parser
@@ -24,62 +48,9 @@ setRobot is a WordPress starter theme with a modern development workflow.
   * Compiles sprites from all files in the `assets/sprite` directory
 * **Revisioning/cache busting**:
   Cache busting static assets for production with [gulp-rev](https://github.com/sindresorhus/gulp-rev)
-  
-## Requirements
-Make sure all dependencies have been installed before moving on:
-
-* WordPress >= 4.7
-* PHP >= 5.6.4
-* Composer
-* Node.js >= 6.9.x
-* Yarn
-
-# Theme structure
-The setRobot folder structure is optimized to give you the best experience when you are developing or migrating themes to wordpress.
-```
-|-- root
-    |-- app
-    |   |-- lib
-    |       |-- SetRobot
-    |           |-- Assets
-    |           |-- Template
-    |-- dist
-    |   |-- assets
-    |       |-- css
-    |       |-- fonts
-    |       |-- js
-    |-- gulpTasks
-    |   |-- config
-    |   |-- lib
-    |   |-- tasks
-    |       |-- rev
-    |-- post_types
-    |-- resources
-    |   |-- assets
-    |   |   |-- images
-    |   |   |-- js
-    |   |   |   |-- partials
-    |   |   |-- sass
-    |   |   |   |-- base
-    |   |   |   |-- core
-    |   |   |   |-- helper
-    |   |   |   |-- modules
-    |   |   |   |-- vendor
-    |   |   |-- sprite
-    |   |-- views
-    |       |-- layouts
-    |       |-- partials
-    |-- vendor
-```
-
-# Theme setup
-Coming Soon
-
-# Theme development
-Coming Soon
 
 # Contributing
-Coming Soon
+Thanks [@gabriellacerda](https://github.com/gabriellacerda)
 
 # Licensing
 Copyright (c) 2016 - 2017 Bruno Fernando. Licensed under the MIT license(MIT)
