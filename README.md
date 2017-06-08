@@ -10,6 +10,7 @@ Make sure all dependencies have been installed before moving on:
 * Composer
 * Node.js >= 6.9.x
 * Yarn
+* Gulp
 
 ## Tasks
 * `gulp build` #Compilação normal para produção
