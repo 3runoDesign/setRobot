@@ -18,12 +18,6 @@ Make sure all dependencies have been installed before moving on:
 * `gulp build --production` #Compilação minificada para produção
 * `gulp cw` #Tarefas para durante o desenvolvimento
 
-# Theme structure
-The setRobot folder structure is optimized to give you the best experience when you are developing or migrating themes to wordpress.
-```
-Coming Soon
-```
-
 # Getting started
 Wow, the best way to get started with setRobot is through the [Docummentation](https://github.com/3runoDesign/setRobot/wiki)
 
