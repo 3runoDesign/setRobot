@@ -24,8 +24,8 @@ The setRobot folder structure is optimized to give you the best experience when 
 Coming Soon
 ```
 
-# Theme start
-* [Wiki](https://github.com/3runoDesign/setRobot/wiki)
+# Getting started
+Wow, the best way to get started with setRobot is through the [Docummentation](https://github.com/3runoDesign/setRobot/wiki)
 
 ## Features:
 * **Sass/CSS**:
