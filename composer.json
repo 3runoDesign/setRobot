@@ -16,7 +16,8 @@
         "composer/installers": "~1.0",
         "illuminate/view": "~5.4.0",
         "illuminate/config": "~5.4.0",
-        "jjgrainger/posttypes": "^1.1"
+        "jjgrainger/posttypes": "^1.1",
+        "soberwp/controller": "9.0.0-beta.3"
     },
     "require-dev": {
       "squizlabs/php_codesniffer": "^2.8.0"

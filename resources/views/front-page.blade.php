@@ -5,7 +5,7 @@
         <section class="container">
             <div class="hero-text">
                 <h1>
-                    Tema base para Wordpress com fluxo de desenvolvimento e <br>front-end moderno.
+                    {!! App::setDescription() !!}
                 </h1>
             </div>
         </section>
