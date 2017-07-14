@@ -52,11 +52,11 @@ themes/your-theme-name/     # → Root of your setRobot based theme
 ├── dist/                   # → Built theme assets (never edit)
 ├── node_modules/           # → Node.js packages (never edit)
 ├─┬ gulpTasks/              # → Gulp Tasks config
-│ ├─┬ config/               # → Settings for compiled assets
-│ ├─┬ lib/                  # → Library of Tasks
+│ ├── config/               # → Settings for compiled assets
+│ ├── lib/                  # → Library of Tasks
 │ └── tasks/                # → Tasks for development
 ├── package.json            # → Node.js dependencies and scripts
-├─┬ post_types/             # → Theme CPTs
+├── post_types/             # → Theme CPTs
 ├─┬ resources/              # → Theme assets and templates
 │ ├─┬ assets/               # → Front-end assets
 │ │ ├── fonts/              # → Theme fonts
