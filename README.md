@@ -53,8 +53,8 @@ themes/your-theme-name/     # → Root of your setRobot based theme
 ├── node_modules/           # → Node.js packages (never edit)
 ├─┬ gulpTasks/              # → Gulp Tasks config
 │ ├─┬ config/               # → Settings for compiled assets
-│ ├─┬ lib/                  # →Library of Tasks aids
-│ └── tasks/                # →Tasks for development
+│ ├─┬ lib/                  # → Library of Tasks aids
+│ └── tasks/                # → Tasks for development
 ├── package.json            # → Node.js dependencies and scripts
 ├─┬ post_types/             # → Theme CPTs
 ├─┬ resources/              # → Theme assets and templates
