@@ -32,8 +32,6 @@ composer create-project 3runodesign/setrobot your-theme-name dev-master
 ```
 
 During theme installation you will have the options to:
-
-Configure Browsersync (path to theme, local development URL)
 *   Configure Browsersync (path to theme, local development URL
 
 # Theme structure
