@@ -19,4 +19,4 @@ gulp.task('watch', function () {
   watch(templates.source, () => { gulp.start(['templates:watch']); });
 });
 
-gulp.task('cw', (cb) => { gulpSequence('build', ['browserSync'], 'watch', cb); });
+gulp.task('start', (cb) => { gulpSequence('build', ['browserSync'], 'watch', cb); });
