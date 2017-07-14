@@ -109,3 +109,14 @@ add_action('after_setup_theme', function () {
 });
 
 setrobot()->bindIf('config', Config::class, true);
+
+add_action('after_setup_theme', function () {
+    $filepath = dirname(__DIR__).'/post_types/';
+    $files = scandir($filepath);
+    foreach ($files as $file) {
+        // match the file extension to cpt-*.php
+        if (substr($file, -4, 4) == '.php' && substr($file, 0, 4) == 'cpt-') {
+            include_once($filepath.$file);
+        }
+    }
+});
