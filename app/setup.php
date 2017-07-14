@@ -29,7 +29,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('post-thumbnails');
     add_theme_support('html5', ['caption', 'gallery', 'search-form']);
     add_theme_support('customize-selective-refresh-widgets');
-    add_editor_style(asset_path('styles/main.css'));
+    add_editor_style(asset_path('assets/css/main.css'));
 
     // CleanUp
     remove_action('wp_head', 'rsd_link');
