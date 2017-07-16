@@ -5,7 +5,7 @@
         <section class="container">
             <div class="hero-text">
                 <h1>
-                    {!! App::setDescription() !!}
+                    {!! App::getDescription() !!}
                 </h1>
             </div>
         </section>
