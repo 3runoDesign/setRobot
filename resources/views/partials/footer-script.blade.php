@@ -1,6 +1,6 @@
 <script type="text/javascript">
     WebFontConfig = {
-        google: { families: [ 'Open+Sans:400,700:latin', 'Sanchez' ] }
+        google: { families: [ 'Open+Sans:400,700:latin' ] }
     };
     (function() {
         var wf = document.createElement('script');

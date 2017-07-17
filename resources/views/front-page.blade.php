@@ -1,13 +1,83 @@
 @extends('layouts.app')
 
+@section('top-style')
+    <style>
+        html, body {
+            background-color: #fff;
+            color: #636b6f;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .header-top {
+            display: none;
+        }
+
+        .full-height {
+            height: 100vh;
+        }
+
+        .flex-center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .position-ref {
+            position: relative;
+        }
+
+        .top-right {
+            position: absolute;
+            right: 10px;
+            top: 18px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 84px;
+            line-height: 95px
+        }
+
+        .title > small {
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 400;
+            display: block;
+        }
+
+        .links > a {
+            color: #636b6f;
+            padding: 0 25px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .m-b-md {
+            margin-bottom: 30px;
+        }
+    </style>
+@endsection
+
 @section('content')
-    <header class="hero-header-main">
-        <section class="container">
-            <div class="hero-text">
-                <h1>
-                    Tema base para Wordpress com fluxo de desenvolvimento e <br> front-end moderno.
-                </h1>
+    <div class="flex-center position-ref full-height">
+        <div class="content">
+            <div class="title m-b-md">
+             setRobot
+             <small>is a WordPress starter theme with a modern development workflow.</small>
             </div>
-        </section>
-    </header>
+
+            <div class="links">
+                <a href="https://github.com/3runoDesign/setRobot">Github</a
+            </div>
+        </div>
+    </div>
 @endsection
