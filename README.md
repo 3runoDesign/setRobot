@@ -64,7 +64,6 @@ themes/your-theme-name/     # → Root of your setRobot based theme
 │ │ ├── js/                 # → Theme JS
 │ │ ├── sass/               # → Theme stylesheets
 │ │ └── sprite/             # → Theme sprite
-│ ├── controllers/          # → Controller files
 │ ├── functions.php         # → Composer autoloader, theme includes
 │ ├── index.php             # → Never manually edit
 │ ├── screenshot.png        # → Theme screenshot for WP admin
