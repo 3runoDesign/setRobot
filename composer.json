@@ -23,6 +23,7 @@
     },
     "scripts": {
       "pre-install-cmd": [
+          "SetRobot\\PostCreateProject::updateHeaders",
           "SetRobot\\PostCreateProject::buildOptions"
       ]
     }
