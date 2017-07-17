@@ -21,6 +21,13 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
+$main-color: #4a3580;
+$sec-color: darken($main-color, 8%);
+$bright-color: lighten($main-color, 14%);
+
+$white: #fff;
+$black: #222;
+
 $blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
@@ -28,7 +35,7 @@ $light-gray: #ddd;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: #4a3580;
+$action-color: $main-color;
 
 // Border
 $base-border-color: $light-gray;
