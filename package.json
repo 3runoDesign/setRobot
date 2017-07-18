@@ -54,7 +54,7 @@
     "gulp.spritesmith": "^6.2.1",
     "main-bower-files": "^2.13.1",
     "merge-stream": "^1.0.0",
-    "require-dir": "^0.3.0",
+    "require-dir": "~0.3.0",
     "vinyl-buffer": "^1.0.0"
   },
   "semistandard": {
