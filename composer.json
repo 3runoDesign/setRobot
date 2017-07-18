@@ -25,6 +25,10 @@
       "pre-install-cmd": [
           "SetRobot\\PostCreateProject::updateHeaders",
           "SetRobot\\PostCreateProject::buildOptions"
+      ],
+      "post-create-project-cmd": [
+        "yarn",
+        "bower install"
       ]
     }
 }
