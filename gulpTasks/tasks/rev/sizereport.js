@@ -1,3 +1,5 @@
+'use strict';
+
 var config = require('../../config');
 var gulp = require('gulp');
 var repeatString = require('../../lib/repeatString');

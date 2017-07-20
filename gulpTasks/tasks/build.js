@@ -13,7 +13,8 @@ gulp.task('build', function (cb) {
     'fonts',
     'providers',
     'templates',
-    'rev', cb);
+    'rev',
+    'sourcemaps', cb);
   } else {
     return gulpSequence('default', cb);
   }

@@ -15,7 +15,7 @@ gulp.task('providers', function () {
   var vendorjs = gulp.src(mainBowerFiles(), { base: config.bowerrc })
     .pipe(filter(config.filter, { restore: true }))
     .pipe(concat('vendor.js'))
-    .pipe(uglify())
+    .pipe(uglify({ preserveComments: 'license' }))
     .pipe(gulp.dest(config.dest.js));
 
   var vendorcss = gulp.src(mainBowerFiles(), { base: config.bowerrc })

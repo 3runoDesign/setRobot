@@ -12,7 +12,7 @@ var uglify = require('gulp-uglify');
 gulp.task('rev-js', function () {
   return gulp.src(path.join(config.buildPath, '**/*.js'))
     .pipe(rev())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest(config.buildPath))
     .pipe(revNapkin({verbose: false}))
     .pipe(rev.manifest(path.join(config.buildPath, config.manifestFile), {merge: true}))
