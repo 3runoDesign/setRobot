@@ -32,7 +32,8 @@ composer create-project 3runodesign/setrobot your-theme-name dev-master
 ```
 
 During theme installation you will have the options to:
-*   Configure Browsersync (path to theme, local development URL)
+*   Configure [`style.css`](https://github.com/3runoDesign/setRobot/blob/master/resources/style.css) (**Theme Name**, **Theme URI**, **Description**, **Version**, **Author**, **Author URI**)
+*   [Configure Browsersync](https://github.com/3runoDesign/setRobot/blob/master/gulpTasks/config/browserSync.js) (path to theme, local development URL)
 
 # Theme structure
 
