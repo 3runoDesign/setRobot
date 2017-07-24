@@ -121,7 +121,7 @@ function title()
  */
 function getImage($filename)
 {
-    return  config('assets.uri') . '/img/' . $filename;
+   return  config('assets.uri') . '/assets/images/' . $filename;
 }
 
 /**
