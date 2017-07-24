@@ -76,7 +76,7 @@
             </div>
 
             <div class="links">
-                <a href="https://github.com/3runoDesign/setRobot">Github</a
+                <a href="https://github.com/3runoDesign/setRobot">Github</a>
             </div>
         </div>
     </div>
