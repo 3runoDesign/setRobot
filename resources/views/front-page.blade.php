@@ -11,7 +11,7 @@
             margin: 0;
         }
 
-        .header-top {
+        .header-top, .footer-main {
             display: none;
         }
 
