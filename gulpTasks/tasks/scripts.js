@@ -14,9 +14,7 @@ gulp.task('scripts', function () {
     .pipe(tap(function(file) {
       file.contents = browserify(file.path, {
         debug: true
-      }).transform(babel, {
-        presets: ['es2015']
-      }).bundle();
+      }).transform(babel).bundle();
     }))
     .pipe(buffer())
     .pipe(gulp.dest(config.dest));
