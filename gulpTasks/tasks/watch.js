@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var watch = require('gulp-watch');
 var gulpSequence = require('gulp-sequence');
 
-var templates = require('../config/templates');
 var styles = require('../config/styles');
 var scripts = require('../config/scripts');
 var images = require('../config/images');
