@@ -14,7 +14,6 @@ gulp.task('watch', function () {
   watch(images.source, () => { gulp.start(['images']); });
   watch(sprite.source, () => { gulp.start(['sprite']); });
   watch(scripts.base, () => { gulp.start(['scripts']); });
-  watch(templates.source, () => { gulp.start(['templates:watch']); });
 });
 
 gulp.task('start', (cb) => { gulpSequence('build', ['browserSync'], 'watch', cb); });

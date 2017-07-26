@@ -6,7 +6,7 @@ module.exports = {
   server: false,
   files: [
     config.buildPath + 'assets/',
-    './**/*.php'
+    config.sourcePath + 'views/**/*.php'
   ],
   open: true,
   proxy: 'setrobot.dev'

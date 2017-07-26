@@ -14,7 +14,6 @@ gulp.task('build', function (cb) {
     'scripts:production',
     'fonts',
     'providers',
-    'templates',
     'rev',
     'sourcemaps', cb);
   } else {
