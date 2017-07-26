@@ -1,16 +1,15 @@
 'use strict';
 
-var buffer = require('vinyl-buffer');
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
-var rigger = require('gulp-rigger');
+var streamify = require('gulp-streamify');
+var buffer = require('vinyl-buffer');
 
 var config = require('../config/scripts');
 
-gulp.task('scripts:production', function (done) {
-  return gulp.src(config.source)
-    .pipe(rigger())
-    .pipe(uglify())
+gulp.task('scripts:production', ['scripts'], function () {
+  return gulp.src(config.dest + '/*.js')
+    .pipe(streamify(uglify()))
     .pipe(buffer())
     .pipe(gulp.dest(config.dest));
 });

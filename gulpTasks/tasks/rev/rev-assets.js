@@ -1,10 +1,11 @@
 'use strict';
 
-var config = require('../../config');
 var gulp = require('gulp');
 var path = require('path');
 var rev = require('gulp-rev');
 var revNapkin = require('gulp-rev-napkin');
+
+var config = require('../../config');
 
 gulp.task('rev-assets', function () {
   // Ignore files that may reference assets. We'll rev them next.

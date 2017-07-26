@@ -1,12 +1,12 @@
 'use strict';
 
-var config = require('../../config');
 var gulp = require('gulp');
 var cssnano = require('gulp-cssnano');
 var path = require('path');
 var rev = require('gulp-rev');
 var revNapkin = require('gulp-rev-napkin');
-// var uglify = require('gulp-uglify');
+
+var config = require('../../config');
 
 // 4) Rev and compress CSS and JS files (this is done after assets, so that if a
 //    referenced asset hash changes, the parent hash will change as well

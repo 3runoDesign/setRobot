@@ -6,14 +6,16 @@ var argv = require('yargs').argv;
 
 gulp.task('build', function (cb) {
   if (argv.p === true || argv.production === true) {
+    process.env.NODE_ENV = 'production';
+
     return gulpSequence('clean',
     ['sprite', 'images'],
     'styles:production',
     'scripts:production',
     'fonts',
     'providers',
-    'templates',
-    'rev', cb);
+    'rev',
+    'sourcemaps', cb);
   } else {
     return gulpSequence('default', cb);
   }
