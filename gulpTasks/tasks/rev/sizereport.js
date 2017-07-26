@@ -1,9 +1,10 @@
 'use strict';
 
-var config = require('../../config');
 var gulp = require('gulp');
-var repeatString = require('../../lib/repeatString');
 var sizereport = require('gulp-sizereport');
+
+var repeatString = require('../../lib/repeatString');
+var config = require('../../config');
 
 // 6) Report sizes
 gulp.task('size-report', function () {

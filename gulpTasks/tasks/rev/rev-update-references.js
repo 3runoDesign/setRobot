@@ -1,9 +1,10 @@
 'use strict';
 
-var config = require('../../config');
 var gulp = require('gulp');
 var path = require('path');
 var revReplace = require('gulp-rev-replace');
+
+var config = require('../../config');
 
 // 2) Update asset references with reved filenames in compiled css + js
 gulp.task('rev-update-references', function () {

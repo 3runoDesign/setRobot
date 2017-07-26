@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var csscomb = require('gulp-csscomb');
+
 var config = require('../config/styles');
 
 gulp.task('styles', function () {

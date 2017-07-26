@@ -2,7 +2,6 @@
 
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
-var browserify = require('browserify');
 var streamify = require('gulp-streamify');
 var buffer = require('vinyl-buffer');
 
