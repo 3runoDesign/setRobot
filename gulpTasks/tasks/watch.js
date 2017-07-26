@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var watch = require('gulp-watch');
 var gulpSequence = require('gulp-sequence');
 
-// var config = require('../config/index');
 var templates = require('../config/templates');
 var styles = require('../config/styles');
 var scripts = require('../config/scripts');
@@ -15,7 +14,7 @@ gulp.task('watch', function () {
   watch(styles.base, () => { gulp.start(['styles']); });
   watch(images.source, () => { gulp.start(['images']); });
   watch(sprite.source, () => { gulp.start(['sprite']); });
-  watch(scripts.source, () => { gulp.start(['scripts']); });
+  watch(scripts.base, () => { gulp.start(['scripts']); });
   watch(templates.source, () => { gulp.start(['templates:watch']); });
 });
 
