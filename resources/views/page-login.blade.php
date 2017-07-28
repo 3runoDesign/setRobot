@@ -4618,7 +4618,7 @@
                             @endif
                         @else
                             <p class="lead">
-                                Bem-vindo novamente, faça login com suas credenciais de conta <strong>{{ wp_get_theme() }}</strong> existentes.
+                                Bem-vindo novamente, faça login com suas credenciais de conta <strong>{{ bloginfo('name') }}</strong> existentes.
                             </p>
                         @endisset
                         {{
