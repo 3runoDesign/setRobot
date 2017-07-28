@@ -4587,7 +4587,6 @@
             #loginform input {
                 border-color: red !important;
             }
-
         @endif
     @endisset
 
@@ -4602,7 +4601,7 @@
             <section class="imageblock switchable feature-large height-100">
             <div class="imageblock__content col-md-6 col-sm-4 pos-right">
                 <div class="background-image-holder">
-                    <img alt="image" src="https://s-media-cache-ak0.pinimg.com/originals/48/3f/ab/483fabff0e33d33169cc04e0653dee8b.jpg" />
+                    <img alt="image" src="https://unsplash.it/920/1200/?random" />
                 </div>
             </div>
             <div class="container pos-vertical-center">
