@@ -1,7 +1,7 @@
 # setRobot WP
 setRobot is a WordPress starter theme with a modern development workflow.
 
-> Note: This is currently an unstable version of setRobot, use it at your own risk, we are working hard to fix some common problems that are causing a not friendly developer experience. :wink:
+> Note: This is currently an **unstable version** of setRobot, use it at your own risk, we are working hard to fix some common problems that are causing a not friendly developer experience. :wink:
 
 # Features
 *   Sass for stylesheets
@@ -45,6 +45,7 @@ themes/your-theme-name/     # → Root of your setRobot based theme
 │ ├── admin.php             # → Theme customizer setup
 │ ├── filters.php           # → Theme filters
 │ ├── helpers.php           # → Helper functions
+│ ├── lock.php              # → Theme customizer login
 │ ├── nav.php               # → Theme customizer navigation
 │ └── setup.php             # → Theme setup
 ├── bower.json              # → Dependency management
