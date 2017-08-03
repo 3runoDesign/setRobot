@@ -1,8 +1,5 @@
 # setRobot WP
 setRobot is a WordPress starter theme with a modern development workflow.
-
-> Note: This is currently an **unstable version** of setRobot, use it at your own risk, we are working hard to fix some common problems that are causing a not friendly developer experience. :wink:
-
 # Features
 *   Sass for stylesheets
     *   [Bourbon](bourbon.io/) a simple and lightweight mixin library.
