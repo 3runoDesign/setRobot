@@ -91,4 +91,4 @@ Run `yarn`, `bower i` and `composer install` from the theme directory to install
 Thanks [@gabriellacerda](https://github.com/gabriellacerda) and [@lucasprogamer](https://github.com/lucasprogamer)
 
 # Licensing
-Copyright (c) 2016 - 2017 Bruno Fernando. Licensed under the MIT license(MIT)
+Copyright (c) 2016 - 2017 Bruno Fernando. Licensed under the MIT license([MIT](https://raw.githubusercontent.com/3runoDesign/setRobot/master/LICENSE))
