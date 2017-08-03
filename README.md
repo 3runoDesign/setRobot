@@ -1,3 +1,4 @@
+![](https://raw.githubusercontent.com/3runoDesign/setRobot/master/resources/screenshot.png)
 # setRobot WP
 setRobot is a WordPress starter theme with a modern development workflow.
 # Features
