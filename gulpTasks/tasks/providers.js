@@ -8,7 +8,6 @@ var flatten = require('gulp-flatten');
 var filter = require('gulp-filter');
 var cssnano = require('gulp-cssnano');
 var merge = require('merge-stream');
-const debug = require('gulp-debug');
 var gulpIgnore = require('gulp-ignore');
 
 var config = require('../config/providers');
@@ -23,7 +22,6 @@ gulp.task('providers', function () {
     .pipe(gulp.dest(config.dest.js));
 
   var vendorcss = gulp.src(mainBowerFiles(), { base: config.bowerrc })
-    .pipe(debug())
     .pipe(gulpIgnore.exclude(filterIndex))
     .pipe(filter(['**/*.css'], { restore: true }))
     .pipe(flatten())
