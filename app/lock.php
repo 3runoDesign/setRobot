@@ -93,5 +93,3 @@ class Lock
         add_action( 'wp_logout', array( &$this, 'logout' ) );
     }
 }
-
-$lock = new \App\Lock( get_page_by_title( 'Login' ) );
