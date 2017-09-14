@@ -6,6 +6,7 @@ if (! defined('ABSPATH')) { header('Location: /'); exit; }
 
 use SetRobot\Container;
 use Illuminate\Contracts\Container\Container as ContainerContract;
+use App\Coming;
 
 /**
  * Get the container
@@ -143,4 +144,16 @@ function excerpt($type = 'excerpt', $limit = 40)
             break;
     }
     return wp_trim_words($excerpt, $limit);
+}
+/**
+ *  getMaintanceBack
+ * @return [array] ['return-date', 'remaining-seconds', 'remaining-array]
+ * @return [return-date] string [date]
+ * @return [remaining-seconds] time [Seconds]
+ * @return [remaining-array] array ['days','hours', 'seconds']
+ */
+function getMaintanceBack($return)
+{
+  $coming = new Coming;
+  return $coming->calc_time_coming()[$return];
 }

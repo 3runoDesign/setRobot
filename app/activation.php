@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) { header('Location: /'); exit; }
 
 
 add_action('after_setup_theme', function() {
-    $pages = ['Home', 'Blog', 'Login'];
+    $pages = ['Home', 'Blog', 'Login', 'Maintenance'];
 
     foreach ($pages as $singlepage) {
         $singlepage_id = get_option(strtolower(str_replace(' ', '_', $singlepage)) . '_id');
@@ -34,4 +34,5 @@ add_action('after_setup_theme', function() {
     update_option( 'page_for_posts', $blog->ID );
 
     $login_lock = new \App\Lock( get_page_by_title( 'Login' ) );
+    $coming = new \App\Coming();
 });
