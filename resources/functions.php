@@ -29,7 +29,7 @@ array_map(function ($file) use ($setrobot_error) {
     if (!locate_template($file, true, true)) {
         $setrobot_error(sprintf('Error locating <code>%s</code> for inclusion.', $file), 'File not found');
     }
-}, ['helpers', 'activation', 'setup', 'filters', 'admin', 'nav', 'lock']);
+}, ['helpers', 'activation', 'setup', 'filters', 'admin', 'nav', 'lock', 'coming']);
 
 if (is_customize_preview() && isset($_GET['theme'])) {
     $setrobot_error('Theme must be activated prior to using the customizer.');
