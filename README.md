@@ -44,6 +44,7 @@ themes/your-theme-name/     # → Root of your setRobot based theme
 │ ├── filters.php           # → Theme filters
 │ ├── helpers.php           # → Helper functions
 │ ├── lock.php              # → Theme customizer login
+│ ├── coming.php            # → Theme Customizer Maintence Mode
 │ ├── nav.php               # → Theme customizer navigation
 │ └── setup.php             # → Theme setup
 ├── bower.json              # → Dependency management
