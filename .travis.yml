@@ -31,4 +31,4 @@ install:
   - node -v && yarn -V
   - travis_retry yarn
   - yarn global add bower
-  - composer install -o --prefer-dist --no-interaction
+  - composer install
