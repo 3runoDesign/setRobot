@@ -1,4 +1,4 @@
-$_url-img: '../images/' !default;
+$_url-img: '../../assets/images/' !default;
 
 @if global-variable-exists(url-img) {
   $_url-img: $url-img;
