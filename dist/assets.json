@@ -1,8 +1,9 @@
 {
-  "assets/css/main.css": "assets/css/main-718ee4b2f1.css",
+  "assets/css/main.css": "assets/css/main-55d687c9e7.css",
+  "assets/css/vendor.css": "assets/css/vendor-d52d19ae8e.css",
+  "assets/fonts/slick.svg": "assets/fonts/slick-f97e3bbf73.svg",
   "assets/fonts/twitter-icon.svg": "assets/fonts/twitter-icon-0934e50137.svg",
-  "assets/images/logo.png": "assets/images/logo-d3156a2948.png",
-  "assets/images/logo.svg": "assets/images/logo-9092621fc1.svg",
   "assets/js/customizer.js": "assets/js/customizer-6eadcbd4d2.js",
-  "assets/js/main.js": "assets/js/main-7505171332.js"
+  "assets/js/main.js": "assets/js/main-7505171332.js",
+  "assets/js/vendor.js": "assets/js/vendor-c2a134f46f.js"
 }
