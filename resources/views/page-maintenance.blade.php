@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('top-style')
+@push('top-style')
     <style>
         html, body {
             background-color: #fff;
@@ -65,7 +65,7 @@
             margin-bottom: 30px;
         }
     </style>
-@endsection
+@endpush
 
 @section('content')
     <div class="flex-center position-ref full-height">
