@@ -1,6 +1,7 @@
-![](https://raw.githubusercontent.com/3runoDesign/setRobot/master/resources/screenshot.png)
 # setRobot WP
 setRobot is a WordPress starter theme with a modern development workflow.
+![](https://raw.githubusercontent.com/3runoDesign/setRobot/master/resources/screenshot.png)
+
 # Features
 *   Sass for stylesheets
     *   [Bourbon](bourbon.io/) a simple and lightweight mixin library.
