@@ -1,6 +1,6 @@
 {
-  "name": "setrobot-front",
-  "version": "1.0.0",
+  "name": "setrobot",
+  "version": "2.0.0",
   "main": "",
   "authors": [
     "Bruno Fernando"
@@ -15,12 +15,10 @@
     "tests"
   ],
   "devDependencies": {
-    "family.scss": "^1.0.8",
-    "bourbon": "^4.3.4",
-    "bootstrap-sass-grid": "^4.0.1"
+    "flexboxgrid-sass": "^8.0.5",
+    "bourbon": "^5.0.0",
+    "family.scss": "^1.0.8"
   },
   "dependencies": {
-    "slick-carousel": "slick.js#^1.6.0",
-    "jquery-meiomask": "^1.1.14"
   }
 }
