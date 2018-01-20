@@ -1,5 +1,5 @@
 {
-    "name": "bruno/coelhotecnologia",
+    "name": "bruno/setrobot",
     "authors": [
         {
             "name": "Bruno Fernando",
@@ -23,6 +23,8 @@
     },
     "scripts": {
       "pre-install-cmd": [
+        "yarn",
+        "bower install"
       ],
       "post-create-project-cmd": [
         "SetRobot\\PostCreateProject::updateHeaders",
