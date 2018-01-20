@@ -4,7 +4,7 @@ setRobot is a WordPress starter theme with a modern development workflow.
 
 # Features
 *   Sass for stylesheets
-    *   [Bourbon](bourbon.io/) a simple and lightweight mixin library.
+    *   [Bourbon](https://bourbon.io) a simple and lightweight mixin library.
 *   [Rigger](https://github.com/kuzyk/gulp-rigger)
 *   [Gulp](gulpjs.com) for compiling assets, optimizing images, and concatenating and minifying files
 *   [Browsersync](http://www.browsersync.io/) for synchronized browser testing
