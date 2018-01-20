@@ -12,4 +12,4 @@
     })();
 </script>
 
-@yield('footer-script')
+@stack('footer-script')

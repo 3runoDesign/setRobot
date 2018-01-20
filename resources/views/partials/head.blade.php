@@ -1,10 +1,13 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  @php(wp_head())
+    <link rel="shortcut icon" href="{{ get_stylesheet_directory_uri() }}/resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ get_stylesheet_directory_uri() }}/resources/favicon.ico" type="image/x-icon">
 
-  @yield('top-style')
+    @php(wp_head())
+
+    @stack('top-style')
 
 </head>
