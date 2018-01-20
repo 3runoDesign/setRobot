@@ -32,3 +32,5 @@ install:
   - travis_retry yarn
   - yarn global add bower
   - composer install
+
+script: phpunit --exclude-group FITS --bootstrap vendor/autoload.php test
