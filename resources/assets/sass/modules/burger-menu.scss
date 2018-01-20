@@ -3,7 +3,6 @@ $burger--thickness: 4px;
 $width: 28px;
 
 .burger {
-  @include transition(border-bottom 1s ease-in-out);
   background: none;
   border-bottom: $burger--thickness solid $action-color;
   border: 0;
@@ -12,6 +11,7 @@ $width: 28px;
   outline: 0;
   padding: 0;
   width: $width;
+  transition: border-bottom 1s ease-in-out;
 
   // Fix for extra space in Firefox
   &::-moz-focus-inner {
@@ -20,7 +20,7 @@ $width: 28px;
   }
 
   &:before {
-    @include transition(transform 0.5s ease-in-out);
+    transition: transform 0.5s ease-in-out;
     border-bottom: $burger--thickness solid $action-color;
     content: "";
     display: block;
@@ -29,7 +29,7 @@ $width: 28px;
   }
 
   &:after {
-    @include transition(transform 0.5s ease-in-out);
+    transition: transform 0.5s ease-in-out;
     border-bottom: $burger--thickness solid $action-color;
     content: "";
     display: block;
@@ -43,15 +43,15 @@ $width: 28px;
 }
 
 .burger-check:checked ~ .burger {
-  @include transition(border-bottom 0.8s ease-in-out);
+  transition: border-bottom 0.8s ease-in-out;
   border-bottom: $burger--thickness solid transparent;
 
   &:before {
-    @include transform(rotate(-405deg) translateY(1px) translateX(-3px));
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
   }
 
   &:after {
-    @include transform(rotate(405deg) translateY(-4px) translateX(-5px));
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
   }
 }
 

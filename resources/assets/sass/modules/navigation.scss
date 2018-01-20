@@ -19,7 +19,7 @@
 }
 
 .nav-wrap {
-  @include transition(max-height 0.5s ease-in-out);
+  transition: max-height 0.5s ease-in-out;
   position: relative;
 
   @media (max-width: 767px) {

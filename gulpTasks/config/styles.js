@@ -13,8 +13,8 @@ module.exports = {
     outputStyle: 'nested',
     sourceComments: true,
     includePaths: [
-      config.bowerDirectory + '/bourbon/app/assets/stylesheets/',
-      config.bowerDirectory + '/bootstrap-sass-grid/sass/',
+      config.bowerDirectory + '/bourbon/core',
+      config.bowerDirectory + '/flexboxgrid-sass/dist/',
       config.bowerDirectory + '/family.scss/source/src/'
     ]
   }
