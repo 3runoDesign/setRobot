@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+/bower_components/*
+/node_modules/*
+/.tmp/*
+/.idea/*
+resources/assets/*
