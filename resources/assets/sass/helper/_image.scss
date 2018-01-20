@@ -3,7 +3,7 @@ $_url-img: '../../assets/images/' !default;
 @if global-variable-exists(url-img) {
   $_url-img: $url-img;
 }
-
+/// Get Image
 @function image-url($name-img) {
   @return url("#{$_url-img}#{$name-img}");
 }

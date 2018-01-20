@@ -5,7 +5,7 @@
   position: relative;
 
   &::after {
-    @include v-aling();
+    @include v-align();
     content: '\f107';
     font-family: FontAwesome;
     font-size: rem(22px);
@@ -14,8 +14,8 @@
   }
 
   select {
-    @include appearance(none); // http://bourbon.io/docs/#appearance
     @include prefixer(box-sizing, border-box, webkit moz spec);
+    appearance: none;
 
     background: none;
     border-radius: 0;

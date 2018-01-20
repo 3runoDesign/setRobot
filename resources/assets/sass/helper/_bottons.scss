@@ -1,3 +1,4 @@
+/// Change color
 @mixin change-btn($color: $main-color, $color-hover: darken($main-color, 15%), $text: $white, $text-hover: $white) {
   background-color: $color;
   color: $text;

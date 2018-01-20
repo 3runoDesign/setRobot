@@ -1,15 +1,18 @@
+/// Align element horizontally
 @mixin h-align {
-  @include transform(translateX(50%));
+  transform: translateX(50%);
   right: 50%;
 }
 
+/// Align element vertically
 @mixin v-align {
-  @include transform(translateY(-50%));
+  transform: translateY(-50%);
   top: 50%;
 }
 
+/// Align element in center
 @mixin c-align {
-  @include transform(translateY(-50%) translateX(-50%));
+  transform: translateY(-50%) translateX(-50%);
   top: 50%;
   left: 50%;
 }
