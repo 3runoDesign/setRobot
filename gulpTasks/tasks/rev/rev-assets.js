@@ -9,7 +9,7 @@ var config = require('../../config');
 
 gulp.task('rev-assets', function () {
   // Ignore files that may reference assets. We'll rev them next.
-  var ignoreThese = '!' + path.join(config.buildPath, '/**/*+(css|js|json|html|ttf|eot|woff|svg)');
+  var ignoreThese = '!' + path.join(config.buildPath, '/**/*+(css|js|json|html|ttf|eot|woff)');
 
   return gulp.src([path.join(config.buildPath, '/**/*'), ignoreThese])
     .pipe(rev())
