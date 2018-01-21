@@ -26,12 +26,12 @@ before_install:
   - composer self-update
   - source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
   - export PATH=$HOME/.yarn/bin:$PATH && travis_retry curl -o- -L https://yarnpkg.com/install.sh | bash
-  - composer global require "squizlabs/php-codesniffer"
 
 install:
   - node -v && yarn -V
   - travis_retry yarn
-  - yarn global add bower
   - composer install
 
-script: phpcs
+script:
+  - gulp build --p
+  - composer test

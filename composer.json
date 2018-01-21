@@ -22,6 +22,7 @@
       "squizlabs/php_codesniffer": "^2.8.0"
     },
     "scripts": {
+      "test": ["phpcs"],
       "pre-install-cmd": [
         "yarn",
         "bower install"
