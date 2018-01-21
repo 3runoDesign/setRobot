@@ -30,6 +30,7 @@ before_install:
 install:
   - node -v && yarn -V
   - travis_retry yarn
+  - yarn global add bower
   - composer install
 
 script:
