@@ -69,10 +69,21 @@ class WalkerTexasRanger extends \Walker_Nav_Menu
         $item_classes =  array(
             'item_class'            => $depth == 0 ? $prefix . $suffix['item'] : '',
             'parent_class'          => $args->has_children ? $parent_class = $prefix . $suffix['parent_item'] : '',
-            'active_page_class'     => in_array("current-menu-item", $item->classes) ? $prefix . $suffix['active_item'] : '',
-            'active_parent_class'   => in_array("current-menu-parent", $item->classes) ? $prefix . $suffix['parent_of_active_item'] : '',
-            'active_ancestor_class' => in_array("current-menu-ancestor", $item->classes) ? $prefix . $suffix['ancestor_of_active_item'] : '',
-            'depth_class'           => $depth >=1 ? $prefix . $suffix['sub_menu_item'] . ' ' . $prefix . $suffix['sub_menu'] . '--' . $depth . '__item' : '',
+            'active_page_class'     => in_array("current-menu-item", $item->classes)
+                                        ? $prefix . $suffix['active_item']
+                                        : '',
+            'active_parent_class'   => in_array("current-menu-parent", $item->classes)
+                                        ? $prefix . $suffix['parent_of_active_item']
+                                        : '',
+            'active_ancestor_class' => in_array("current-menu-ancestor", $item->classes)
+                                        ? $prefix . $suffix['ancestor_of_active_item']
+                                        : '',
+            'depth_class'           => ($depth >=1)
+                                        ? $prefix . $suffix['sub_menu_item'] .
+                                          ' ' . $prefix . $suffix['sub_menu'] .
+                                          '--' . $depth .
+                                          '__item'
+                                        : '',
             'item_id_class'         => $prefix . '__item--'. $item->object_id,
             'user_class'            => $item->classes[0] !== '' ? $prefix . '__item--'. $item->classes[0] : '');
         // convert array to string excluding any empty values
@@ -82,7 +93,12 @@ class WalkerTexasRanger extends \Walker_Nav_Menu
         // Link classes
         $link_classes = array(
             'item_link'             => $depth == 0 ? $prefix . $suffix['link'] : '',
-            'depth_class'           => $depth >=1 ? $prefix . $suffix['sub_menu'] . $suffix['link'] . '  ' . $prefix . $suffix['sub_menu'] . '--' . $depth . $suffix['link'] : '',);
+            'depth_class'           => ($depth >=1)
+                                    ? $prefix . $suffix['sub_menu'] . $suffix['link'] .
+                                      '  ' . $prefix . $suffix['sub_menu'] .
+                                      '--' . $depth . $suffix['link']
+                                    : ''
+        );
         $link_class_string = implode("  ", array_filter($link_classes));
         $link_class_output = 'class="' . $link_class_string . '"';
         // link attributes
@@ -108,7 +124,8 @@ class WalkerTexasRanger extends \Walker_Nav_Menu
  * get_menu returns an instance of the walker_texas_ranger class with the following arguments
  * @param  string $location This must be the same as what is set in wp-admin/settings/menus for menu location.
  * @param  string $css_class_prefix This string will prefix all of the menu's classes, BEM syntax friendly
- * @param  arr/string $css_class_modifiers Provide either a string or array of values to apply extra classes to the <ul> but not the <li's>
+ * @param  arr/string $css_class_modifiers Provide either a string or array of values to apply extra classes to the
+ *          <ul> but not the <li's>
  * @return [type]
  */
 function get_menu($location = "main_menu", $css_class_prefix = 'main-menu', $css_class_modifiers = null)

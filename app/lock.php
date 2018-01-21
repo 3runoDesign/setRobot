@@ -22,9 +22,11 @@ class Lock
      */
     public function __construct(\WP_Post $login_page = null)
     {
+        $req_url = $_SERVER['REQUEST_URI'];
+        $post_name = $this->login_page->post_name;
         $this->login_page = $login_page;
         $this->login_page_url = get_permalink($this->login_page->ID);
-        $this->is_login_page = substr($_SERVER['REQUEST_URI'], 0, 2 + strlen($this->login_page->post_name)) === '/' . $this->login_page->post_name .'/';
+        $this->is_login_page = substr($req_url, 0, 2 + strlen($post_name)) === '/' . $post_name .'/';
         $this->subscribe();
     }
     /**
