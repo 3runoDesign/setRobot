@@ -2,10 +2,13 @@
 
 namespace App;
 
-if (! defined('ABSPATH')) { header('Location: /'); exit; }
+if (! defined('ABSPATH')) {
+    header('Location: /');
+    exit;
+}
 
 
-add_action('after_setup_theme', function() {
+add_action('after_setup_theme', function () {
     $pages = ['Home', 'Blog', 'Login', 'Maintenance'];
 
     foreach ($pages as $singlepage) {
@@ -14,25 +17,24 @@ add_action('after_setup_theme', function() {
             'post_title' => $singlepage,
             'post_content' => '',
             'post_status' => 'publish',
-            'post_type' => 'page',
-        );
+            'post_type' => 'page',);
 
-        $page_exists = get_page_by_title( $page['post_title'] );
+        $page_exists = get_page_by_title($page['post_title']);
 
-        if ( $page_exists == null ) {
-            $insert = wp_insert_post( $page );
+        if ($page_exists == null) {
+            $insert = wp_insert_post($page);
         }
     }
 
     // Use a static front page
-    $home = get_page_by_title( 'Home' );
-    update_option( 'page_on_front', $home->ID );
-    update_option( 'show_on_front', 'page' );
+    $home = get_page_by_title('Home');
+    update_option('page_on_front', $home->ID);
+    update_option('show_on_front', 'page');
 
     // Set the blog page
-    $blog = get_page_by_title( 'Blog' );
-    update_option( 'page_for_posts', $blog->ID );
+    $blog = get_page_by_title('Blog');
+    update_option('page_for_posts', $blog->ID);
 
-    $login_lock = new \App\Lock( get_page_by_title( 'Login' ) );
+    $login_lock = new \App\Lock(get_page_by_title('Login'));
     $coming = new \App\Coming();
 });

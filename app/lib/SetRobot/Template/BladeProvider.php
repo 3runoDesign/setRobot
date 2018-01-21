@@ -2,8 +2,6 @@
 
 namespace SetRobot\Template;
 
-if (! defined('ABSPATH')) { header('Location: /'); exit; }
-
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Container\Container as ContainerContract;
 use Illuminate\Events\Dispatcher;

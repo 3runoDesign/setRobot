@@ -1,8 +1,7 @@
 <?php
 
-namespace App;
 
-if (! defined('ABSPATH')) { header('Location: /'); exit; }
+namespace App;
 
 use SetRobot\Container;
 use Illuminate\Contracts\Container\Container as ContainerContract;
@@ -122,7 +121,7 @@ function title()
  */
 function getImage($filename)
 {
-   return  config('assets.uri') . '/assets/images/' . $filename;
+    return config('assets.uri') . '/assets/images/' . $filename;
 }
 
 /**
@@ -139,7 +138,7 @@ function excerpt($type = 'excerpt', $limit = 40)
         case 'title':
             $excerpt = get_the_title();
             break;
-        default :
+        default:
             $excerpt = get_the_excerpt();
             break;
     }
@@ -154,6 +153,6 @@ function excerpt($type = 'excerpt', $limit = 40)
  */
 function getMaintanceBack($return)
 {
-  $coming = new Coming;
-  return $coming->calc_time_coming()[$return];
+    $coming = new Coming;
+    return $coming->calcTimeComing()[$return];
 }

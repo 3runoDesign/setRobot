@@ -2,7 +2,10 @@
 
 namespace App;
 
-if (! defined('ABSPATH')) { header('Location: /'); exit; }
+if (! defined('ABSPATH')) {
+    header('Location: /');
+    exit;
+}
 
 add_filter('body_class', function (array $classes) {
     if (is_single() || is_page() && !is_front_page()) {

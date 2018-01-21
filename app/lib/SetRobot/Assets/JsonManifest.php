@@ -2,8 +2,6 @@
 
 namespace SetRobot\Assets;
 
-if (! defined('ABSPATH')) { header('Location: /'); exit; }
-
 class JsonManifest implements ManifestInterface
 {
     protected $manifest;

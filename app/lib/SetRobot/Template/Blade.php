@@ -2,8 +2,6 @@
 
 namespace SetRobot\Template;
 
-if (! defined('ABSPATH')) { header('Location: /'); exit; }
-
 use Illuminate\Contracts\Container\Container as ContainerContract;
 use Illuminate\Contracts\View\Factory as FactoryContract;
 use Illuminate\View\Engines\CompilerEngine;

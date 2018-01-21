@@ -2,8 +2,6 @@
 
 namespace SetRobot\Template;
 
-if (! defined('ABSPATH')) { header('Location: /'); exit; }
-
 class FileViewFinder extends \Illuminate\View\FileViewFinder
 {
     const FALLBACK_PARTS_DELIMITER = '-';

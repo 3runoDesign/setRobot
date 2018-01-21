@@ -2,7 +2,10 @@
 
 namespace App;
 
-if (! defined('ABSPATH')) { header('Location: /'); exit; }
+if (! defined('ABSPATH')) {
+    header('Location: /');
+    exit;
+}
 
 use Illuminate\Contracts\Container\Container as ContainerContract;
 use SetRobot\Assets\JsonManifest;

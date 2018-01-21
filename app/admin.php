@@ -2,7 +2,10 @@
 
 namespace App;
 
-if (! defined('ABSPATH')) { header('Location: /'); exit; }
+if (! defined('ABSPATH')) {
+    header('Location: /');
+    exit;
+}
 
 add_action('customize_register', function (\WP_Customize_Manager $wp_customize) {
 
