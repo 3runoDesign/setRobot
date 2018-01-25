@@ -9,7 +9,6 @@ setRobot is a WordPress starter theme with a modern development workflow.
 *   [Gulp](gulpjs.com) for compiling assets, optimizing images, and concatenating and minifying files
 *   [Browsersync](http://www.browsersync.io/) for synchronized browser testing
 *   [Laravel Blade](https://laravel.com/docs/5.3/blade) as a templating engine
-*   [Controller](https://github.com/soberwp/controller) for passing data to Blade templates
 *   [PostTypes](https://github.com/jjgrainger/PostTypes) for creating post types
 
 # Requirements
