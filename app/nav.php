@@ -14,7 +14,7 @@ class WalkerTexasRanger extends \Walker_Nav_Menu
         $this->css_class_prefix = $css_class_prefix;
 
         // Define menu item names appropriately
-        $this->item_css_class_suffixes = array(
+        $this->item_css_class_suffixes = [
             'item'                      => '__item',
             'parent_item'               => '__item--parent',
             'active_item'               => '__item--active',
@@ -22,7 +22,8 @@ class WalkerTexasRanger extends \Walker_Nav_Menu
             'ancestor_of_active_item'   => '__item--ancestor--active',
             'sub_menu'                  => '__sub-menu',
             'sub_menu_item'             => '__sub-menu__item',
-            'link'                      => '__link',);
+            'link'                      => '__link'
+        ];
     }
 
     // Check for children
@@ -46,9 +47,10 @@ class WalkerTexasRanger extends \Walker_Nav_Menu
         $indent = str_repeat("\t", $real_depth);
         $prefix = $this->css_class_prefix;
         $suffix = $this->item_css_class_suffixes;
-        $classes = array(
+        $classes = [
             $prefix . $suffix['sub_menu'],
-            $prefix . $suffix['sub_menu']. '--' . $real_depth);
+            $prefix . $suffix['sub_menu']. '--' . $real_depth
+        ];
         $class_names = implode(' ', $classes);
 
         // Add a ul wrapper to sub nav
@@ -66,7 +68,7 @@ class WalkerTexasRanger extends \Walker_Nav_Menu
         $prefix = $this->css_class_prefix;
         $suffix = $this->item_css_class_suffixes;
         // Item classes
-        $item_classes =  array(
+        $item_classes = [
             'item_class'            => $depth == 0 ? $prefix . $suffix['item'] : '',
             'title_class'           => $prefix . $suffix['item'] . '--' . str_slug($item->title),
             'parent_class'          => $args->has_children ? $parent_class = $prefix . $suffix['parent_item'] : '',
@@ -86,20 +88,21 @@ class WalkerTexasRanger extends \Walker_Nav_Menu
                                           '__item'
                                         : '',
             'item_id_class'         => $prefix . '__item--'. $item->object_id,
-            'user_class'            => $item->classes[0] !== '' ? $prefix . '__item--'. $item->classes[0] : '');
+            'user_class'            => $item->classes[0] !== '' ? $prefix . '__item--'. $item->classes[0] : ''
+        ];
         // convert array to string excluding any empty values
         $class_string = implode("  ", array_filter($item_classes));
         // Add the classes to the wrapping <li>
         $output .= $indent . '<li class="' . $class_string . '">';
         // Link classes
-        $link_classes = array(
+        $link_classes = [
             'item_link'             => $depth == 0 ? $prefix . $suffix['link'] : '',
             'depth_class'           => ($depth >=1)
                                     ? $prefix . $suffix['sub_menu'] . $suffix['link'] .
                                       '  ' . $prefix . $suffix['sub_menu'] .
                                       '--' . $depth . $suffix['link']
                                     : ''
-        );
+        ];
         $link_class_string = implode("  ", array_filter($link_classes));
         $link_class_output = 'class="' . $link_class_string . '"';
         // link attributes
@@ -141,11 +144,12 @@ function get_menu($location = "main_menu", $css_class_prefix = 'main-menu', $css
     } else {
         $modifiers = '';
     }
-    $args = array(
+    $args = [
         'theme_location'    => $location,
         'container'         => false,
         'items_wrap'        => '<ul class="' . $css_class_prefix . ' ' . $modifiers . '">%3$s</ul>',
-        'walker'            => new WalkerTexasRanger($css_class_prefix, true));
+        'walker'            => new WalkerTexasRanger($css_class_prefix, true)
+    ];
 
     if (has_nav_menu($location)) {
         return wp_nav_menu($args);
