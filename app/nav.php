@@ -19,19 +19,18 @@ class walker_texas_ranger extends \Walker_Nav_Menu {
             'ancestor_of_active_item'   => '__item--ancestor--active',
             'sub_menu'                  => '__sub-menu',
             'sub_menu_item'             => '__sub-menu__item',
-            'link'                      => '__link',
-        );
+            'link'                      => '__link',);
     }
     // Check for children
-    function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ){
+    function display_element($element, &$children_elements, $max_depth, $depth=0, $args, &$output){
 
         $id_field = $this->db_fields['id'];
 
-        if ( is_object( $args[0] ) ) {
-            $args[0]->has_children = !empty( $children_elements[$element->$id_field] );
+        if (is_object($args[0])) {
+            $args[0]->has_children = !empty($children_elements[$element->$id_field]);
         }
 
-        return parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
+        return parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
 
     }
 
@@ -44,20 +43,19 @@ class walker_texas_ranger extends \Walker_Nav_Menu {
         $suffix = $this->item_css_class_suffixes;
         $classes = array(
             $prefix . $suffix['sub_menu'],
-            $prefix . $suffix['sub_menu']. '--' . $real_depth
-        );
-        $class_names = implode( ' ', $classes );
+            $prefix . $suffix['sub_menu']. '--' . $real_depth);
+        $class_names = implode(' ', $classes);
         // Add a ul wrapper to sub nav
         $output .= "\n" . $indent . '<ul class="'. $class_names .'">' ."\n";
     }
 
     // Add main/sub classes to li's and links
 
-    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+    function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
 
         global $wp_query;
 
-        $indent = ( $depth > 0 ? str_repeat( "    ", $depth ) : '' ); // code indent
+        $indent = ($depth > 0 ? str_repeat("    ", $depth) : ''); // code indent
         $prefix = $this->css_class_prefix;
         $suffix = $this->item_css_class_suffixes;
         // Item classes
@@ -70,8 +68,7 @@ class walker_texas_ranger extends \Walker_Nav_Menu {
             'active_ancestor_class' => in_array("current-menu-ancestor",$item->classes) ? $prefix . $suffix['ancestor_of_active_item'] : '',
             'depth_class'           => $depth >=1 ? $prefix . $suffix['sub_menu_item'] . ' ' . $prefix . $suffix['sub_menu'] . '--' . $depth . '__item' : '',
             'item_id_class'         => $prefix . '__item--'. $item->object_id,
-            'user_class'            => $item->classes[0] !== '' ? $prefix . '__item--'. $item->classes[0] : ''
-        );
+            'user_class'            => $item->classes[0] !== '' ? $prefix . '__item--'. $item->classes[0] : '');
         // convert array to string excluding any empty values
         $class_string = implode("  ", array_filter($item_classes));
         // Add the classes to the wrapping <li>
@@ -79,15 +76,14 @@ class walker_texas_ranger extends \Walker_Nav_Menu {
         // Link classes
         $link_classes = array(
             'item_link'             => $depth == 0 ? $prefix . $suffix['link'] : '',
-            'depth_class'           => $depth >=1 ? $prefix . $suffix['sub_menu'] . $suffix['link'] . '  ' . $prefix . $suffix['sub_menu'] . '--' . $depth . $suffix['link'] : '',
-        );
+            'depth_class'           => $depth >=1 ? $prefix . $suffix['sub_menu'] . $suffix['link'] . '  ' . $prefix . $suffix['sub_menu'] . '--' . $depth . $suffix['link'] : '',);
         $link_class_string = implode("  ", array_filter($link_classes));
         $link_class_output = 'class="' . $link_class_string . '"';
         // link attributes
         $attributes  = ! empty($item->attr_title) ? ' title="'  . esc_attr($item->attr_title) .'"' : '';
-        $attributes .= ! empty($item->target)     ? ' target="' . esc_attr($item->target    ) .'"' : '';
-        $attributes .= ! empty($item->xfn)        ? ' rel="'    . esc_attr($item->xfn       ) .'"' : '';
-        $attributes .= ! empty($item->url)        ? ' href="'   . esc_attr($item->url       ) .'"' : '';
+        $attributes .= ! empty($item->target)     ? ' target="' . esc_attr($item->target   ) .'"' : '';
+        $attributes .= ! empty($item->xfn)        ? ' rel="'    . esc_attr($item->xfn      ) .'"' : '';
+        $attributes .= ! empty($item->url)        ? ' href="'   . esc_attr($item->url      ) .'"' : '';
         // Creatre link markup
         $item_output = $args->before;
         $item_output .= '<a' . $attributes . ' ' . $link_class_output . '>';
@@ -125,8 +121,7 @@ function get_menu($location = "main_menu", $css_class_prefix = 'main-menu', $css
         'theme_location'    => $location,
         'container'         => false,
         'items_wrap'        => '<ul class="' . $css_class_prefix . ' ' . $modifiers . '">%3$s</ul>',
-        'walker'            => new walker_texas_ranger($css_class_prefix, true)
-    );
+        'walker'            => new walker_texas_ranger($css_class_prefix, true));
 
     if (has_nav_menu($location)){
         return wp_nav_menu($args);
