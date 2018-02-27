@@ -1,8 +1,0 @@
-/// Text in a single line
-@mixin truncate-text($with-size) {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: $with-size;
-}
