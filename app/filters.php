@@ -6,6 +6,8 @@ namespace App;
  * Template Hierarchy should search for .blade.php files
  */
 
+use App\Lib\NavWalker;
+
 collect([
     'index', '404', 'archive', 'author', 'category', 'tag', 'taxonomy', 'date', 'home',
     'frontpage', 'page', 'paged', 'search', 'single', 'singular', 'attachment'
@@ -196,5 +198,30 @@ add_filter('body_class', function (array $classes) {
     return $classes;
 });
 
+/**
+ * Clean up wp_nav_menu_args
+ *
+ * Remove the container
+ * Remove the id="" on nav menu items
+ */
+add_filter('wp_nav_menu_args', function ($args = '') {
+    $nav_menu_args = [];
+    $nav_menu_args['container'] = false;
+    if (!$args['items_wrap']) {
+        $nav_menu_args['items_wrap'] = '<ul class="%2$s">%3$s</ul>';
+    }
+    if (!$args['walker']) {
+        $nav_menu_args['walker'] = new NavWalker();
+    }
+    return array_merge($args, $nav_menu_args);
+});
 
-//TODO: Adicionar sober/models
+add_filter('nav_menu_item_id', '__return_null');
+
+
+/**
+ * models path
+ */
+add_filter('sober/models/path', function () {
+    return dirname(get_template_directory()) . '/app/models';
+});
