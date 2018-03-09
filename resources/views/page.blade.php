@@ -8,7 +8,8 @@
         </header>
         <div class="entry__content">
             @php(the_content())
+            page
         </div>
     </article>
     @endmainquery
-@stop
+@endsection

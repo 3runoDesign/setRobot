@@ -12,6 +12,7 @@
         </header>
         <div class="entry__content">
             @php(the_content())
+            custom
         </div>
     </article>
     @endmainquery
