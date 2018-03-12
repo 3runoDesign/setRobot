@@ -32,7 +32,7 @@
     "tgmpa/tgm-plugin-activation": "^2.6"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.0.2"
+    "squizlabs/php_codesniffer": "^2.8.0"
   },
   "extra": {
     "installer-paths": {
@@ -42,6 +42,7 @@
   "scripts": {
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-    ]
+    ],
+    "phpcs": "phpcs"
   }
 }
