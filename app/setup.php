@@ -9,8 +9,6 @@ use Roots\Sage\Template\BladeProvider;
 use App\Lib\Utils;
 use StoutLogic\AcfBuilder\FieldsBuilder;
 
-require_once dirname(get_stylesheet_directory()) . '/vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php';
-
 /**
  * Theme assets
  */
@@ -46,22 +44,52 @@ add_action('init', function () {
  * Theme setup
  */
 add_action('after_setup_theme', function () {
-//    load_theme_textdomain('setrobot', get_template_directory() . '/languages');
 
-    add_theme_support('html5', ['search-form', 'comment-form', 'comment-list', 'gallery', 'caption']);
-    add_theme_support('menus');
+    load_theme_textdomain( 'setrobot', get_template_directory() . '/lang' );
+
+    /**
+     * Enable plugins to manage the document title
+     * @link https://developer.wordpress.org/reference/functions/add_theme_support/#title-tag
+     */
     add_theme_support('title-tag');
-    add_theme_support('post-thumbnails');
-    add_theme_support('automatic-feed-links');
 
-    // add_theme_support('woocommerce');
-    // add_post_type_support('page', 'excerpt');
-
-    add_editor_style(asset_path('styles/editor.css'));
-
+    /**
+     * Register navigation menus
+     * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
+     */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'setrobot'),
+        'primary_navigation' => __('Primary Navigation', 'setrobot')
     ]);
+
+    /**
+     * Enable post thumbnails
+     * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+     */
+    add_theme_support('post-thumbnails');
+
+    /**
+     * Enable HTML5 markup support
+     * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
+     */
+    add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
+
+    /**
+     * Enable selective refresh for widgets in customizer
+     * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
+     */
+    add_theme_support('customize-selective-refresh-widgets');
+
+    /**
+     * Use main stylesheet for visual editor
+     * @see resources/assets/styles/layouts/_tinymce.scss
+     */
+    add_editor_style(asset_path('styles/main.css'));
+
+    /**
+     * Declare WooCommerce theme support
+     * https://roots.io/using-woocommerce-with-sage/
+     */
+    // add_theme_support('woocommerce');
 }, 100);
 
 /**
@@ -156,7 +184,7 @@ add_action('after_setup_theme', function () {
 });
 
 /**
- * Plugins require
+ * Required Plugins
  */
 add_action('tgmpa_register', function ()
 {
