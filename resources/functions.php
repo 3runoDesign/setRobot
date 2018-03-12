@@ -8,7 +8,6 @@ use Dotenv\Dotenv;
 use Roots\Sage\Config;
 use Roots\Sage\Container;
 
-
 /**
  * Helper function for prettying up errors
  * @param string $message
@@ -33,7 +32,10 @@ if (version_compare('7', phpversion(), '>=')) {
  * Ensure compatible version of WordPress is used
  */
 if (version_compare('4.7.0', get_bloginfo('version'), '>=')) {
-    $sage_error(__('You must be using WordPress 4.7.0 or greater.', 'setrobot'), __('Invalid WordPress version', 'setrobot'));
+    $sage_error(
+        __('You must be using WordPress 4.7.0 or greater.', 'setrobot'),
+        __('Invalid WordPress version', 'setrobot')
+    );
 }
 
 /**
@@ -48,13 +50,15 @@ if (file_exists($root_dir . '/.env')) {
  * Ensure dependencies are loaded
  */
 if (!class_exists('Roots\\Sage\\Container')) {
-    if (!file_exists($composer = __DIR__.'/../vendor/autoload.php')) {
+    if (!file_exists($composer = __DIR__ . '/../vendor/autoload.php')) {
         $sage_error(
             __('You must run <code>composer install</code> from the Sage directory.', 'setrobot'),
             __('Autoloader not found.', 'setrobot')
         );
     }
     require_once $composer;
+
+    require_once __DIR__ . '/../vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php';
 }
 
 /** Initializes the WPS (whoops error handling) instance */
@@ -98,9 +102,9 @@ array_map(
 Container::getInstance()
     ->bindIf('config', function () {
         return new Config([
-            'assets' => require dirname(__DIR__).'/config/assets.php',
-            'theme' => require dirname(__DIR__).'/config/theme.php',
-            'view' => require dirname(__DIR__).'/config/view.php',
-            'directives' => require dirname(__DIR__).'/config/directives.php'
+            'assets' => require dirname(__DIR__) . '/config/assets.php',
+            'theme' => require dirname(__DIR__) . '/config/theme.php',
+            'view' => require dirname(__DIR__) . '/config/view.php',
+            'directives' => require dirname(__DIR__) . '/config/directives.php'
         ]);
     }, true);
