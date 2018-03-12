@@ -3,5 +3,14 @@
   "version": "3.0.0",
   "repository": "git@github.com:3runoDesign/setRobot.git",
   "author": "Bruno Fernando <bruno2fernando@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "laravel-mix": "^2.0.0"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  }
 }
