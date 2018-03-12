@@ -8,59 +8,65 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.7\n"
+"Last-Translator: \n"
+"Language: pt_BR\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: app/admin.php:22
 msgid "Environment"
-msgstr ""
+msgstr "Ambiente"
 
 #: app/setup.php:61
 msgid "Primary Navigation"
-msgstr ""
+msgstr "Navegação Primária"
 
 #: app/setup.php:108
 msgid "Main"
-msgstr ""
+msgstr "Principal"
 
 #: app/setup.php:114
 msgid "Footer"
-msgstr ""
+msgstr "Rodapé"
 
 #: resources/functions.php:19
 msgid "Sage &rsaquo; Error"
-msgstr ""
+msgstr "Sage &rsaquo; Erro"
 
 #: resources/functions.php:29
 msgid "You must be using PHP 7 or greater."
-msgstr ""
+msgstr "Você deve usar o WordPress 4.7.0 ou superior."
 
 #: resources/functions.php:29
 msgid "Invalid PHP version"
-msgstr ""
+msgstr "Versão do PHP inválida"
 
 #: resources/functions.php:36
 msgid "You must be using WordPress 4.7.0 or greater."
-msgstr ""
+msgstr "Você deve usar o WordPress 4.7.0 ou superior."
 
 #: resources/functions.php:36
 msgid "Invalid WordPress version"
-msgstr ""
+msgstr "Versão inválida do WordPress"
 
 #: resources/functions.php:53
 msgid "You must run <code>composer install</code> from the Sage directory."
-msgstr ""
+msgstr "Você deve executar <code>composer install</ code> no diretório Sage."
 
 #: resources/functions.php:54
 msgid "Autoloader not found."
-msgstr ""
+msgstr "Não encontrado"
 
 #: resources/functions.php:74
 msgid "Error locating <code>%s</code> for inclusion."
-msgstr ""
+msgstr "Erro ao localizar <code>%s</ code> para inclusão."
 
 #: resources/views/template-custom.blade.php:1
 msgid "Custom Template"
-msgstr ""
+msgstr "Template personalizado"
