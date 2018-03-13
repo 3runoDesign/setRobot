@@ -13,14 +13,17 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('setrobot/main.css', asset_path('styles/main.css'), false, null);
-    wp_enqueue_script('setrobot/main.js#defer', asset_path('scripts/main.js'), [], null, true);
+    wp_enqueue_style('setrobot/app.css', asset_path('styles/app.css'), false, null);
+
+    wp_enqueue_script('setrobot/manifest.js', asset_path('scripts/manifest.js'), ['jquery'], null, true);
+    wp_enqueue_script('setrobot/vendor.js', asset_path('scripts/vendor.js'), ['setrobot/manifest.js'], null, true);
+    wp_enqueue_script('setrobot/app.js#defer', asset_path('scripts/app.js'), ['setrobot/vendor.js'], null, true);
 
     /*
     * Creates the 'setrobot' javascript object with useful URLs.
     */
     wp_localize_script(
-        'setrobot/main.js#defer',
+        'setrobot/manifest.js',
         'setrobot',
         [
             'homeUrl' => get_bloginfo('url'),
@@ -83,7 +86,7 @@ add_action('after_setup_theme', function () {
      * Use main stylesheet for visual editor
      * @see resources/assets/styles/layouts/_tinymce.scss
      */
-    add_editor_style(asset_path('styles/main.css'));
+    add_editor_style(asset_path('css/app.css'));
 
     /**
      * Declare WooCommerce theme support

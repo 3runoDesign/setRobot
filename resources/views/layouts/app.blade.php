@@ -5,7 +5,7 @@
 
 <body @php(body_class('app'))>
 
-    <div class="app__wrapper" role="document">
+    <div id="app" class="app__wrapper" role="document">
         <div class="app__container">
             @php(do_action('get_header'))
 

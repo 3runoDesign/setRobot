@@ -134,7 +134,7 @@ add_filter('embed_oembed_html', function ($cache) {
  */
 $filter__parse_asset_version = function ($src) {
     if ((defined('WP_DEBUG') && WP_DEBUG) || strtoupper(WP_ENV) === 'DEVELOPMENT') {
-        return add_query_arg('ver', 'dev-'.rand(), remove_query_arg('ver', $src));
+        return add_query_arg('ver', 'dev-'.rand(), remove_query_arg('id', $src));
     }
     return $src;
 };

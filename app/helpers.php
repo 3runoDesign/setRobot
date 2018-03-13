@@ -77,14 +77,10 @@ function template_path($file, $data = [])
  */
 function asset_path($asset)
 {
-    $dir = dirname($asset);
-    $assetName = basename($asset);
     return join(
-        '/',
         [
             config('assets')['uri'],
-            $dir,
-            sage('assets')->get($assetName),
+            sage('assets')->get('/'. $asset),
         ]
     );
 }
@@ -188,7 +184,7 @@ function console($data, $onlyLogged = true)
  */
 function get_image($data, $onlyLogged = true)
 {
-    return config('assets.uri') . '/assets/images/' . $data;
+    return config('assets.uri') . '/images/' . $data;
 }
 
 /**
