@@ -79,6 +79,6 @@ return [
 
     /** Create @getimage */
     'getimage' => function ($obj) {
-        return "<?php echo App\get_image({$obj}); ?>";
+        return "<?php echo \App\get_image({$obj}); ?>";
     },
 ];

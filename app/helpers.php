@@ -184,7 +184,7 @@ function console($data, $onlyLogged = true)
  */
 function get_image($data, $onlyLogged = true)
 {
-    return config('assets.uri') . '/images/' . $data;
+    return asset_path("images/{$data}");
 }
 
 /**
