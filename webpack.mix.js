@@ -1,11 +1,9 @@
 let mix = require('laravel-mix');
 
-const rootPath = path.join(__dirname, '..');
+// const rootPath = '../';
 const resources = 'resources';
 const assets = `${resources}/assets`;
 const dist = 'dist';
-
-console.log(assets);
 
 /*
  |--------------------------------------------------------------------------
@@ -13,30 +11,29 @@ console.log(assets);
  |--------------------------------------------------------------------------
  |
  | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
+ | for your WP theme. By default, we are compiling the Sass
  | file for your application, as well as bundling up your JS files.
  |
  */
 mix.setPublicPath(dist);
-mix.setResourceRoot(rootPath);
+mix.setResourceRoot('');
 
 mix.webpackConfig({
     output: {
         publicPath: `${dist}/`,
     }})
     .options({
-        processCssUrls: false,
+        // processCssUrls: false,
         vue: {
             esModule: true
         },
-        extractVueStyles: true, // Extract .vue component styling to file, rather than inline.
+        // extractVueStyles: true, // Extract .vue component styling to file, rather than inline.
         //   globalVueStyles: file, // Variables file to be imported in every component.
     })
     .js(`${assets}/scripts/app.js`, `${dist}/scripts/`)
     .extract([
         'babel-polyfill',
-        'vue',
-        //'jquery'
+        'vue'
     ])
     .sass(`${assets}/styles/app.scss`, `${dist}/styles/`)
     .copy(`${assets}/images/**/*.{png,jpg,jpeg,gif,svg}`, `${dist}/images`, false)
@@ -45,26 +42,13 @@ mix.webpackConfig({
 
 if (mix.inProduction()) {
     // Hash and version files in production.
-    mix.version(`${dist}/images/`); // need to add cb to theme's php page
+    mix.version(); // need to add cb to theme's php page
 }
 else {
     // Source maps when not in production.
-    mix.sourceMaps();
+    mix.sourceMaps()
+        .browserSync({
+            proxy: 'setrobot.dev',
+            files: ['**/*.{blade.php, php}', 'dist/css/**/*.css', 'dist/js/**/*.js'] // no touch me!
+        });
 }
-
-
-// mix.setPublicPath('dist')
-//     .js('resources/assets/scripts/app.js', 'js/')
-//     .styles('resources/assets/styles/app.scss', 'css/')
-//     .version()
-//     .browserSync({
-//         proxy: 'setrobot.dev',
-//         files: ['**/*.{blade.php, php}', 'dist/css/**/*.css', 'dist/js/**/*.js'] // no touch me!
-//     })
-//     .extract([
-//         'babel-polyfill',
-//         'vue'
-//     ])
-//     .options({
-//         processCssUrls: false
-//     });

@@ -1,10 +1,16 @@
-// Require bootstrapped js
-require('./bootstrap');
+import Vue from 'vue';
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+/**
+ * First we will load all of this project's JavaScript dependencies which
+ * includes Vue and other libraries. It is a great starting point when
+ * building robust, powerful web applications using Vue and Laravel.
+ */
+import './bootstrap';
+
+import ExampleComponent from './components/Example.vue';
+
+Vue.component('my-teste', ExampleComponent);
 
 const app = new Vue({
     el: '#app'
 });
-
-$('body').append('<p>Added from jQuery</p>');

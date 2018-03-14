@@ -1,9 +1,5 @@
-//// Import bulma variable overrides
-//@import "common/variables";
-//
-//// Import bulma
-//@import "~bulma";
+// Import bulma variable overrides
+@import "common/variables";
 
-body {
-  background-image: url('/images/db-bg.jpg');
-}
+// Import bulma
+@import "~bulma";
