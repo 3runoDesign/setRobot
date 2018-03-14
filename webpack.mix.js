@@ -27,7 +27,7 @@ mix.webpackConfig({
         vue: {
             esModule: true
         },
-        // extractVueStyles: true, // Extract .vue component styling to file, rather than inline.
+        extractVueStyles: true, // Extract .vue component styling to file, rather than inline.
         //   globalVueStyles: file, // Variables file to be imported in every component.
     })
     .js(`${assets}/scripts/app.js`, `${dist}/scripts/`)

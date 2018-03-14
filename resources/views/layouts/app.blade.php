@@ -16,12 +16,14 @@
 
                 @yield('content')
             </main>
-
             @php(do_action('get_footer'))
+
         </div>
     </div>
 
+
     @php(wp_footer())
+    @include('partials.foot')
     @stack('scripts-footer')
 </body>
 </html>

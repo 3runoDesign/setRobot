@@ -28,7 +28,8 @@ add_action('wp_enqueue_scripts', function () {
         [
             'homeUrl' => get_bloginfo('url'),
             'ajaxUrl' => admin_url('admin-ajax.php'),
-            'assetsUrl' => config('assets.uri')
+            'assetsUrl' => config('assets.uri'),
+            'font_google' => explode('|', 'Arvo:400,700,700i|Ubuntu:400,500,700')
         ]
     );
 }, 100);
