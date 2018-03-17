@@ -6,10 +6,12 @@
   "license": "MIT",
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
+    "bourbon": "^5.0.0",
     "browser-sync": "^2.23.6",
     "browser-sync-webpack-plugin": "^2.0.1",
     "bulma": "^0.6.2",
     "cross-env": "^5.1.4",
+    "family.scss": "^1.0.8",
     "laravel-mix": "^2.1.0",
     "vue": "^2.5.16"
   },
