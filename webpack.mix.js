@@ -36,7 +36,7 @@ mix.webpackConfig({
         'vue'
     ])
     .sass(`${assets}/styles/app.scss`, `${dist}/styles/`)
-    .copy(`${assets}/images/**/*.{png,jpg,jpeg,gif,svg}`, `${dist}/images`, false)
+    .copy(`${assets}/images/**/*.{png,jpg,jpeg,gif,svg,ico}`, `${dist}/images`, false)
     .copy(`${assets}/fonts/**/*.{eot,svg,ttf,otf,woff,woff2}`, `${dist}/fonts`, false);
 
 
