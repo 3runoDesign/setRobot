@@ -215,7 +215,14 @@ add_action('tgmpa_register', function () {
     ];
 
     $plugins = [
-        $acf
+        $acf,
+        [
+            'name' => 'Fancy Admin UI',
+            'slug' => 'fancy-admin-ui',
+            'required'  => true,
+            'force_activation' => true,
+            'force_deactivation' => false,
+        ]
     ];
 
     tgmpa($plugins);
