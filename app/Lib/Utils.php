@@ -8,7 +8,7 @@ class Utils
      * Create pages default
      * @param array $pages
      */
-    public function create_page(Array $pages)
+    public function create_page(array $pages)
     {
 
         foreach ($pages as $singlepage) {
@@ -25,13 +25,12 @@ class Utils
                 wp_insert_post($page);
             }
         }
-
     }
 
     /**
      * @param array $pages ['front_page' and 'blog_page']
      */
-    public function setting_frontpage(Array $pages_title)
+    public function setting_frontpage(array $pages_title)
     {
         // default options
         $setting_page = [
@@ -46,7 +45,6 @@ class Utils
 
             update_option('page_on_front', get_page_by_title($setting_page['front_page'])->ID);
             update_option('page_for_posts', get_page_by_title($setting_page['blog_page'])->ID);
-
         }
     }
 
@@ -115,5 +113,4 @@ class Utils
             });
         }
     }
-
 }
