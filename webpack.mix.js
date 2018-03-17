@@ -1,6 +1,6 @@
 let mix = require('laravel-mix');
 
-// const rootPath = '../';
+const rootPath = '';
 const resources = 'resources';
 const assets = `${resources}/assets`;
 const dist = 'dist';
@@ -16,7 +16,7 @@ const dist = 'dist';
  |
  */
 mix.setPublicPath(dist);
-mix.setResourceRoot('');
+mix.setResourceRoot(rootPath);
 
 mix.webpackConfig({
     output: {
