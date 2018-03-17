@@ -45,10 +45,24 @@ if (mix.inProduction()) {
     mix.version(); // need to add cb to theme's php page
 }
 else {
+    mix.webpackConfig({
+        devtool: 'inline-source-map',
+    });
     // Source maps when not in production.
     mix.sourceMaps()
         .browserSync({
             proxy: 'setrobot.dev',
-            files: ['**/*.{blade.php, php}', 'dist/css/**/*.css', 'dist/js/**/*.js'] // no touch me!
+            files: [
+                'app/**/*',
+                `${dist}/**/*`,
+                'resources/views/**/*',
+                'resources/lang/**/*',
+            ],
+            notify: {
+                styles: {
+                    top: 'auto',
+                    bottom: '0'
+                }
+            },
         });
 }
