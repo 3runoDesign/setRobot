@@ -13,7 +13,12 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
+
     wp_enqueue_style('setrobot/app.css', asset_path('styles/app.css'), false, null);
+
+    if (file_exists(config('theme.dir') . '/dist/styles/vue-css.css')) {
+        wp_enqueue_style('setrobot/vue.css', asset_path('styles/vue-css.css'), false, null);
+    }
 
     wp_enqueue_script('setrobot/manifest.js', asset_path('scripts/manifest.js'), ['jquery'], null, true);
     wp_enqueue_script('setrobot/vendor.js', asset_path('scripts/vendor.js'), ['setrobot/manifest.js'], null, true);
