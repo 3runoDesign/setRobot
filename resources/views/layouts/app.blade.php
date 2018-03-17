@@ -6,8 +6,7 @@
 <body @php(body_class('app'))>
 
     <div id="app" class="app__wrapper" role="document">
-        <div class="app__container">
-            @php(do_action('get_header'))
+        <div class="app__container">@php(do_action('get_header'))
 
             <main class="app__main" role="main">
                 @if (has_nav_menu('primary_navigation'))
@@ -20,8 +19,6 @@
 
         </div>
     </div>
-
-
     @php(wp_footer())
     @include('partials.foot')
     @stack('scripts-footer')
