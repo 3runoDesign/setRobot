@@ -1,0 +1,23 @@
+{
+  "paths": {
+    "build": "dist/",
+    "root": "",
+    "assets": "resources/assets"
+  },
+  "sass": "styles/app.scss",
+  "scripts": "scripts/app.js",
+  "vue_css": "styles/vue-css.css",
+  "extract": [
+    "babel-polyfill",
+    "vue"
+  ],
+  "serve": {
+    "proxy": "http://setrobot.dev",
+    "files": [
+      "app/**/*",
+      "dist/**/*",
+      "resources/views/**/*",
+      "resources/lang/**/*"
+    ]
+  }
+}

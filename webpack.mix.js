@@ -1,9 +1,6 @@
 let mix = require('laravel-mix');
 
-const rootPath = '';
-const resources = 'resources';
-const assets = `${resources}/assets`;
-const dist = 'dist';
+const config = require('./config.json');
 
 /*
  |--------------------------------------------------------------------------
@@ -15,30 +12,24 @@ const dist = 'dist';
  | file for your application, as well as bundling up your JS files.
  |
  */
-mix.setPublicPath(dist);
-mix.setResourceRoot(rootPath);
+mix.setPublicPath(config.paths.build);
+mix.setResourceRoot(config.paths.root);
 
-mix.webpackConfig({
-    output: {
-        publicPath: `${dist}/`,
-    }})
-    .options({
-        // processCssUrls: false,
-        vue: {
-            esModule: true
-        },
-        extractVueStyles: `${dist}/styles/vue-css.css` // Path or boolean
-        //   globalVueStyles: file, // Variables file to be imported in every component.
-    })
-    .js(`${assets}/scripts/app.js`, `${dist}/scripts/`)
-    .extract([
-        'babel-polyfill',
-        'vue'
-    ])
-    .sass(`${assets}/styles/app.scss`, `${dist}/styles/`)
-    .copy(`${assets}/images/**/*.{png,jpg,jpeg,gif,svg,ico}`, `${dist}/images`, false)
-    .copy(`${assets}/fonts/**/*.{eot,svg,ttf,otf,woff,woff2}`, `${dist}/fonts`, false);
+mix.js(`${config.paths.assets}/${config.scripts}`, `${config.paths.build}/scripts/`)
+    .extract(config.extract)
+    .sass(`${config.paths.assets}/${config.sass}`, `${config.paths.build}/styles/`)
+    .copy(`${config.paths.assets}/images/**/*.{png,jpg,jpeg,gif,svg,ico}`, `${config.paths.build}/images`, false)
+    .copy(`${config.paths.assets}/fonts/**/*.{eot,svg,ttf,otf,woff,woff2}`, `${config.paths.build}/fonts`, false);
 
+
+mix.options({
+    // processCssUrls: false,
+    vue: {
+        esModule: true
+    },
+    extractVueStyles: `${config.paths.build}/${config.vue_css}` // Path or boolean
+    //   globalVueStyles: file, // Variables file to be imported in every component.
+});
 
 if (mix.inProduction()) {
     // Hash and version files in production.
@@ -50,19 +41,5 @@ else {
     });
     // Source maps when not in production.
     mix.sourceMaps()
-        .browserSync({
-            proxy: 'setrobot.dev',
-            files: [
-                'app/**/*',
-                `${dist}/**/*`,
-                'resources/views/**/*',
-                'resources/lang/**/*',
-            ],
-            notify: {
-                styles: {
-                    top: 'auto',
-                    bottom: '0'
-                }
-            },
-        });
+        .browserSync(config.serve);
 }
