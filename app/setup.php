@@ -219,9 +219,9 @@ add_action('tgmpa_register', function () {
         [
             'name' => 'Fancy Admin UI',
             'slug' => 'fancy-admin-ui',
-//            'required'  => true,
-//            'force_activation' => true,
-//            'force_deactivation' => false,
+            'required'  => true,
+            'force_activation' => true,
+            'force_deactivation' => false,
         ]
     ];
 
