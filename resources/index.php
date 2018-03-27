@@ -1,2 +1,2 @@
 <?php
-// This file is deliberately blank
+// this file is deliberately blank

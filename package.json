@@ -1,70 +1,28 @@
 {
   "name": "setrobot",
-  "version": "2.0.0",
-  "author": "3runo Desing",
-  "homepage": "https://github.com/3runoDesign/setRobot",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/3runoDesign/setRobot.git"
-  },
-  "bugs": {
-    "url": "https://github.com/3runoDesign/setRobot/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
-  "scripts": {
-    "build": "npm install && bower install"
-  },
-  "engines": {
-    "node": ">= 0.12.0",
-    "npm": ">=2.1.5"
-  },
-  "semistandard": {
-    "globals": [
-      "jQuery"
-    ]
-  },
-  "dependencies": {
-    "jquery": "^3.2.1"
-  },
+  "version": "3.0.0",
+  "repository": "git@github.com:3runoDesign/setRobot.git",
+  "author": "Bruno Fernando <bruno2fernando@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babelify": "^8.0.0",
-    "browser-sync": "^2.23.5",
-    "browserify": "^15.2.0",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-cached": "^1.1.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-csscomb": "^3.0.8",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-filter": "^5.1.0",
-    "gulp-flatten": "^0.4.0",
-    "gulp-ignore": "^2.0.2",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-rev": "^8.1.1",
-    "gulp-rev-napkin": "^0.1.0",
-    "gulp-rev-replace": "^0.4.3",
-    "gulp-sass": "^3.1.0",
-    "gulp-semistandard": "^1.0.0",
-    "gulp-sequence": "^1.0.0",
-    "gulp-sizereport": "^1.2.0",
-    "gulp-sourcemaps": "^2.6.3",
-    "gulp-streamify": "^1.0.2",
-    "gulp-svgmin": "^1.2.4",
-    "gulp-tap": "^1.0.1",
-    "gulp-uglify": "^3.0.0",
-    "gulp-watch": "^5.0.0",
-    "gulp.spritesmith": "^6.9.0",
-    "main-bower-files": "^2.13.1",
-    "merge-stream": "^1.0.1",
-    "require-dir": "^0.3.2",
-    "vinyl-buffer": "^1.0.1"
+    "babel-polyfill": "^6.26.0",
+    "bourbon": "^5.0.0",
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "bulma": "^0.6.2",
+    "cross-env": "^5.1.4",
+    "dotenv": "^5.0.1",
+    "family.scss": "^1.0.8",
+    "laravel-mix": "^2.1.0",
+    "vue": "^2.5.16"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   }
 }

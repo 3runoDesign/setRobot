@@ -1,37 +1,54 @@
 {
-    "name": "bruno/setrobot",
-    "authors": [
-        {
-            "name": "Bruno Fernando",
-            "email": "bruno2fernando@gmail.com"
-        }
-    ],
-    "autoload": {
-      "psr-4": {
-        "SetRobot\\": "app/lib/SetRobot/"
-      }
-    },
-    "require": {
-        "php": ">=5.6.4",
-        "composer/installers": "~1.0",
-        "illuminate/view": "~5.4.0",
-        "illuminate/config": "~5.4.0",
-        "jjgrainger/posttypes": "^1.1"
-    },
-    "require-dev": {
-      "squizlabs/php_codesniffer": "^2.8.0"
-    },
-    "scripts": {
-      "test": ["phpcs"],
-      "pre-install-cmd": [
-        "yarn",
-        "bower install"
-      ],
-      "post-create-project-cmd": [
-        "SetRobot\\PostCreateProject::updateHeaders",
-        "SetRobot\\PostCreateProject::buildOptions",
-        "yarn",
-        "bower install"
-      ]
+  "name": "bruno/setrobot",
+  "license": "MIT",
+  "description": "A opinionated Wordpress base theme based on Sage",
+  "authors": [
+    {
+      "name": "Bruno Fernando",
+      "email": "bruno2fernando@gmail.com"
     }
+  ],
+  "keywords": ["wordpress", "sage"],
+  "support": {
+    "issues": "https://github.com/3runoDesign/setRobot/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "php": ">=7",
+    "composer/installers": "~1.4.0",
+    "illuminate/support": "~5.4",
+    "roots/sage-lib": "~9.0.0-beta.4",
+    "soberwp/controller": "~9.0.0-beta.4",
+    "soberwp/models": "^1.0.6-p",
+    "rarst/wps": "^1.1",
+    "vlucas/phpdotenv": "^2.4",
+    "johnbillion/extended-cpts": "^4",
+    "StoutLogic/acf-builder": "^1.6",
+    "press-bits/media-library-svg-display": "^0.1.2",
+    "tgmpa/tgm-plugin-activation": "^2.6"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.8.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "vendor/{$name}/": ["rarst/wps"]
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "test": "phpcs",
+    "post-create-project-cmd": [
+      "@update-headers"
+    ],
+    "update-headers": [
+      "App\\Lib\\PostCreateProject::updateHeaders"
+    ]
+  }
 }

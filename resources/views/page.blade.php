@@ -1,8 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-  @while(have_posts()) @php(the_post())
-    @include('partials.page-header')
-    @include('partials.content-page')
-  @endwhile
+    @mainquery
+    <article @php(post_class()) role="article">
+        <header>
+            <h1 class="entry__title">{{ get_the_title() }}</h1>
+        </header>
+        <div class="entry__content">
+            @php(the_content())
+            page
+        </div>
+    </article>
+    @endmainquery
 @endsection
