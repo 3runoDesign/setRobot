@@ -1,5 +1,7 @@
-let mix = require('laravel-mix');
+require('dotenv').config();
 
+let mix = require('laravel-mix');
+const proxy_url = process.env.MIX_URL_PROXY;
 const config = require('./config.json');
 
 /*
@@ -27,7 +29,7 @@ mix.options({
     vue: {
         esModule: true
     },
-    extractVueStyles: `${config.paths.build}/${config.vue_css}` // Path or boolean
+    // extractVueStyles: `${config.paths.build}/${config.vue_css}` // Path or boolean
     //   globalVueStyles: file, // Variables file to be imported in every component.
 });
 
@@ -41,5 +43,9 @@ else {
     });
     // Source maps when not in production.
     mix.sourceMaps()
-        .browserSync(config.serve);
+    // .browserSync(config.serve);
+        .browserSync({
+            proxy: proxy_url,
+            files: config.serve.files
+        });
 }
