@@ -1,0 +1,177 @@
+body.page-reset-pass .pass1 {
+  border-color: transparent;
+  padding-left: 0;
+}
+
+body.page-reset-pass,
+body.page-register,
+body.page-login,
+body.page-lost-password {
+  background-size: cover;
+
+  .main-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .columns {
+    margin-top: 0;
+  }
+
+  .faded-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(#15151c, .5);
+    background: linear-gradient(to bottom,rgba(#15151c,0) 0, rgba(#15151c,.1) 40%, rgba(#15151c,.3) 55%, rgba(#15151c,.61) 75%, #15151c 100%);
+  }
+
+  .login-sidebar {
+    border-top: 3px solid $main-color;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    background: #fff;
+  }
+
+  .login-container {
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .login-container form {
+    padding-top: 15px;
+  }
+
+  .login-container form p.focused {
+    border-color: $bright-color;
+  }
+
+  .login-container form p.login-submit,
+  .login-container form p.submit,
+  .login-container form p.clear-style {
+    border-color: transparent;
+    padding-left: 0;
+  }
+
+  .button.is-primary:focus:not(:active), .button.is-primary.is-focused:not(:active) {
+    box-shadow: 0 0 0 0.125em rgba($main-color, 0.25);
+  }
+
+
+  .button.is-primary {
+    background-color: $main-color;
+  }
+
+  .login-container form p.login-submit {
+    .buttons {
+      margin-bottom: 0;
+
+      .button {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .login-container form p input[type='text'],
+  .login-container form p input[type='password'] {
+    border: none;
+    height: 25px;
+    min-height: 25px;
+    padding: 0;
+    margin-top: -4px;
+    background: 0 0;
+    box-shadow: none;
+  }
+
+  .login-container form p input:focus {
+    box-shadow: none;
+  }
+
+  .login-container form p {
+    background-color: $white;
+    position: relative;
+    border: 2px solid rgba($medium-gray,.07);
+    border-radius: 3px;
+    padding: 7px 12px 4px;
+    overflow: hidden;
+    transition: border .3s ease-in;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  .login-container form p label {
+    margin: 0 0 3px;
+    display: block;
+    opacity: 1;
+    transition: opacity .2s ease;
+    font-weight: 500;
+    font-size: 12px;
+    color: #58666e;
+  }
+
+  .logo-title-container {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: -100px;
+    left: 30px;
+
+    .logo {
+      height: auto;
+      max-width: 35px;
+      margin: 0 auto;
+      padding-top: 55px;
+      padding-bottom: 20px;
+      float: left;
+    }
+
+    .copy {
+      width: auto;
+      padding: 30px 30px 12px;
+
+      h1 {
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        z-index: 9999;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+        top: 0;
+        line-height: 45px;
+        margin: 20px 0 0 14px;
+      }
+
+      p {
+        color: #fff;
+        font-size: 13px;
+        max-width: 650px;
+        opacity: .9;
+        z-index: 99;
+        font-weight: 300;
+        margin-top: 0;
+        left: 15px;
+        position: relative;
+        top: -8px;
+      }
+    }
+  }
+
+
+  .login-notification {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    z-index: 3;
+  }
+}

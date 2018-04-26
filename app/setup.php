@@ -102,6 +102,8 @@ add_action('after_setup_theme', function () {
      * https://roots.io/using-woocommerce-with-sage/
      */
     // add_theme_support('woocommerce');
+
+    (new \App\Lib\Lock());
 }, 100);
 
 /**
@@ -185,7 +187,13 @@ add_action('after_setup_theme', function () {
 add_action('after_setup_theme', function () {
     (new Utils())->create_page([
         'Home',
-        'Blog'
+        'Blog',
+        'Login',
+        'Register',
+        'Lost Password',
+        'Reset Pass',
+        'Profile user'
+
     ]);
 
     (new Utils())->setting_frontpage([

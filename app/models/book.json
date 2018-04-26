@@ -1,5 +1,5 @@
 {
-  "active": false,
+  "active": true,
   "type": "post-type",
   "name": "book",
   "supports": ["title", "editor", "thumbnail"],

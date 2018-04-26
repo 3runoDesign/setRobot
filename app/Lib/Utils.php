@@ -10,7 +10,6 @@ class Utils
      */
     public function create_page(array $pages)
     {
-
         foreach ($pages as $singlepage) {
             $page = [
                 'post_title' => $singlepage,
@@ -22,8 +21,15 @@ class Utils
             $page_exists = get_page_by_title($page['post_title']);
 
             if ($page_exists == null) {
+
+
                 wp_insert_post($page);
+
+                return $page;
             }
+
+            return $page_exists;
+
         }
     }
 
@@ -113,4 +119,56 @@ class Utils
             });
         }
     }
+
+    public function get_error_message($error_code) {
+    switch($error_code) {
+      case 'empty_username':
+        return __('Email was blank', 'personalize-login');
+        case 'empty_password':
+            return __( 'Password was blank', 'personalize-login' );
+        case 'invalid_username':
+            return __(
+                "Something did not work. <a href='%s'>Do you want to recover your account?</a>?",
+                'personalize-login'
+            );
+        case 'incorrect_password':
+            $err = __(
+                "Something did not work. <a href='%s'>Do you want to recover your account?</a>?",
+                'personalize-login'
+            );
+            return sprintf( $err, wp_lostpassword_url() );
+
+        // Registration errors
+        case 'email':
+          return __( 'The email address you entered is not valid.', 'personalize-login' );
+
+        case 'email_exists':
+          return __( 'An account exists with this email address.', 'personalize-login' );
+
+        case 'closed':
+          return __( 'Registering new users is currently not allowed.', 'personalize-login' );
+
+        // Lost password
+        case 'empty_username':
+            return __( 'You need to enter your email address to continue.', 'personalize-login' );
+
+        case 'invalid_email':
+        case 'invalidcombo':
+            return __( 'There are no users registered with this email address.', 'personalize-login' );
+
+        // Reset password
+        case 'expiredkey':
+        case 'invalidkey':
+            return __( 'The password reset link you used is not valid anymore.', 'personalize-login' );
+        case 'password_reset_mismatch':
+            return __( "The two passwords you entered don't match.", 'personalize-login' );
+        case 'password_reset_empty':
+            return __( "Sorry, we don't accept empty passwords.", 'personalize-login' );
+        case 'entered_successfully':
+            return __( "You have successfully logged in!", 'personalize-login' );
+        default:
+            break;
+    }
+    return __( 'An unknown error occurred. Please try again later.', 'personalize-login' );
+  }
 }

@@ -8,6 +8,13 @@
 
     @php(wp_head())
 
+    @if(is_admin_bar_showing())
+        <style>
+            html { margin-top: 32px !important; }
+            * html body { margin-top: 32px !important; }
+        </style>
+    @endif
+
     @stack('styles-head')
     @stack('scripts-head')
 </head>

@@ -225,3 +225,21 @@ add_filter('nav_menu_item_id', '__return_null');
 add_filter('sober/models/path', function () {
     return dirname(get_template_directory()) . '/app/models';
 });
+
+// add_action( 'login_form_register', function() {
+//     if ( 'GET' == $_SERVER['REQUEST_METHOD'] ) {
+//         if ( is_user_logged_in() ) {
+//             $this->redirect_logged_in_user();
+//         } else {
+//             wp_redirect( get_permalink(get_page_by_title( 'Register' )->ID) );
+//         }
+//         exit;
+//     }
+// });
+// add_filter( 'init', function() {
+//     global $pagenow;
+//
+//     if ( isset($_GET['action']) && ( strtolower($pagenow) == 'wp-login.php') && ( strtolower( $_GET['action']) == 'register' ) ) {
+//         wp_redirect( get_permalink(get_page_by_title( 'Register' )->ID) );
+//     }
+// });

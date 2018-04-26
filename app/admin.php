@@ -29,11 +29,9 @@ if (defined('WP_ENV')) {
             .wp-admin #wpadminbar .ab-item {
                 padding: 7px 12px;
             }
-
             #wpadminbar .admin-bar__current-env .ab-item {
                 color:#f4f3f4!important;
-                background-color: #fe3055!important;
-                padding: 7px 12px;
+                background-color: #fe3055!important
             }
 
             #wpadminbar .admin-bar__current-env[class*="is-staging"] .ab-item {
