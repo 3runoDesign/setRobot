@@ -40,8 +40,9 @@
                 </p>
 
                 <p class="submit">
-                    <input type="submit" name="submit" class="button is-danger is-medium"
-                           value="{{ __('Reset Password', 'setrobot') }}"/>
+                    <button type="submit" name="submit" class="button is-primary is-medium">
+                        {{ __("Reset Password", "setrobot") }}
+                    </button>
                 </p>
 
                 <div class="tabs is-toggle is-small is-right">

@@ -111,7 +111,7 @@
 
                 <p class="login-submit">
                     <span class="buttons">
-                        <input type="submit" name="wp-submit" id="wp-submit" value="{{ __("Log in", "setrobot") }}" class="button is-primary is-medium">
+                        <input type="submit" name="wp-submit" id="wp-submit" value="{{ __("Login", "setrobot") }}" class="button is-primary is-medium">
 
                         @if(get_option('users_can_register'))
                             <a href="{{ wp_registration_url() }}" class="button is-medium">{{ __("Register", "setrobot") }}</a>

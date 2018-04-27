@@ -100,7 +100,7 @@
                        value="{{ esc_attr( $attributes['login'] ) }}" autocomplete="off"/>
                 <p class="submit">
                     <input type="submit" name="wp-submit" id="wp-submit"
-                           class="button is-danger is-medium"
+                           class="button is-primary is-medium"
                            value="{{ esc_attr_e('Reset Password') }}"/>
                 </p>
 

@@ -1,43 +1,31 @@
-# Copyright (C) 2018 setrobot
-# This file is distributed under the same license as the setrobot package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: setrobot\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-27 12:04-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: app/admin.php:22
-msgid "Environment"
-msgstr ""
-
-#: app/setup.php:61
-msgid "Primary Navigation"
-msgstr ""
-
-#: app/setup.php:108
-msgid "Main"
-msgstr ""
-
-#: app/setup.php:114
-msgid "Footer"
-msgstr ""
-
-#: resources/functions.php:19
+#: resources/functions.php:18
 msgid "Sage &rsaquo; Error"
 msgstr ""
 
-#: resources/functions.php:29
+#: resources/functions.php:28
 msgid "You must be using PHP 7 or greater."
 msgstr ""
 
-#: resources/functions.php:29
+#: resources/functions.php:28
 msgid "Invalid PHP version"
 msgstr ""
 
@@ -45,22 +33,256 @@ msgstr ""
 msgid "You must be using WordPress 4.7.0 or greater."
 msgstr ""
 
-#: resources/functions.php:36
+#: resources/functions.php:37
 msgid "Invalid WordPress version"
 msgstr ""
 
-#: resources/functions.php:53
+#: resources/functions.php:55
 msgid "You must run <code>composer install</code> from the Sage directory."
 msgstr ""
 
-#: resources/functions.php:54
+#: resources/functions.php:56
 msgid "Autoloader not found."
 msgstr ""
 
-#: resources/functions.php:74
+#: resources/functions.php:76
+#, php-format
 msgid "Error locating <code>%s</code> for inclusion."
 msgstr ""
 
-#: resources/views/template-custom.blade.php:1
-msgid "Custom Template"
+#: app/admin.php:22
+msgid "Environment"
+msgstr ""
+
+#: app/Lib/Utils.php:126
+msgid "Email was blank"
+msgstr ""
+
+#: app/Lib/Utils.php:128
+msgid "Password was blank"
+msgstr ""
+
+#: app/Lib/Utils.php:131 app/Lib/Utils.php:136
+#, php-format
+msgid ""
+"Something did not work. <a href='%s'>Do you want to recover your account?</a>"
+msgstr ""
+
+#: app/Lib/Utils.php:143
+msgid "The email address you entered is not valid."
+msgstr ""
+
+#: app/Lib/Utils.php:146
+msgid "An account exists with this email address."
+msgstr ""
+
+#: app/Lib/Utils.php:149
+msgid "Registering new users is currently not allowed."
+msgstr ""
+
+#: app/Lib/Utils.php:153
+msgid "You need to enter your email address to continue."
+msgstr ""
+
+#: app/Lib/Utils.php:157
+msgid "There are no users registered with this email address."
+msgstr ""
+
+#: app/Lib/Utils.php:162
+msgid "The password reset link you used is not valid anymore."
+msgstr ""
+
+#: app/Lib/Utils.php:164
+msgid "The two passwords you entered don't match."
+msgstr ""
+
+#: app/Lib/Utils.php:166
+msgid "Sorry, we don't accept empty passwords."
+msgstr ""
+
+#: app/Lib/Utils.php:168
+msgid "You have successfully logged in!"
+msgstr ""
+
+#: app/Lib/Utils.php:172
+msgid "An unknown error occurred. Please try again later."
+msgstr ""
+
+#: app/setup.php:73
+msgid "Primary Navigation"
+msgstr ""
+
+#: app/setup.php:122
+msgid "Main"
+msgstr ""
+
+#: app/setup.php:128
+msgid "Footer"
+msgstr ""
+
+#: resources/views/404.blade.php:6
+msgid "404 - Page Not Found"
+msgstr ""
+
+#: resources/views/layouts/lock.blade.php:27
+msgid "Created by setRobot."
+msgstr ""
+
+#: resources/views/page-login.blade.php:47
+#, python-format
+msgid "You have successfully registered to <strong>%s</strong>."
+msgstr ""
+
+#: resources/views/page-login.blade.php:67
+msgid "You have signed out. Would you like to sign in again?"
+msgstr ""
+
+#: resources/views/page-login.blade.php:79
+msgid "Check your email for a link to reset your password."
+msgstr ""
+
+#: resources/views/page-login.blade.php:91
+msgid "Your password has been changed. You can sign in now."
+msgstr ""
+
+#: resources/views/page-login.blade.php:99
+msgid "Login"
+msgstr ""
+
+#: resources/views/page-login.blade.php:101
+msgid "Enter your credential"
+msgstr ""
+
+#: resources/views/page-login.blade.php:105
+msgid "Username:"
+msgstr ""
+
+#: resources/views/page-login.blade.php:108
+msgid "Password:"
+msgstr ""
+
+#: resources/views/page-login.blade.php:117
+msgid "Register"
+msgstr ""
+
+#: resources/views/page-login.blade.php:128
+msgid "Remember Me Forgot your password?"
+msgstr ""
+
+#: resources/views/page-login.blade.php:135
+msgid "Lost Password?"
+msgstr ""
+
+#: resources/views/page-login.blade.php:136
+#: resources/views/page-lost-password.blade.php:51
+#: resources/views/page-reset-pass.blade.php:110
+msgid "Back to home"
+msgstr ""
+
+#: resources/views/page-lost-password.blade.php:31
+msgid "Lost password"
+msgstr ""
+
+#: resources/views/page-lost-password.blade.php:33
+msgid ""
+"Enter your email address and we'll send you a link you can use to reset your "
+"password."
+msgstr ""
+
+#: resources/views/page-lost-password.blade.php:38
+#: resources/views/page-register.blade.php:88
+msgid "Email"
+msgstr ""
+
+#: resources/views/page-lost-password.blade.php:44
+msgid "Reset Password"
+msgstr ""
+
+#: resources/views/page-lost-password.blade.php:50
+#: resources/views/page-register.blade.php:109
+msgid "Login with my credentials"
+msgstr ""
+
+#: resources/views/page-register.blade.php:21
+msgid "Please don't leave the required fields."
+msgstr ""
+
+#: resources/views/page-register.blade.php:23
+msgid "Invalid email address."
+msgstr ""
+
+#: resources/views/page-register.blade.php:25
+msgid "Email already exist."
+msgstr ""
+
+#: resources/views/page-register.blade.php:27
+msgid "Password do not match."
+msgstr ""
+
+#: resources/views/page-register.blade.php:32
+msgid "Error in creating the user."
+msgstr ""
+
+#: resources/views/page-register.blade.php:43
+msgid "Your registration created successfully."
+msgstr ""
+
+#: resources/views/page-register.blade.php:72
+msgid "Don't have an account?"
+msgstr ""
+
+#: resources/views/page-register.blade.php:75
+msgid "Create one now."
+msgstr ""
+
+#: resources/views/page-register.blade.php:80
+msgid "First Name"
+msgstr ""
+
+#: resources/views/page-register.blade.php:84
+msgid "Last Name"
+msgstr ""
+
+#: resources/views/page-register.blade.php:92
+msgid "Username"
+msgstr ""
+
+#: resources/views/page-register.blade.php:96
+msgid "Password"
+msgstr ""
+
+#: resources/views/page-register.blade.php:100
+msgid "Password again"
+msgstr ""
+
+#: resources/views/page-register.blade.php:104
+msgid "Submit"
+msgstr ""
+
+#: resources/views/page-reset-pass.blade.php:54
+msgid "Pick a New Password"
+msgstr ""
+
+#: resources/views/page-reset-pass.blade.php:73
+msgid "Strength indicator"
+msgstr ""
+
+#: resources/views/page-reset-pass.blade.php:80
+msgid "Confirm new password"
+msgstr ""
+
+#: resources/views/partials/comments.blade.php:22
+msgid "&larr; Older comments"
+msgstr ""
+
+#: resources/views/partials/comments.blade.php:25
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: resources/views/partials/comments.blade.php:34
+msgid "Comments are closed."
+msgstr ""
+
+#: resources/views/partials/entry-meta.blade.php:3
+msgid "By"
 msgstr ""

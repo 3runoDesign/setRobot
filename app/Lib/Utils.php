@@ -123,52 +123,52 @@ class Utils
     public function get_error_message($error_code) {
     switch($error_code) {
       case 'empty_username':
-        return __('Email was blank', 'personalize-login');
+        return __('Email was blank', 'setrobot');
         case 'empty_password':
-            return __( 'Password was blank', 'personalize-login' );
+            return __( 'Password was blank', 'setrobot' );
         case 'invalid_username':
             return __(
-                "Something did not work. <a href='%s'>Do you want to recover your account?</a>?",
-                'personalize-login'
+                "Something did not work. <a href='%s'>Do you want to recover your account?</a>",
+                'setrobot'
             );
         case 'incorrect_password':
             $err = __(
-                "Something did not work. <a href='%s'>Do you want to recover your account?</a>?",
-                'personalize-login'
+                "Something did not work. <a href='%s'>Do you want to recover your account?</a>",
+                'setrobot'
             );
             return sprintf( $err, wp_lostpassword_url() );
 
         // Registration errors
         case 'email':
-          return __( 'The email address you entered is not valid.', 'personalize-login' );
+          return __( 'The email address you entered is not valid.', 'setrobot' );
 
         case 'email_exists':
-          return __( 'An account exists with this email address.', 'personalize-login' );
+          return __( 'An account exists with this email address.', 'setrobot' );
 
         case 'closed':
-          return __( 'Registering new users is currently not allowed.', 'personalize-login' );
+          return __( 'Registering new users is currently not allowed.', 'setrobot' );
 
         // Lost password
         case 'empty_username':
-            return __( 'You need to enter your email address to continue.', 'personalize-login' );
+            return __( 'You need to enter your email address to continue.', 'setrobot' );
 
         case 'invalid_email':
         case 'invalidcombo':
-            return __( 'There are no users registered with this email address.', 'personalize-login' );
+            return __( 'There are no users registered with this email address.', 'setrobot' );
 
         // Reset password
         case 'expiredkey':
         case 'invalidkey':
-            return __( 'The password reset link you used is not valid anymore.', 'personalize-login' );
+            return __( 'The password reset link you used is not valid anymore.', 'setrobot' );
         case 'password_reset_mismatch':
-            return __( "The two passwords you entered don't match.", 'personalize-login' );
+            return __( "The two passwords you entered don't match.", 'setrobot' );
         case 'password_reset_empty':
-            return __( "Sorry, we don't accept empty passwords.", 'personalize-login' );
+            return __( "Sorry, we don't accept empty passwords.", 'setrobot' );
         case 'entered_successfully':
-            return __( "You have successfully logged in!", 'personalize-login' );
+            return __( "You have successfully logged in!", 'setrobot' );
         default:
             break;
     }
-    return __( 'An unknown error occurred. Please try again later.', 'personalize-login' );
+    return __( 'An unknown error occurred. Please try again later.', 'setrobot' );
   }
 }
