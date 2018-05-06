@@ -37,16 +37,15 @@
     @mainquery
 
         @if (count( $errors ) > 0)
-            <div class="login-notification notification is-warning">
-                <button class="delete"></button>
-                <ul>
+            @section('notification')
+                @component('components.notification-area', ['class' => 'warning'])
                     @foreach ($errors as $error)
                         <li>
                             {!! $error !!}
                         </li>
                     @endforeach
-                </ul>
-            </div>
+                @endcomponent
+            @endsection
         @endif
 
         <div class="login-container">

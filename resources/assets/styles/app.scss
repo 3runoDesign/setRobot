@@ -11,4 +11,5 @@
 @import "~family.scss";
 
 // Import
-@import "modules/login";
+@import "modules/notification",
+        "modules/login";

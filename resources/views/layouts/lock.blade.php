@@ -41,6 +41,11 @@
 
         </div>
     </div>
+
+    <div class="notification-area">
+        @yield('notification')
+    </div>
+
     @php(wp_footer())
     @include('partials.foot')
 
@@ -60,9 +65,9 @@
             });
 
             @isset($_GET['logout'])
-            @if ($_GET['logout'] == 'success')
-            setTimeout("location.href = '{{ get_bloginfo("url") }}';", 2000);
-            @endif
+                @if ($_GET['logout'] == 'success')
+                    setTimeout("location.href = '{{ get_bloginfo("url") }}';", 6000);
+                @endif
             @endisset
         })(jQuery);
     </script>

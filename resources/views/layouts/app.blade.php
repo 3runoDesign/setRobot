@@ -19,6 +19,11 @@
 
         </div>
     </div>
+
+    <div class="notification-area">
+        @yield('notification')
+    </div>
+
     @php(wp_footer())
     @include('partials.foot')
     @stack('scripts-footer')

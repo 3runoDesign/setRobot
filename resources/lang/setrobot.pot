@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-27 12:04-0300\n"
+"POT-Creation-Date: 2018-05-06 01:02-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,57 +54,57 @@ msgstr ""
 msgid "Environment"
 msgstr ""
 
-#: app/Lib/Utils.php:126
+#: app/Lib/Utils.php:118
 msgid "Email was blank"
 msgstr ""
 
-#: app/Lib/Utils.php:128
+#: app/Lib/Utils.php:120
 msgid "Password was blank"
 msgstr ""
 
-#: app/Lib/Utils.php:131 app/Lib/Utils.php:136
+#: app/Lib/Utils.php:123 app/Lib/Utils.php:128
 #, php-format
 msgid ""
 "Something did not work. <a href='%s'>Do you want to recover your account?</a>"
 msgstr ""
 
-#: app/Lib/Utils.php:143
+#: app/Lib/Utils.php:135
 msgid "The email address you entered is not valid."
 msgstr ""
 
-#: app/Lib/Utils.php:146
+#: app/Lib/Utils.php:138
 msgid "An account exists with this email address."
 msgstr ""
 
-#: app/Lib/Utils.php:149
+#: app/Lib/Utils.php:141
 msgid "Registering new users is currently not allowed."
 msgstr ""
 
-#: app/Lib/Utils.php:153
+#: app/Lib/Utils.php:145
 msgid "You need to enter your email address to continue."
 msgstr ""
 
-#: app/Lib/Utils.php:157
+#: app/Lib/Utils.php:149
 msgid "There are no users registered with this email address."
 msgstr ""
 
-#: app/Lib/Utils.php:162
+#: app/Lib/Utils.php:154
 msgid "The password reset link you used is not valid anymore."
 msgstr ""
 
-#: app/Lib/Utils.php:164
+#: app/Lib/Utils.php:156
 msgid "The two passwords you entered don't match."
 msgstr ""
 
-#: app/Lib/Utils.php:166
+#: app/Lib/Utils.php:158
 msgid "Sorry, we don't accept empty passwords."
 msgstr ""
 
-#: app/Lib/Utils.php:168
+#: app/Lib/Utils.php:160
 msgid "You have successfully logged in!"
 msgstr ""
 
-#: app/Lib/Utils.php:172
+#: app/Lib/Utils.php:164
 msgid "An unknown error occurred. Please try again later."
 msgstr ""
 
@@ -124,82 +124,86 @@ msgstr ""
 msgid "404 - Page Not Found"
 msgstr ""
 
+#: resources/views/front-page.blade.php:5
+msgid "Logged in successfully!"
+msgstr ""
+
 #: resources/views/layouts/lock.blade.php:27
 msgid "Created by setRobot."
 msgstr ""
 
-#: resources/views/page-login.blade.php:47
+#: resources/views/page-login.blade.php:48
 #, python-format
 msgid "You have successfully registered to <strong>%s</strong>."
 msgstr ""
 
-#: resources/views/page-login.blade.php:67
+#: resources/views/page-login.blade.php:70
 msgid "You have signed out. Would you like to sign in again?"
 msgstr ""
 
-#: resources/views/page-login.blade.php:79
+#: resources/views/page-login.blade.php:83
 msgid "Check your email for a link to reset your password."
 msgstr ""
 
-#: resources/views/page-login.blade.php:91
+#: resources/views/page-login.blade.php:96
 msgid "Your password has been changed. You can sign in now."
 msgstr ""
 
-#: resources/views/page-login.blade.php:99
+#: resources/views/page-login.blade.php:105
 msgid "Login"
 msgstr ""
 
-#: resources/views/page-login.blade.php:101
+#: resources/views/page-login.blade.php:107
 msgid "Enter your credential"
 msgstr ""
 
-#: resources/views/page-login.blade.php:105
+#: resources/views/page-login.blade.php:111
 msgid "Username:"
 msgstr ""
 
-#: resources/views/page-login.blade.php:108
+#: resources/views/page-login.blade.php:114
 msgid "Password:"
 msgstr ""
 
-#: resources/views/page-login.blade.php:117
+#: resources/views/page-login.blade.php:123
 msgid "Register"
 msgstr ""
 
-#: resources/views/page-login.blade.php:128
+#: resources/views/page-login.blade.php:134
 msgid "Remember Me Forgot your password?"
 msgstr ""
 
-#: resources/views/page-login.blade.php:135
+#: resources/views/page-login.blade.php:141
 msgid "Lost Password?"
 msgstr ""
 
-#: resources/views/page-login.blade.php:136
-#: resources/views/page-lost-password.blade.php:51
-#: resources/views/page-reset-pass.blade.php:110
+#: resources/views/page-login.blade.php:142
+#: resources/views/page-lost-password.blade.php:52
+#: resources/views/page-reset-pass.blade.php:109
 msgid "Back to home"
 msgstr ""
 
-#: resources/views/page-lost-password.blade.php:31
+#: resources/views/page-lost-password.blade.php:32
 msgid "Lost password"
 msgstr ""
 
-#: resources/views/page-lost-password.blade.php:33
+#: resources/views/page-lost-password.blade.php:34
 msgid ""
 "Enter your email address and we'll send you a link you can use to reset your "
 "password."
 msgstr ""
 
-#: resources/views/page-lost-password.blade.php:38
-#: resources/views/page-register.blade.php:88
+#: resources/views/page-lost-password.blade.php:39
+#: resources/views/page-register.blade.php:90
 msgid "Email"
 msgstr ""
 
-#: resources/views/page-lost-password.blade.php:44
+#: resources/views/page-lost-password.blade.php:45
 msgid "Reset Password"
 msgstr ""
 
-#: resources/views/page-lost-password.blade.php:50
-#: resources/views/page-register.blade.php:109
+#: resources/views/page-lost-password.blade.php:51
+#: resources/views/page-register.blade.php:111
 msgid "Login with my credentials"
 msgstr ""
 
@@ -227,47 +231,47 @@ msgstr ""
 msgid "Your registration created successfully."
 msgstr ""
 
-#: resources/views/page-register.blade.php:72
+#: resources/views/page-register.blade.php:74
 msgid "Don't have an account?"
 msgstr ""
 
-#: resources/views/page-register.blade.php:75
+#: resources/views/page-register.blade.php:77
 msgid "Create one now."
 msgstr ""
 
-#: resources/views/page-register.blade.php:80
+#: resources/views/page-register.blade.php:82
 msgid "First Name"
 msgstr ""
 
-#: resources/views/page-register.blade.php:84
+#: resources/views/page-register.blade.php:86
 msgid "Last Name"
 msgstr ""
 
-#: resources/views/page-register.blade.php:92
+#: resources/views/page-register.blade.php:94
 msgid "Username"
 msgstr ""
 
-#: resources/views/page-register.blade.php:96
+#: resources/views/page-register.blade.php:98
 msgid "Password"
 msgstr ""
 
-#: resources/views/page-register.blade.php:100
+#: resources/views/page-register.blade.php:102
 msgid "Password again"
 msgstr ""
 
-#: resources/views/page-register.blade.php:104
+#: resources/views/page-register.blade.php:106
 msgid "Submit"
 msgstr ""
 
-#: resources/views/page-reset-pass.blade.php:54
+#: resources/views/page-reset-pass.blade.php:53
 msgid "Pick a New Password"
 msgstr ""
 
-#: resources/views/page-reset-pass.blade.php:73
+#: resources/views/page-reset-pass.blade.php:72
 msgid "Strength indicator"
 msgstr ""
 
-#: resources/views/page-reset-pass.blade.php:80
+#: resources/views/page-reset-pass.blade.php:79
 msgid "Confirm new password"
 msgstr ""
 

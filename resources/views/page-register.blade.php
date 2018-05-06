@@ -52,17 +52,19 @@
 
     @if (!$user_ID && get_option('users_can_register'))
         @if ( !empty($err) )
-            <div class="login-notification notification is-warning">
-                <button class="delete"></button>
-                <p>{{ $err }}</p>
-            </div>
+            @section('notification')
+                @component('components.notification-area', ['class' => 'warning'])
+                    <p>{{ $err }}</p>
+                @endcomponent
+            @endsection
         @endif
 
         @if ( !empty($success) )
-            <div class="login-notification notification is-success">
-                <button class="delete"></button>
-                <p>{{ $success }}</p>
-            </div>
+            @section('notification')
+                @component('components.notification-area', ['class' => 'success'])
+                    <p>{{ $success }}</p>
+                @endcomponent
+            @endsection
         @endif
 
 

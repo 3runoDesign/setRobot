@@ -14,16 +14,17 @@
         @endphp
 
         @if (count( $errors ) > 0)
-            <div class="login-notification notification is-warning">
-                <button class="delete"></button>
-                <ul>
-                    @foreach ($errors as $error)
-                        <li>
-                            {!! $error !!}
-                        </li>
-                    @endforeach
-                </ul>
-            </div>
+            @section('notification')
+                @component('components.notification-area', ['class' => 'warning'])
+                    <ul>
+                        @foreach ($errors as $error)
+                            <li>
+                                {!! $error !!}
+                            </li>
+                        @endforeach
+                    </ul>
+                @endcomponent
+            @endsection
         @endif
 
         <div class="login-container">

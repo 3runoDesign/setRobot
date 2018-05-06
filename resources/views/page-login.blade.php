@@ -28,16 +28,17 @@
         @endphp
 
         @if (count( $errors ) > 0)
-            <div class="login-notification notification is-warning">
-                <button class="delete"></button>
-                <ul>
-                    @foreach ($errors as $error)
-                        <li>
-                            {!! $error !!}
-                        </li>
-                    @endforeach
-                </ul>
-            </div>
+            @section('notification')
+                @component('components.notification-area', ['class' => 'warning'])
+                    <ul>
+                        @foreach ($errors as $error)
+                            <li>
+                                {!! $error !!}
+                            </li>
+                        @endforeach
+                    </ul>
+                @endcomponent
+            @endsection
         @endif
 
         {{--Show success message if user just registered--}}
@@ -48,50 +49,55 @@
                     'setrobot'
                 );
             @endphp
-            <div class="login-notification notification is-info">
-                <button class="delete"></button>
-                <ul>
-                    <li>
-                        {!! sprintf( $msg_registered, get_bloginfo( 'name' ) ) !!}
-                    </li>
-                </ul>
-            </div>
+
+            @section('notification')
+                @component('components.notification-area', ['class' => 'info'])
+                    <ul>
+                        <li>
+                            {!! sprintf( $msg_registered, get_bloginfo( 'name' ) ) !!}
+                        </li>
+                    </ul>
+                @endcomponent
+            @endsection
         @endif
 
         {{--Show logged out message if user just logged out--}}
         @if ($attributes['logged_out'])
-            <div class="login-notification notification is-info">
-                <button class="delete"></button>
-                <ul>
-                    <li>
-                        {{ __('You have signed out. Would you like to sign in again?', 'setrobot') }}
-                    </li>
-                </ul>
-            </div>
+            @section('notification')
+                @component('components.notification-area', ['class' => 'info'])
+                    <ul>
+                        <li>
+                            {{ __('You have signed out. Would you like to sign in again?', 'setrobot') }}
+                        </li>
+                    </ul>
+                @endcomponent
+            @endsection
         @endif
 
         {{--Show success message if user sent a password reset email--}}
         @if ($attributes['lost_password_sent'])
-            <div class="login-notification notification is-info">
-                <button class="delete"></button>
-                <ul>
-                    <li>
-                        {{ __('Check your email for a link to reset your password.', 'setrobot') }}
-                    </li>
-                </ul>
-            </div>
+            @section('notification')
+                @component('components.notification-area', ['class' => 'info'])
+                    <ul>
+                        <li>
+                            {{ __('Check your email for a link to reset your password.', 'setrobot') }}
+                        </li>
+                    </ul>
+                @endcomponent
+            @endsection
         @endif
 
         {{--Show success message if user updated their password--}}
         @if ($attributes['password_updated'])
-            <div class="login-notification notification is-info">
-                <button class="delete"></button>
-                <ul>
-                    <li>
-                        {{ __('Your password has been changed. You can sign in now.', 'setrobot') }}
-                    </li>
-                </ul>
-            </div>
+            @section('notification')
+                @component('components.notification-area', ['class' => 'info'])
+                    <ul>
+                        <li>
+                            {{ __('Your password has been changed. You can sign in now.', 'setrobot') }}
+                        </li>
+                    </ul>
+                @endcomponent
+            @endsection
         @endif
 
         <div class="login-container">
