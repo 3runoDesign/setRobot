@@ -184,22 +184,15 @@ add_action('after_setup_theme', function () {
 /**
  * Setting Static Pages
  */
+
+
+
+add_action('init', function () {
+    (new Utils())->create_page( array_values(config('pages')['default']) );
+});
+
 add_action('after_setup_theme', function () {
-    (new Utils())->create_page([
-        'Home',
-        'Blog',
-        'Login',
-        'Register',
-        'Lost Password',
-        'Reset Pass',
-        'Profile user'
-
-    ]);
-
-    (new Utils())->setting_frontpage([
-        'front_page' => 'Home',
-        'blog_page' => 'Blog'
-    ]);
+    (new Utils())->setting_frontpage(config('pages')['setting_frontpage']);
 });
 
 /**

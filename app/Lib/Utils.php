@@ -17,20 +17,12 @@ class Utils
                 'post_status' => 'publish',
                 'post_type' => 'page'
             ];
-
             $page_exists = get_page_by_title($page['post_title']);
-
             if ($page_exists == null) {
-
-
                 wp_insert_post($page);
-
-                return $page;
             }
-
-            return $page_exists;
-
         }
+
     }
 
     /**

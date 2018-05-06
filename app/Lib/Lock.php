@@ -2,12 +2,11 @@
 
 namespace App\Lib;
 
+use function App\config;
+
 class Lock
 {
     private $is_login_page;
-
-    private $pages_array;
-
 
     private $get_login_url;
     private $get_register_url;
@@ -20,25 +19,17 @@ class Lock
      */
     public function __construct()
     {
+        $this->get_login_url = get_permalink( get_page_by_title(config('pages')['default']['login'])->ID );
+        $this->get_register_url = get_permalink( get_page_by_title(config('pages')['default']['register'])->ID);
+        $this->get_lostpassword_url = get_permalink( get_page_by_title(config('pages')['default']['lostpassword'])->ID);
+        $this->get_resetpass_url = get_permalink( get_page_by_title(config('pages')['default']['resetpass'])->ID);
+        $this->get_profile_user_url = get_permalink( get_page_by_title(config('pages')['default']['profile_user'])->ID);
 
-        $this->pages_array = [
-            'login' => (new Utils())->create_page(['Login']),
-            'register' => (new Utils())->create_page(['Register']),
-            'lostpassword' => (new Utils())->create_page(['Lost Password']),
-            'resetpass' => (new Utils())->create_page(['Reset Pass']),
-            'profile_user' => (new Utils())->create_page(['Profile user']),
-        ];
-
-
-        $this->get_login_url = get_permalink($this->pages_array['login']->ID);
-        $this->get_register_url = get_permalink($this->pages_array['register']->ID);
-        $this->get_lostpassword_url = get_permalink($this->pages_array['lostpassword']->ID);
-        $this->get_resetpass_url = get_permalink($this->pages_array['resetpass']->ID);
-        $this->get_profile_user_url = get_permalink($this->pages_array['profile_user']->ID);
-        $this->is_login_page = substr( $_SERVER['REQUEST_URI'], 0, 2 + strlen($this->pages_array['login']->post_name) ) === '/' . $this->pages_array['login']->post_name .'/';
+        $this->is_login_page = substr( $_SERVER['REQUEST_URI'], 0, 2 + strlen(get_page_by_title(config('pages')['default']['login'])->post_name) ) === '/' . get_page_by_title(config('pages')['default']['login'])->post_name .'/';
 
         $this->subscribe();
     }
+
 
 
     /**
@@ -57,7 +48,7 @@ class Lock
     }
 
     /**
-     * Redirect user to custom login page rather than wp-login.php
+     * Redirect user to custom login page rather than wp-pages.php
      */
     public function redirect_to_custom_login() {
         if($_SERVER['REQUEST_METHOD'] == 'GET') {
@@ -137,7 +128,7 @@ class Lock
 
     /**
      * Redirects the user to the custom registration page instead
-     * of wp-login.php?action=register.
+     * of wp-pages.php?action=register.
      */
     public function redirect_to_custom_register() {
         if ( 'GET' == $_SERVER['REQUEST_METHOD'] ) {
@@ -153,7 +144,7 @@ class Lock
     /**
      * Handles the registration of a new user.
      *
-     * Used through the action hook "login_form_register" activated on wp-login.php
+     * Used through the action hook "login_form_register" activated on wp-pages.php
      * when accessed through the registration action.
      */
     public function do_register_user() {
@@ -185,7 +176,7 @@ class Lock
 
     /**
      * Redirects the user to the custom "Forgot your password?" page instead of
-     * wp-login.php?action=lostpassword.
+     * wp-pages.php?action=lostpassword.
      */
     public function redirect_to_custom_lostpassword() {
         if('GET' == $_SERVER['REQUEST_METHOD']) {
