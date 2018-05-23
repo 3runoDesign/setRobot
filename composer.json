@@ -1,16 +1,17 @@
 {
   "name": "bruno/setrobot",
-  "license": "MIT",
   "description": "A opinionated Wordpress base theme based on Sage",
+  "keywords": ["wordpress", "sage"],
+  "license": "MIT",
   "authors": [
     {
       "name": "Bruno Fernando",
       "email": "bruno2fernando@gmail.com"
     }
   ],
-  "keywords": ["wordpress", "sage"],
   "support": {
-    "issues": "https://github.com/3runoDesign/setRobot/issues"
+    "issues": "https://github.com/3runoDesign/setRobot/issues",
+    "source": "https://github.com/3runoDesign/setRobot"
   },
   "autoload": {
     "psr-4": {
@@ -50,5 +51,7 @@
     "update-headers": [
       "App\\Lib\\PostCreateProject::updateHeaders"
     ]
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
