@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-06 01:03-0300\n"
-"PO-Revision-Date: 2018-05-06 01:04-0300\n"
+"POT-Creation-Date: 2018-05-24 09:36-0300\n"
+"PO-Revision-Date: 2018-05-24 09:37-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -23,8 +23,8 @@ msgid "Sage &rsaquo; Error"
 msgstr "Sage &rsaquo; Erro"
 
 #: resources/functions.php:28
-msgid "You must be using PHP 7 or greater."
-msgstr "Você deve estar usando o PHP 7 ou superior."
+msgid "You must be using PHP 7.1 or greater."
+msgstr "Você deve estar usando o PHP 7.1 ou superior."
 
 #: resources/functions.php:28
 msgid "Invalid PHP version"
@@ -125,10 +125,6 @@ msgstr "Rodapé"
 #: resources/views/404.blade.php:6
 msgid "404 - Page Not Found"
 msgstr "404 Página Não Encontrada"
-
-#: resources/views/front-page.blade.php:5
-msgid "Logged in successfully!"
-msgstr "Logado com sucesso!"
 
 #: resources/views/layouts/lock.blade.php:27
 msgid "Created by setRobot."
@@ -292,6 +288,12 @@ msgstr "Comentários estão fechados."
 #: resources/views/partials/entry-meta.blade.php:3
 msgid "By"
 msgstr "Por"
+
+#~ msgid "You must be using PHP 7 or greater."
+#~ msgstr "Você deve estar usando o PHP 7 ou superior."
+
+#~ msgid "Logged in successfully!"
+#~ msgstr "Logado com sucesso!"
 
 #~ msgid ""
 #~ "Something did not work. <a href='%s'>Do you want to recover your account?"

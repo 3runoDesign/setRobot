@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-06 01:02-0300\n"
+"POT-Creation-Date: 2018-05-24 09:35-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "Sage &rsaquo; Error"
 msgstr ""
 
 #: resources/functions.php:28
-msgid "You must be using PHP 7 or greater."
+msgid "You must be using PHP 7.1 or greater."
 msgstr ""
 
 #: resources/functions.php:28
@@ -122,10 +122,6 @@ msgstr ""
 
 #: resources/views/404.blade.php:6
 msgid "404 - Page Not Found"
-msgstr ""
-
-#: resources/views/front-page.blade.php:5
-msgid "Logged in successfully!"
 msgstr ""
 
 #: resources/views/layouts/lock.blade.php:27
