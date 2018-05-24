@@ -31,6 +31,3 @@ install:
   - node -v && yarn -V
   - travis_retry yarn
   - composer install
-
-script:
-  - composer test
