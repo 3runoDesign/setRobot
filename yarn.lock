@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@vizuaalog/bulmajs@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@vizuaalog/bulmajs/-/bulmajs-0.3.1.tgz#36db922dcc01fa4e10faedff64b03f5ed78a0a19"
+"@vizuaalog/bulmajs@vizuaalog/bulmajs":
+  version "0.4.0"
+  resolved "https://codeload.github.com/vizuaalog/bulmajs/tar.gz/2b2bfa4996283023ad99d12212e1f1470c1d63cc"
 
 abbrev@1:
   version "1.1.1"

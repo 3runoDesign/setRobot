@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-import Notification from '@vizuaalog/bulmajs/src/plugins/notification';
+import { Notification } from '@vizuaalog/bulmajs/src/plugins/notification';
 
 /**
  * First we will load all of this project's JavaScript dependencies which
