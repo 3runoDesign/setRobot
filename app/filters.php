@@ -49,7 +49,7 @@ add_filter('comments_template', function ($comments_template) {
         locate_template([ "views/{$comments_template}", $comments_template ])
             ?: $comments_template
     );
-});
+}, 100);
 
 /**
  * Pretty search and redirects
