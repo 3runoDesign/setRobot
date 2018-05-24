@@ -13,7 +13,7 @@
     "cross-env": "^5.1.4",
     "dotenv": "^5.0.1",
     "family.scss": "^1.0.8",
-    "laravel-mix": "^2.1.0",
+    "laravel-mix": "^2.1.11",
     "vue": "^2.5.16"
   },
   "scripts": {
