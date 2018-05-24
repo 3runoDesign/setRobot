@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html @php(language_attributes())>
+<html @php language_attributes() @endphp>
 
 @include('partials.head')
 
-<body @php(body_class('app')) style="background-image: url({{
+<body @php body_class('app') @endphp style="background-image: url({{
                                     function_exists('get_field') && get_field('background_login', 'option') ?
                                     get_field('background_login', 'option') :
                                     'https://placeimg.com/1000/1000/any'
                                 }});">
 
     <div id="app" class="app__wrapper" role="document">
-        <div class="app__container">@php(do_action('get_header'))
+        <div class="app__container">@php do_action('get_header') @endphp
 
             <main class="app__main" role="main">
                 <section class="faded-bg"></section>
@@ -37,7 +37,7 @@
                 </section>
 
             </main>
-            @php(do_action('get_footer'))
+            @php do_action('get_footer') @endphp
 
         </div>
     </div>
@@ -46,7 +46,7 @@
         @yield('notification')
     </div>
 
-    @php(wp_footer())
+    @php wp_footer() @endphp
     @include('partials.foot')
 
     <script>

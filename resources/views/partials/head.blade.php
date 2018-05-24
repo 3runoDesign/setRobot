@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="@getimage('favicon.ico')" type="image/x-icon">
     <link rel="icon" href="@getimage('favicon.ico')" type="image/x-icon">
 
-    @php(wp_head())
+    @php wp_head() @endphp
 
     @if(is_admin_bar_showing())
         <style>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html @php(language_attributes())>
+<html @php language_attributes() @endphp>
 
 @include('partials.head')
 
-<body @php(body_class('app'))>
+<body @php body_class('app') @endphp>
 
     <div id="app" class="app__wrapper" role="document">
-        <div class="app__container">@php(do_action('get_header'))
+        <div class="app__container">@php do_action('get_header') @endphp
 
             <main class="app__main" role="main">
                 @if (has_nav_menu('primary_navigation'))
@@ -15,7 +15,7 @@
 
                 @yield('content')
             </main>
-            @php(do_action('get_footer'))
+            @php do_action('get_footer') @endphp
 
         </div>
     </div>
@@ -24,7 +24,7 @@
         @yield('notification')
     </div>
 
-    @php(wp_footer())
+    @php wp_footer() @endphp
     @include('partials.foot')
     @stack('scripts-footer')
 </body>
