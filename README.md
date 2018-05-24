@@ -1,4 +1,4 @@
-# setRobot WP [![Build Status](https://travis-ci.org/3runoDesign/setRobot.svg?branch=master)](https://travis-ci.org/3runoDesign/setRobot) 3.0.0
+# setRobot WP 3.0.0
 setRobot is a A opinionated Wordpress base theme based on Sage and Laravel-mix.
 
 `composer create-project 3runodesign/setrobot my-theme`
