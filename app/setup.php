@@ -102,8 +102,6 @@ add_action('after_setup_theme', function () {
      * https://roots.io/using-woocommerce-with-sage/
      */
     // add_theme_support('woocommerce');
-
-    (new \App\Lib\Lock());
 }, 100);
 
 /**
@@ -184,15 +182,16 @@ add_action('after_setup_theme', function () {
 /**
  * Setting Static Pages
  */
-
-
-
 add_action('init', function () {
     (new Utils())->create_page( array_values(config('pages')['default']) );
 });
 
 add_action('after_setup_theme', function () {
     (new Utils())->setting_frontpage(config('pages')['setting_frontpage']);
+});
+
+add_action('setrobot_after_creating_pages', function () {
+    (new \App\Lib\Lock());
 });
 
 /**

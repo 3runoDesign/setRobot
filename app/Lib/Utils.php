@@ -23,6 +23,8 @@ class Utils
             }
         }
 
+        do_action('setrobot_after_creating_pages');
+
     }
 
     /**
