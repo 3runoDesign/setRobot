@@ -1,7 +1,7 @@
 # setRobot WP 3.0.0
 setRobot is a A opinionated Wordpress base theme based on Sage and Laravel-mix.
 
-![](https://messages-svg.herokuapp.com/warning.svg?message=No+maintenance+version.+Use+version+2.0.0!)
+![No Maintenance](https://img.shields.io/badge/Version%203.0.0-No%20Maintenance-red) ![Maintenance](https://img.shields.io/badge/Version%202.0.0-Maintenance-green)
 
 `composer create-project 3runodesign/setrobot my-theme`
 
